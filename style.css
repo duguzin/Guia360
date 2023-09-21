@@ -163,6 +163,10 @@ body.open .navbar-menu {
     visibility: visible;
 }
 
+body.open {
+    overflow: hidden;
+}
+
 
 /* .navbar-menu > .nav-link {
     color: rgba(2, 1, 1, 0.5);
