@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Poppins:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 * {
     padding: 0;
@@ -12,7 +13,7 @@ body {
     background: #fff;
 }
 
-button {
+.button-menu {
     border: 0;
     padding: 0;
     font-family: inherit;
@@ -84,7 +85,7 @@ body.open .navbar-overlay {
 }
 
 
-.navbar-burguer-pc {
+#navbar-burguer-pc {
     position: fixed;
     top: 60px;
     right: 20px;
@@ -96,7 +97,7 @@ body.open .navbar-overlay {
     z-index: 2;
 }
 
-.navbar-burguer {
+#navbar-burguer {
     position: fixed;
     top: 0;
     right: 0;
@@ -108,7 +109,7 @@ body.open .navbar-overlay {
     z-index: 4;
 }
 
-.button-menu-pc button {
+.button-menu-pc #navbar-burguer-pc {
     background-color: #003366;
     display: flex;
     padding: 0 15px;
@@ -188,7 +189,7 @@ body.open .navbar-menu {
         padding: 0.5rem 1.5rem
     }
    
-    .navbar-burguer {
+    #navbar-burguer {
         display: none;
     }
     /* .navbar-menu {
@@ -438,6 +439,9 @@ div.swiper-button-next, div.swiper-button-prev {
     .swiper {
         height: 700px;
     }
+    .container-login {
+        width: 400px;
+    }
 }
 @media screen and (max-width: 420px) {
     .section-home {
@@ -473,6 +477,9 @@ div.swiper-button-next, div.swiper-button-prev {
     }
     .swiper {
         height: 600px;
+    }
+    .container-login {
+        width: 350px;
     }
 }
 @media screen and (max-width: 330px) {
@@ -510,6 +517,15 @@ div.swiper-button-next, div.swiper-button-prev {
     .swiper {
         height: 500px;
     }
+    .container-login {
+        width: 280px;
+    }
+    .container-login form {
+        padding: 1rem;
+    }
+    .navbar-login {
+        display: none;
+    }
 }
 
 footer {
@@ -533,3 +549,107 @@ footer {
       font-size: 12px;
     }
   }
+
+
+/* CSS FORMULÁRIO DE CADASTRO */
+
+.navbar-login {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+}
+  
+.container-login {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 8rem 0;
+}
+  
+form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.4);
+}
+  
+.container-login h3 {
+    text-align: center;
+    color: #ff9900;
+    margin-bottom: 20px;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.container-login h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #003366;
+    margin-bottom: 30px;
+  }
+   
+.container-login h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #003366;
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    color: #003366;
+    font-weight: 600;
+}
+  
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border-radius: 10px;
+    border: #003366 solid 2px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgb(253, 247, 247);
+}
+
+.btn-login {
+    width: 100%;
+    height: 60px;
+    color: #003366;
+    background-color: #ff9900;
+    border-radius: 10px;
+    border-style: dashed;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.btn-login:hover {
+    background-color: #ee930b;
+}
+
+.svg-fundo {
+    background-image: url(https://fontawesome.com/images/icons-gray-bg.svg);
+}
+
+.logo-login {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-login img {
+    width: 80px;
+}
