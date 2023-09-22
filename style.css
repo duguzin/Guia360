@@ -34,10 +34,8 @@ body {
 .nav-link-menu {
     color: #fff;
     text-decoration: none;
-    font-weight: 500;
     font-size: 22px;
     letter-spacing: 3px;
-    margin-left: 10px;
     border-bottom: 2px solid transparent;
     transition: all .55s ease;
 }
@@ -84,6 +82,9 @@ body.open .navbar-overlay {
     opacity: 1;
 }
 
+body.open {
+    overflow: hidden;
+}
 
 #navbar-burguer-pc {
     position: fixed;
@@ -147,7 +148,7 @@ body.open .navbar-overlay {
      translate: 100% 0;
      width: 270px;
      height: 100%;
-     padding: 1rem 1rem;
+     padding: 2rem;
      display: flex;
      gap: 1rem;
      flex-direction: column;
@@ -155,16 +156,11 @@ body.open .navbar-overlay {
      background: #003366;
      visibility: hidden;
      transition: all .5s;
-     
 }
 
 body.open .navbar-menu {
     translate: 0 0;
     visibility: visible;
-}
-
-body.open {
-    overflow: hidden;
 }
 
 
@@ -206,7 +202,7 @@ body.open {
     } */
 }
 @media (max-width: 800px) {
-    .navbar-links, .button-menu-pc {
+    .navbar-links, .button-menu-pc, .container-postagens {
         display: none;
     }
     .navbar-menu {
@@ -233,35 +229,54 @@ div.swiper-button-next, div.swiper-button-prev {
 }
 
 .section-home {
-    padding: 2rem 4rem;
+    padding: 2rem 3rem;
 }
 
 .section-home h1 {
-    font-size: 2.3rem;
+    font-size: 30px;
     color: #003366;
+    margin-bottom: 20px;
+}
+
+.section-home h2 {
+    font-size: 20px;
+    color: #ff9900;
+    text-align: center;
     margin-bottom: 30px;
 }
 
+.section-home h3 {
+    font-size: 20px;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.section-home h4 {
+    font-size: 20px;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
 .content {
+    padding: 2rem 2rem;
     background-color: #2ca0da;
     height: 180px;
     width: 500px;
 }
 
 .content p {
-    padding: 2rem 2rem;
     color: #fff;
     font-size: 14px;
 }
 
 .content2 {
+    padding: 2rem 2rem;
     background-color: #003366;
     height: 200px;
     width: 700px;
 }
 
 .content2 p {
-    padding: 2rem 2rem;
     color: #fff;
     font-size: 14px;
 }
@@ -273,6 +288,7 @@ div.swiper-button-next, div.swiper-button-prev {
 }
 
 .content3 {
+    padding: 2rem 2rem;
     background-color: #fff;
     height: 200px;
     width: 700px;
@@ -280,19 +296,18 @@ div.swiper-button-next, div.swiper-button-prev {
 }
 
 .content3 p {
-    padding: 2rem 2rem;
     color: #000;
     font-size: 14px;
 }
 
 .content4 {
+    padding: 2rem 2rem;
     background-color: #ff9900;
     height: 180px;
     width: 500px;
 }
 
 .content4 p {
-    padding: 2rem 2rem;
     color: #fff;
     font-size: 14px;
 }
@@ -324,6 +339,15 @@ div.swiper-button-next, div.swiper-button-prev {
 .content7 p {
     font-size: 16px;
     font-weight: 500;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.content8 p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: justify;
 }
 
 .span-home {
@@ -392,7 +416,7 @@ div.swiper-button-next, div.swiper-button-prev {
     .content, .content2, .content3, .content4 {
         width: 100%;
     }
-    .content p, .content2 p, .content3 p, .content4 p {
+    .content p, .content2 p, .content3 p, .content4 p, .content7 p, .content8 p {
         font-size: 17px;
     }
     .content5 img, .content6 img {
@@ -413,7 +437,7 @@ div.swiper-button-next, div.swiper-button-prev {
         padding: 1rem 1.5rem;
     }
     .section-home h1 {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
         font-weight: 600;
         margin-top: 20px;
     }
@@ -428,7 +452,7 @@ div.swiper-button-next, div.swiper-button-prev {
     .content, .content2, .content3, .content4 {
         width: 100%;
     }
-    .content p, .content2 p, .content3 p, .content4 p {
+    .content p, .content2 p, .content3 p, .content4 p, .content7 p, .content8 p {
         font-size: 16px;
     }
     .content5, .content6, .content5 img, .content6 img {
@@ -452,7 +476,7 @@ div.swiper-button-next, div.swiper-button-prev {
         padding: 1rem 1.5rem;
     }
     .section-home h1 {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         font-weight: 600;
         margin-top: 20px;
     }
@@ -464,7 +488,7 @@ div.swiper-button-next, div.swiper-button-prev {
         flex-wrap: wrap;
         margin-bottom: 30px;
     }
-    .content p, .content2 p, .content3 p, .content4 p {
+    .content p, .content2 p, .content3 p, .content4 p, .content7 p, .content8 p {
         font-size: 12px;
     }
     .content, .content2, .content3, .content4 {
@@ -491,7 +515,7 @@ div.swiper-button-next, div.swiper-button-prev {
         padding: 0.5rem 1rem;
     }
     .section-home h1 {
-        font-size: 1.1rem;
+        font-size: 16px;
         font-weight: 600;
         margin-top: 20px;
     }
@@ -506,12 +530,15 @@ div.swiper-button-next, div.swiper-button-prev {
     .content, .content2, .content3, .content4 {
         width: 100%;
     }
-    .content p, .content2 p, .content3 p, .content4 p {
-        font-size: 11px;
+    .content p, .content2 p, .content3 p, .content4 p, .content7 p, .content8 p {
+        font-size: 12px;
     }
     .content5, .content6, .content5 img, .content6 img {
         max-height: 250px;
         width: 100%;
+    }
+    .content7 h3 {
+        font-size: 16px;
     }
     .swiper-slide img {
         padding: 2rem 0 0 0;
@@ -529,6 +556,13 @@ div.swiper-button-next, div.swiper-button-prev {
     }
     .navbar-login {
         display: none;
+    }
+    /* .section-2 {
+        flex-wrap: wrap;
+    } */
+    .container-postagens2 {
+        width: 100%;
+        margin: 0;
     }
 }
 
@@ -694,6 +728,7 @@ input[type="tel"] {
 .div-login {
     margin-top: 30px;
     display: flex;
+    gap: 10px;
 }
 
 #link-cadastrar, #link-entrar {
@@ -706,4 +741,107 @@ input[type="tel"] {
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
+}
+
+.section-2 {
+    padding: 2rem 1rem;
+    margin-bottom: 80px;
+    display: flex;
+    background-color: #ccc;
+    gap: 20px;
+}
+
+.container-postagens {
+    height: auto;
+    width: 50%;
+}
+
+.h1-postagens {
+    background-color: #003366;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.h1-postagens {
+    font-size: 20px;
+}
+
+.card {
+    width: 180px;
+    height: 100px;
+    margin: 15px;
+    display: inline-flex;
+    border: 2px solid #003366;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #218abe;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.container-postagens2 {
+    height: auto;
+    width: auto;
+    background-color: rgb(241, 238, 238);
+    padding: 1rem;
+}
+
+.fundo-postagens {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 2px;
+}
+
+.fundo-postagens h1 {
+    color: #003366;
+    font-size: 18px;
+}
+
+.div-pesquisa {
+    display: flex;
+}
+
+.div-pesquisa button {
+    border: 0;
+    background: #218abe;
+    cursor: pointer;
+    width: 15%;
+    height: 60px;
+    border-radius: 2px;
+}
+
+#input-postagens {
+    width: 85%;
+    height: 60px;
+    padding: 1rem 3rem;
+    border-radius: 2px;
+    border: none;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #fff;
+}
+
+.div-links-postagens a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.link-postagens {
+    background-color: #003366;
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 2px;
 }
