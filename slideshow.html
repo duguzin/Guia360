@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Slideshow</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot-container {
+  text-align: center;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+  </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+
+        <button type="button" class="button-menu" id="navbar-burguer" onclick="toggleMenuOpen()">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+       
+        
+            <!-- <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_92x30dp.png" alt="">
+            
+            <div class="container">
+            <input type="text" name="q" class="search-box" autofocus>
+            <input type="submit" value="Pesquisar" class="search-button">
+            </div> -->
+
+            <h1 class="navbar-title">Inter Ivan</h1>
+        
+        <nav class="navbar-links"> 
+            <li class="nav-list"><a href="#" class="nav-link">Fale Conosco  |</a></li>
+            <li class="nav-list"><a href="#" class="nav-link">Saiba Mais  |</a></li>
+            <li class="nav-list"><a href="#" class="nav-link">Novidades</a></li>
+        </nav>
+
+        <nav class="navbar-menu">
+            <li class="nav-list"><a href="./login.html" class="nav-link-menu" id="active">Home</a></li>
+            <li class="nav-list"><a href="./login.html" class="nav-link-menu">Simulados</a></li>
+            <li class="nav-list"><a href="#" class="nav-link-menu">Cronograma</a></li>
+            <li class="nav-list"><a href="#" class="nav-link-menu">Aulão</a></li>
+            <li class="nav-list"><a href="#" class="nav-link-menu">Materiais de Revisão</a></li>
+            <li class="nav-list"><a href="#" class="nav-link-menu">Provas</a></li>
+            <li class="nav-list"><a href="#" class="nav-link-menu">Notas de Corte</a></li>
+            
+            <div class="div-login">
+             <li class="nav-list"><a href="./login.html" class="nav-link-menu" id="link-entrar">Entrar</a></li>
+             <li class="nav-list"><a href="./cadastro.html" class="nav-link-menu" id="link-cadastrar">Cadastrar</a></li> 
+            </div>
+            
+        </nav>
+        </nav>
+    </header>
+
+
+
+        <div class="button-menu-pc">
+          <button type="button" class="button-menu" id="navbar-burguer-pc" onmouseover="toggleMenuOpen()">
+            Menu<span class="material-symbols-outlined">menu</span>
+        </button>  
+        </div>
+        
+
+        <div class="logo">
+            <a href="#">Guia<span>360</span></a>
+        </div>
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <img src="./Imagens/aulao-historia-banner.png" alt="Slide 1">
+    </div>
+    <div class="slide fade">
+      <img src="./Imagens/banner.png" alt="Slide 2">
+    </div>
+    <div class="slide fade">
+      <img src="./Imagens/aulao-historia-banner.png" alt="Slide 3">
+    </div>
+
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+
+    <div class="dot-container">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+
+  <script>
+    let slideIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+
+showSlide(slideIndex);
+
+function showSlide(index) {
+  slides.forEach((slide) => (slide.style.display = 'none'));
+  dots.forEach((dot) => dot.classList.remove('active'));
+
+  if (index >= slides.length) {
+    slideIndex = 0;
+  } else if (index < 0) {
+    slideIndex = slides.length - 1;
+  } else {
+    slideIndex = index;
+  }
+
+  slides[slideIndex].style.display = 'block';
+  dots[slideIndex].classList.add('active');
+}
+
+function nextSlide() {
+  showSlide(slideIndex + 1);
+}
+
+function prevSlide() {
+  showSlide(slideIndex - 1);
+}
+
+function currentSlide(index) {
+  showSlide(index);
+}
+
+document.querySelector('.next').addEventListener('click', nextSlide);
+document.querySelector('.prev').addEventListener('click', prevSlide);
+
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', () => currentSlide(index));
+});
+
+
+  </script>
+</body>
+</html>
