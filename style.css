@@ -369,10 +369,11 @@ div.swiper-button-next, div.swiper-button-prev {
 }
 
 .content5 img, .content6 img {
-    height: 430px;
+    height: 400px;
     width: auto;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
 }
+
 
 /* .content6 img {
     height: 400px;
@@ -939,6 +940,19 @@ input[type="tel"] {
     border-radius: 5px;
 }
 
+.card:hover {
+    transform: scale(1.1);
+}
+
+.link-postagens:hover {
+    background-color: #064380;
+}
+
+#btn-pesquisar:hover {
+    background-color: #0c6d9e;
+}
+
+
 .card a {
     color: #fff;
     font-size: 18px;
@@ -1005,3 +1019,26 @@ input[type="tel"] {
     border-radius: 2px;
 }
 
+/* Estilo para o botão de voltar ao topo */
+#btnVoltarTopo {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; 
+    background-color: #003366;
+    color: #fff;
+    border: none; 
+    border-radius: 50%;
+    width: 4.5em;
+    height: 4.5em;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+    }
+  
+  
+  #btnVoltarTopo.show {
+    display: block;
+  }
+  
