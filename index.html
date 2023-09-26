@@ -41,8 +41,8 @@
 
         <nav class="navbar-menu">
             <li class="nav-list"><a href="./login.html" class="nav-link-menu" id="active">Home</a></li>
-            <li class="nav-list"><a href="./login.html" class="nav-link-menu">Simulados</a></li>
-            <li class="nav-list"><a href="#" class="nav-link-menu">Cronograma</a></li>
+            <li class="nav-list"><a href="./slideshow.html" class="nav-link-menu">Simulados</a></li>
+            <li class="nav-list"><a href="./teste.html" class="nav-link-menu">Cronograma</a></li>
             <li class="nav-list"><a href="#" class="nav-link-menu">Aulão</a></li>
             <li class="nav-list"><a href="#" class="nav-link-menu">Materiais de Revisão</a></li>
             <li class="nav-list"><a href="#" class="nav-link-menu">Provas</a></li>
@@ -71,27 +71,58 @@
         </div> -->
         
         <!-- Slider main container -->
-<div class="swiper">
+<!-- Swiper -->
 
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
+<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #2ca0da" class="swiper mySwiper">
+  <div class="swiper-wrapper">
 
-      <!-- Slides -->
-      <div class="swiper-slide"><img src="./Imagens/banner.png" alt=""></div>
-      <div class="swiper-slide"><img src="https://yesofcorsa.com/wp-content/uploads/2019/05/4K-Landscape-Scenery-Wallpaper-HQ.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="https://wallpapercave.com/wp/wp4854991.jpg" alt=""></div>
+    <div class="swiper-slide">
+      <img src="https://yesofcorsa.com/wp-content/uploads/2019/05/4K-Landscape-Scenery-Wallpaper-HQ.jpg" alt="Banner 1">
+      <div class="overlay-slide"></div>
+      <div class="container-slide">
+        <div class="title" data-swiper-parallax="-300">Navegue seu Caminho para o Sucesso!</div>
+      <div class="subtitle" data-swiper-parallax="-200">O Guia360 é sua bússola para os desafios acadêmicos</div>
+      <div class="text" data-swiper-parallax="-100">
+        <p>
+          Encontre o caminho mais eficaz para seus estudos e alcance o sucesso nos vestibulares e concursos. Deixe o Guia360 guiar você nessa jornada.
+        </p>
+      </div>
+    </div>
+    
+      </div>
+    <div class="swiper-slide">
+      <div class="overlay-slide"></div>
+      <img src="https://th.bing.com/th/id/R.02549b58df319c593ef1e692838a4514?rik=GQAB%2bBF6oaSGog&pid=ImgRaw&r=0" alt="Banner 2">
+      <div class="container-slide">
+        <div class="title" data-swiper-parallax="-300">Descubra Seu Próprio Caminho para o Conhecimento!</div>
+      <div class="subtitle" data-swiper-parallax="-200">O Guia360: Sua bússola personalizada para o aprendizado.</div>
+      <div class="text" data-swiper-parallax="-100">
+        <p>
+          Aprender é encontrar o caminho certo. Com o Guia360, você tem as ferramentas para navegar seu próprio percurso educacional, alcançando seus objetivos.
+        </p>
+      </div>
+    </div>
+    </div> 
+      
+    <div class="swiper-slide">
+      <img src="https://www.itl.cat/pngfile/big/206-2066198_new-zealand-4k-free-hd-wallpaper-free-download.jpg" alt="Banner 3">
+      <div class="overlay-slide"></div>
+      <div class="container-slide">
+        <div class="title" data-swiper-parallax="-300">Explore, Aprenda e Conquiste!</div>
+      <div class="subtitle" data-swiper-parallax="-200">Guia360: Sua bússola digital para o sucesso acadêmico.</div>
+      <div class="text" data-swiper-parallax="-100">
+        <p>
+          O conhecimento está lá fora. Explore com confiança, aprenda com dedicação e conquiste seus objetivos acadêmicos. O Guia360 está aqui para te guiar nessa jornada.
+        </p>
+      </div>
+      </div>
       
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-  
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
   </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
 
    <section class="section-home">
         <h1>Seja bem-vindo ao Guia360: Sua Bússola na Jornada Acadêmica!</h1>
@@ -167,6 +198,7 @@
              <p>
               Estabelecemos uma comunidade ativa de estudantes e mentores, proporcionando um ambiente de aprendizado colaborativo e encorajador.
              </p>
+             
          </div>
 
          </div>
@@ -223,8 +255,8 @@
 
         <div class="container-postagens2">
           <div class="div-pesquisa">
-            <input type="text" name="" id="input-postagens" placeholder="procure aqui">
-            <button>
+            <input type="text" id="input-postagens" placeholder="procure aqui">
+            <button id="btn-pesquisar">
               <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><style>svg{fill:#fff}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
             </button>
           </div>
@@ -282,33 +314,28 @@
       </main> 
     
     <script src="./script.js"></script>
+
     <script type="module">
-        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.js'
-        const swiper = new Swiper('.swiper', {
-      // Optional parameters
-      centeredSlides: true,
-      autoplay: {
+      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.js'
+          var swiper = new Swiper(".mySwiper", {
+        autoplay: {
         delay: 10000,
         disableOnInteraction: false,
       },
+      speed: 600,
+      parallax: true,
       direction: 'horizontal',
       loop: true,
-    
-      // If we need pagination
       pagination: {
-        el: '.swiper-pagination',
+        el: ".swiper-pagination",
+        clickable: true,
+        centeredSlides: true,
+
       },
-    
-      // Navigation arrows
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
-    
-    //   And if we need scrollbar
-      // scrollbar: {
-      //   el: '.swiper-scrollbar',
-      // },
     });
        </script>
 
