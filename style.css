@@ -188,19 +188,17 @@ body.open {
     background: #003366;
     visibility: hidden;
     transition: all .5s;
-}
-
-.navbar-pesquisa {
-    padding: 1rem 1rem;
+    padding: 1rem;
     display: flex;
     justify-content: center;
 }
+
 
 .navbar-pesquisa button {
     border: 0;
     background: #2ca0da;
     cursor: pointer;
-    width: 50px;
+    width: 15%;
     height: 50px;
     border-radius: 2px;
     padding: .5em;
@@ -209,7 +207,7 @@ body.open {
 }
 
 #nav-input {
-    width: auto;
+    width: 85%;
     height: 50px;
     padding: 1rem 2rem;
     border-radius: 0;
