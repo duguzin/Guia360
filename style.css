@@ -42,7 +42,8 @@ body {
 }
 
 
-.nav-link-menu:hover {
+.nav-link-menu:hover,
+#active {
     border-bottom: 2px solid #ff9900;
 }
 
@@ -85,7 +86,8 @@ body.open .navbar-overlay {
     opacity: 1;
 }
 
-body.open {
+body.open,
+body.open-pesquisa {
     overflow: hidden;
 }
 
@@ -202,8 +204,6 @@ body.open {
     height: 50px;
     border-radius: 2px;
     padding: .5em;
-    border-bottom-right-radius: 2px;
-    border-top-right-radius: 2px;
 }
 
 #nav-input {
@@ -215,8 +215,7 @@ body.open {
     font-size: 16px;
     font-weight: 600;
     background-color: #fff;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
+    margin-right: 5px;
 }
 
 
@@ -469,6 +468,7 @@ div.swiper-button-next, div.swiper-button-prev {
     font-weight: 400;
     border: #003366 solid 2px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+    font-size: 15px;
 }
 
 .content8, .content9 {
@@ -493,8 +493,7 @@ div.swiper-button-next, div.swiper-button-prev {
 }
 
 .content7 p {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 15px;
     margin-bottom: 10px;
     text-align: justify;
     color: #676767;
@@ -502,8 +501,7 @@ div.swiper-button-next, div.swiper-button-prev {
 }
 
 .content8 p {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 15px;
     margin-bottom: 10px;
     text-align: justify;
 }
@@ -1113,7 +1111,7 @@ input[type="tel"] {
   }
   
   .section-pesquisa {
-    padding: 3rem 6rem;
+    padding: 4rem 6rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1133,19 +1131,17 @@ input[type="tel"] {
     background: #218abe;
     cursor: pointer;
     width: 80px;
-    height: 50px;
+    height: 60px;
     border-radius: 5px;
 }
 
 .div-nav-pesquisa input {
-    width: auto;
     width: 600px;
-    height: 50px;
+    height: 60px;
     padding: 1rem 3rem;
     border-radius: 5px;
     border: none;
     margin-right: 5px;
-    margin-bottom: 20px;
     font-size: 16px;
     font-weight: 600;
     background-color: #fff;
