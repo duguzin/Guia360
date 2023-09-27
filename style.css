@@ -13,7 +13,7 @@ body {
     background: #fff;
 }
 
-.button-menu {
+.button-menu, .button-pesquisa {
     border: 0;
     padding: 0;
     font-family: inherit;
@@ -60,14 +60,14 @@ body {
      align-items: center;
      justify-content: space-between;
      width: 100%;
-     height: 45px;
+     height: 60px;
      /* background-image: linear-gradient(to right, #327a9e, #003366); */
      background-color: #003366;
      color: #fff;
      z-index: 3;
 }
 
-.navbar-overlay {
+.navbar-overlay, .navbar-overlay-pesquisa {
     position: fixed;
     top: 0;
     left: 0;
@@ -107,11 +107,25 @@ body.open {
     right: 0;
     display: grid;
     place-items: center;
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
     padding: 0;
     z-index: 4;
 }
+
+#navbar-pesquisa {
+    position: fixed;
+    top: 0;
+    right: 40px;
+    display: grid;
+    place-items: center;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    z-index: 3;
+}
+
+
 
 .button-menu-pc #navbar-burguer-pc {
     /* background-image: linear-gradient(to right, #327a9e, #003366); */
@@ -154,19 +168,73 @@ body.open {
      top: 0;
      right: 0;
      translate: 100% 0;
-     width: 320px;
+     width: 280px;
      height: 100%;
      padding: 2rem;
      background: #003366;
      visibility: hidden;
      transition: all .5s;
-
 }
 
-body.open .navbar-menu {
+.navbar-pesquisa {
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    right: 0;
+    translate: 0 -100%;
+    width: 100%;
+    height: 80px;
+    background: #003366;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.navbar-pesquisa {
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-pesquisa button {
+    border: 0;
+    background: #2ca0da;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 2px;
+    padding: .5em;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+#nav-input {
+    width: auto;
+    height: 50px;
+    padding: 1rem 2rem;
+    border-radius: 0;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #fff;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+
+
+body.open .navbar-menu,
+body.open-pesquisa .navbar-pesquisa {
     translate: 0 0;
     visibility: visible;
 }
+
+body.open-pesquisa .navbar-overlay-pesquisa {
+    visibility: visible;
+    opacity: 1;
+}
+
+
 
 
 /* .navbar-menu > .nav-link {
@@ -191,20 +259,22 @@ body.open .navbar-menu {
     }
     .navbar {
         justify-content: space-between;
-        padding: 0.5rem 1.5rem
+        padding: 0.5rem 1.5rem;
+        height: 40px;
     }
    
-    #navbar-burguer {
+    #navbar-burguer, #navbar-pesquisa {
         display: none;
     }
 }
 @media (max-width: 800px) {
-    .navbar-links, .button-menu-pc, .container-postagens {
+    .navbar-links, .button-menu-pc, .container-postagens, section.section-pesquisa {
         display: none;
     }
     .navbar-menu {
         display: block;
     }
+   
 }
 
 .swiper {
@@ -268,7 +338,7 @@ div.swiper-button-next, div.swiper-button-prev {
 
 
 .section-home {
-    padding: 2rem 3rem;
+    padding: 2rem 4rem;
 }
 
 .section-home h1 {
@@ -302,7 +372,7 @@ div.swiper-button-next, div.swiper-button-prev {
     border: 2px solid #003366;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
     height: 180px;
-    width: 540px;
+    width: 700px;
 }
 
 .content p {
@@ -316,7 +386,7 @@ div.swiper-button-next, div.swiper-button-prev {
     border: 2px solid #ff9900;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
     height: 200px;
-    width: 700px;
+    width: auto;
 }
 
 .content2 p {
@@ -328,13 +398,14 @@ div.swiper-button-next, div.swiper-button-prev {
     display: flex;
     gap: 1rem;
     margin-bottom: 30px;
+    
 }
 
 .content3 {
     padding: 1rem 1rem;
     background-color: #fff;
     height: 200px;
-    width: 700px;
+    width: auto;
     border: 2px solid #2ca0da;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
 }
@@ -350,7 +421,7 @@ div.swiper-button-next, div.swiper-button-prev {
     border: 2px solid #003366;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
     height: 180px;
-    width: 540px;
+    width: 650px;
 }
 
 .content4 p {
@@ -387,7 +458,6 @@ div.swiper-button-next, div.swiper-button-prev {
     display: flex;
     gap: 1rem;
     margin-bottom: 30px;
-
 }
 
 .container6 {
@@ -456,7 +526,6 @@ div.swiper-button-next, div.swiper-button-prev {
     
     .content5 img, .content6 img {
         height: 400px;
-        width: 550px;
     }
        
 }
@@ -534,7 +603,7 @@ div.swiper-button-next, div.swiper-button-prev {
 }
 @media screen and (max-width: 700px) {
     .section-home {
-        padding: 1rem 1.5rem;
+        padding: 2rem;
     }
     .section-home h1 {
         font-size: 1.6rem;
@@ -556,11 +625,10 @@ div.swiper-button-next, div.swiper-button-prev {
         width: 100%;
     }
     .content p, .content2 p, .content3 p, .content4 p, .content7 p, .content8 p, .content9 p,.content10 p {
-        font-size: 16px;
+        font-size: 15px;
     }
     .content5, .content6, .content5 img, .content6 img {
         height: 300px;
-        width: 100%;
     } 
     .swiper-slide img {
         padding: 2rem 0 0 0;
@@ -901,6 +969,10 @@ input[type="tel"] {
     letter-spacing: 1px;
 }
 
+#link-entrar:hover {
+    background-color: #da8507;
+}
+
 .section-2 {
     padding: 2rem 1rem;
     display: flex;
@@ -1042,3 +1114,42 @@ input[type="tel"] {
     display: block;
   }
   
+  .section-pesquisa {
+    padding: 3rem 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .section-pesquisa img {
+    width: 80px;
+  }
+
+  .div-nav-pesquisa {
+    display: flex;
+  }
+
+  .div-nav-pesquisa button {
+    border: 0;
+    background: #218abe;
+    cursor: pointer;
+    width: 80px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.div-nav-pesquisa input {
+    width: auto;
+    width: 600px;
+    height: 50px;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #fff;
+    border: #676767 solid 2px;
+}

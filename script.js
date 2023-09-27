@@ -1,4 +1,5 @@
 const toggleMenuOpen = () => document.body.classList.toggle("open");
+const togglePesquisaOpen = () => document.body.classList.toggle("open-pesquisa");
 
 // function pesquisarPalavra() {
 //     const palavraPesquisada = document.getElementById('input-postagens').value.toLowerCase();
