@@ -115,7 +115,7 @@ body.open-pesquisa {
     z-index: 4;
 }
 
-#navbar-pesquisa {
+#navbar-lupa {
     position: fixed;
     top: 0;
     right: 40px;
@@ -260,7 +260,7 @@ body.open-pesquisa .navbar-overlay-pesquisa {
         height: 40px;
     }
    
-    #navbar-burguer, #navbar-pesquisa {
+    #navbar-burguer, #navbar-lupa {
         display: none;
     }
 }
@@ -1124,6 +1124,11 @@ input[type="tel"] {
 
   .div-nav-pesquisa {
     display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
   }
 
   .div-nav-pesquisa button {
@@ -1138,12 +1143,52 @@ input[type="tel"] {
 .div-nav-pesquisa input {
     width: 600px;
     height: 60px;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     border-radius: 5px;
     border: none;
-    margin-right: 5px;
     font-size: 16px;
     font-weight: 600;
     background-color: #fff;
     border: #676767 solid 2px;
+}
+
+
+#lista-titulos {
+    position: absolute;
+    top: 80px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: none;
+}
+
+#lista-titulos-pc {
+    position: absolute;
+    top: 60px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    display: none;
+}
+
+#lista-titulos-pc li a, #lista-titulos li a {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    text-decoration: none;
+    font-size: 18px;
+    color: #003366;
+    border: #ddd solid 1px;
+    background-color: #f6f6f6;
+    padding: 12px;
+}
+
+#lista-titulos li a:hover, #lista-titulos-pc li a:hover {
+    background-color: #eee;
+}
+
+.titulo-name {
+    margin-left: 15px;
 }
