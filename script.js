@@ -1,5 +1,33 @@
 const toggleMenuOpen = () => document.body.classList.toggle("open");
 const togglePesquisaOpen = () => document.body.classList.toggle("open-pesquisa");
+const questionElement = document.getElementById('question');
+const optionsElement = document.getElementById('options');
+const nextButton = document.getElementById('next-button');
+const resultElement = document.getElementById('result');
+const questionNumberElement = document.getElementById('question-number');
+const progressBar = document.getElementById('progress-bar');
+const questions = [
+  {
+    question: "Qual é a capital do Brasil?",
+    options: ["Brasília", "Rio de Janeiro", "São Paulo", "Belo Horizonte"],
+    correctAnswer: "Brasília"
+  },
+  {
+    question: "Qual é a capital da França?",
+    options: ["Madri", "Paris", "Londres", "Berlim"],
+    correctAnswer: "Paris"
+  },
+  {
+    question: "Quanto é 1+1?",
+    options: ["10000", "100000000", "2", "7"],
+    correctAnswer: "2"
+  },
+  {
+    question: "Qual é a capital do Japão?",
+    options: ["Seul", "Pequim", "Tóquio", "Bangcoc"],
+    correctAnswer: "Tóquio"
+  }
+];
 
 
 fetch('api.json')
@@ -149,6 +177,86 @@ function voltarAoTopo() {
   document.body.scrollTop = 0; // Para navegadores que suportam o scrollTop
   document.documentElement.scrollTop = 0; // Para navegadores modernos
 }
+
+let currentQuestionIndex = 0;
+let numCorrect = 0;
+
+function displayQuestion() {
+  // Verificar se é a última pergunta
+  if (currentQuestionIndex === questions.length - 1) {
+    nextButton.textContent = 'Verificar Respostas';
+  } else {
+    nextButton.textContent = 'Próxima Pergunta';
+  }
+
+  const currentQuestion = questions[currentQuestionIndex];
+  questionElement.textContent = currentQuestion.question;
+
+  optionsElement.innerHTML = '';
+
+  for (let i = 0; i < currentQuestion.options.length; i++) {
+    const li = document.createElement('li');
+    const input = document.createElement('input');
+    input.type = 'radio';
+    input.name = 'answer';
+    input.value = currentQuestion.options[i];
+    li.appendChild(input);
+    li.appendChild(document.createTextNode(currentQuestion.options[i]));
+    optionsElement.appendChild(li);
+  }
+
+  questionNumberElement.textContent = `Pergunta ${currentQuestionIndex + 1} de ${questions.length}`;
+  progressBar.value = ((currentQuestionIndex + 1) / questions.length) * 100;
+}
+
+
+function nextQuestion() {
+  const userAnswer = document.querySelector('input[name="answer"]:checked');
+
+  if (!userAnswer) {
+    alert('Por favor, selecione uma resposta antes de avançar para a próxima pergunta.');
+    return;
+  }
+
+  if (userAnswer.value === questions[currentQuestionIndex].correctAnswer) {
+    numCorrect++;
+  }
+
+  currentQuestionIndex++;
+
+  if (currentQuestionIndex === questions.length) {
+    displayResults();
+  } else {
+    displayQuestion();
+  }
+}
+
+
+function displayResults() {
+  const percentage = ((numCorrect / questions.length) * 100).toFixed(2);
+  const resultText = `
+    Você acertou ${numCorrect} pergunta(s) de ${questions.length}.<br>
+    Porcentagem de acertos: ${percentage}%
+  `;
+
+  resultElement.innerHTML = resultText;
+
+  if (numCorrect / questions.length >= 0.5) {
+    resultElement.style.color = 'green';
+  } else {
+    resultElement.style.color = 'red';
+  }
+}
+
+
+optionsElement.addEventListener('change', () => {
+  nextButton.disabled = false;
+});
+
+
+
+// Mostrar a primeira pergunta quando a página carregar
+displayQuestion();
 
 
   

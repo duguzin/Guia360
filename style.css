@@ -816,7 +816,7 @@ footer {
 
 /* CSS FORMULÁRIO DE CADASTRO */
 
-.navbar-login {
+.navbar-voltar {
     position: relative;
     width: 100%;
     height: 60px;
@@ -1192,3 +1192,113 @@ input[type="tel"] {
 .titulo-name {
     margin-left: 15px;
 }
+
+/* ----- SIMULADO ------ */
+.simulado {
+    padding: 3rem 2rem;
+}
+
+#quiz-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.4);
+    width: auto;
+}
+
+#options li {
+    list-style-type: none;
+}
+
+#question {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: #003366;
+}
+
+#options {
+    font-size: 20px;
+}
+
+input[type="radio"] {
+    margin: 10px;
+}
+
+#next-button {
+    width: auto;
+    height: 50px;
+    color: #fff;
+    background-color: #003366;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+#next-button:hover {
+    background-color: #06407a;
+}
+
+#navigation {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.4);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#progress-bar {
+    margin-left: 30px;
+}
+/* ----------- */
+
+/* Menu Simulados */
+.section-menu-simulados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .container-menu-simulados {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-simulado {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    margin: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  .card-simulado a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .card-simulado a:hover {
+    color: #ff9900;
+  }
+  
+  /* ------  */
