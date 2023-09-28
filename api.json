@@ -2,27 +2,37 @@
     {
       "id": 1,
       "title": "Bob Esponja",
-      "image": "https://c1.staticflickr.com/3/2372/2380183266_bd37c42cdb.jpg"
+      "image": "https://c1.staticflickr.com/3/2372/2380183266_bd37c42cdb.jpg",
+      "link":  "index.html"
     },
     {
       "id": 2,
       "title": "Paisagem",
-      "image": "https://th.bing.com/th/id/R.02549b58df319c593ef1e692838a4514?rik=GQAB%2bBF6oaSGog&pid=ImgRaw&r=0"
+      "image": "https://th.bing.com/th/id/R.02549b58df319c593ef1e692838a4514?rik=GQAB%2bBF6oaSGog&pid=ImgRaw&r=0",
+      "link":  "cadastro.html"
     },
     {
       "id": 3,
       "title": "Batata",
-      "image": "https://th.bing.com/th/id/OIP.p0mLDr7iExlMygWzzRjYAAHaF7?pid=ImgDet&rs=1"
+      "image": "https://th.bing.com/th/id/OIP.p0mLDr7iExlMygWzzRjYAAHaF7?pid=ImgDet&rs=1",
+      "link":  "login.html"
     },
     {
        "id": 4,
        "title": "Gustavo",
-       "image": "https://i.pinimg.com/originals/53/c9/77/53c977b9e30caf8b32d3b24d5040f61e.png"
+       "image": "https://i.pinimg.com/originals/53/c9/77/53c977b9e30caf8b32d3b24d5040f61e.png",
+       "link":  "menu-simulados.html"
     },
     {
         "id": 5,
         "title": "Felipe",
         "image": "https://th.bing.com/th/id/OIP.NrIriLXnxpNHpIwyGv2JwQHaE7?pid=ImgDet&rs=1"
+     },
+     {
+        "id": 6, 
+        "title": "Simulados",
+        "image": "https://th.bing.com/th/id/R.d27943e59fa0174cb82d89f215ff3216?rik=K%2f4sHM3QHTR4%2bw&riu=http%3a%2f%2fwww.norteportaleducacao.com.br%2fwp-content%2fuploads%2f2019%2f07%2fcropped-simulado-tem-varias-questoes-vestibular-57d9a8d50b0b0.jpg&ehk=AqIfATJwyyHqevkJIs4nr07Oh0A1%2b5yoZrZTft2ndMc%3d&risl=&pid=ImgRaw&r=0",
+        "link":  "menu-simulados.html"
      }
   ]
   

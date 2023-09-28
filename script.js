@@ -38,7 +38,7 @@ fetch('api.json')
     const ulPc = document.getElementById('lista-titulos-pc');
     json.forEach((titulo) => {
         const lista = `
-        <a href="#">
+        <a href="${titulo.link}">
          <img width="50"
             src="${titulo.image}">
          <span class="titulo-name">${titulo.title}</span>
@@ -166,7 +166,7 @@ function filtrarPc() {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 400) {
     document.getElementById("btnVoltarTopo").classList.add("show");
   } else {
     document.getElementById("btnVoltarTopo").classList.remove("show");
