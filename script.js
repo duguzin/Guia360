@@ -6,10 +6,27 @@ const resultElement = document.getElementById('result');
 const questionNumberElement = document.getElementById('question-number');
 const progressBar = document.getElementById('progress-bar');
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 400) {
+    document.getElementById("btnVoltarTopo").classList.add("show");
+  } else {
+    document.getElementById("btnVoltarTopo").classList.remove("show");
+  }
+}
+
+function voltarAoTopo() {
+  document.body.scrollTop = 0; // Para navegadores que suportam o scrollTop
+  document.documentElement.scrollTop = 0; // Para navegadores modernos
+}
+
 fetch('api.json')
 .then(res => res.json())
 .then((json) => {
     console.log(json);
+    const ul = document.getElementById('lista-titulos');
+    const ulPc = document.getElementById('lista-titulos-pc');
     json.forEach((titulo) => {
         const lista = `
         <a href="${titulo.link}">
@@ -174,6 +191,16 @@ let questions;  // Vamos armazenar as perguntas aqui após carregar do JSON
     displayQuestion();
     document.getElementById('simulado-container').style.display = 'block';
     document.getElementById('progress-bar').style.display = 'block';
+
+    const optionsTexts = document.querySelectorAll('#options li');
+    optionsTexts.forEach((optionText, index) => {
+      optionText.addEventListener('click', () => {
+        const input = optionText.querySelector('input[type="radio"]');
+        if (input) {
+          input.click();
+        }
+      });
+    });
 
     // Rolar a página para o topo
     window.scrollTo({ top: 0, behavior: 'smooth' });

@@ -331,7 +331,7 @@
     </section>
   
   <footer>
-    <div><a href="#"><img src="./Imagens/logo.png" alt="logo"></a></div>
+    <div><a href="#"><img src="./logo.png" alt="logo"></a></div>
     <p>Desenvolvimento de Sistemas &copy; 2023. Todos os direitos reservados.</p>
     
   </footer>
@@ -361,21 +361,6 @@
         prevEl: ".swiper-button-prev",
       },
     });
-
-    window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 400) {
-    document.getElementById("btnVoltarTopo").classList.add("show");
-  } else {
-    document.getElementById("btnVoltarTopo").classList.remove("show");
-  }
-}
-
-function voltarAoTopo() {
-  document.body.scrollTop = 0; // Para navegadores que suportam o scrollTop
-  document.documentElement.scrollTop = 0; // Para navegadores modernos
-}
        </script>
 
         <button onclick="voltarAoTopo()" id="btnVoltarTopo" class="escondido">
