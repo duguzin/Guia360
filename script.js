@@ -269,30 +269,84 @@ function nextQuestion() {
   }
 }
 
-// Modificação na função displayResults() para exibir e ocultar os resultados
+function hideGabaritoButton() {
+  const gabaritoButton = document.getElementById('buttons-modal');
+  gabaritoButton.style.display = 'none';
+}
+
+function showGabarito() {
+  const modalText = document.getElementById('modal-text');
+  modalText.innerHTML += '<br><br><strong>Gabarito:</strong><br>';
+
+  for (let i = 0; i < questions[currentMateria].length; i++) {
+    const question = questions[currentMateria][i];
+    const respostaCorreta = question.correctAnswer;
+
+    modalText.innerHTML += `<span style="color: #003366;">Pergunta ${i + 1}:<br></span> Resposta correta: 
+      <span style="color: green;">${respostaCorreta}</span><br>`;
+  }
+
+  hideGabaritoButton(); // Oculta o botão "Ver Gabarito"
+}
+
+function tryAgain() {
+  closeModal(); // Feche o modal
+  openSimulado(currentMateria); // Chame a função para tentar o simulado novamente
+
+  const gabaritoButton = document.getElementById('buttons-modal');
+  gabaritoButton.style.display = 'inline-block'; // Mostra o botão "Ver Gabarito" novamente
+}
+
+
 function displayResults() {
-  const resultElement = document.getElementById('result');
   const percentage = ((numCorrect / questions[currentMateria].length) * 100).toFixed(2);
   const resultText = `
     Você acertou ${numCorrect} pergunta(s) de ${questions[currentMateria].length}.<br>
     Porcentagem de acertos: ${percentage}%
   `;
 
-  resultElement.innerHTML = resultText;
+  const modalText = document.getElementById('modal-text');
+  modalText.innerHTML = resultText;
 
-  if (numCorrect / questions[currentMateria].length >= 0.5) {
-    resultElement.style.color = 'green';
-  } else {
-    resultElement.style.color = 'red';
-  }
+  // Adicionando os botões
+  const buttonContainer = document.getElementById('modal-buttons');
+  buttonContainer.innerHTML = `
+    <button id="buttons-modal" onclick="showGabarito()">Ver Gabarito</button>
+    <button id="buttons-modal" onclick="tryAgain()">Tente De Novo</button>
+  `;
 
-  resultElement.style.display = 'block'; // Exibir os resultados
+  // Esconder a seção do simulado
+  const simuladoContainer = document.getElementById('simulado-container');
+  simuladoContainer.style.display = 'none';
+
+  const modal = document.getElementById('modal');
+  modal.style.display = 'block';
 }
+
+
+function closeModal() {
+  const modal = document.getElementById('modal');
+  modal.style.display = 'none';
+
+  // Exibir os cards de matérias
+  const cardsSimulado = document.querySelector('.section-menu-simulados');
+  cardsSimulado.style.display = 'flex';
+}
+
+window.onclick = function(event) {
+  const modal = document.getElementById('modal');
+  if (event.target === modal) {
+    modal.style.display = 'none';
+
+    // Exibir os cards de matérias
+    const cardsSimulado = document.querySelector('.section-menu-simulados');
+    cardsSimulado.style.display = 'flex';
+  }
+}
+
 const optionsElement = document.getElementById('options');
 optionsElement.addEventListener('change', () => {
   const nextButton = document.getElementById('next-button');
   nextButton.disabled = false;
 });
-
-
 
