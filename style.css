@@ -1215,6 +1215,7 @@ input[type="tel"] {
     font-weight: 800;
     margin-bottom: 30px;
     color: #003366;
+    /* margin-left: 10px; */
 }
 
 #options {
@@ -1223,6 +1224,13 @@ input[type="tel"] {
 
 input[type="radio"] {
     margin: 10px;
+}
+
+#materia-name {
+    font-size: 24px;
+    color: #ff9900;
+    margin-bottom: 10px;
+    display: none;
 }
 
 #next-button {
@@ -1289,16 +1297,15 @@ input[type="radio"] {
     padding: 20px;
     text-align: center;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.4);
-  }
-  
-  .card-simulado a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    cursor: pointer;
   }
   
-  .card-simulado a:hover {
+  .card-simulado:hover {
     color: #ff9900;
   }
   
+
   /* ------  */

@@ -3,22 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="style.css">
   <title>Simulados</title>
   <style>
-body {
-    height: 100vh;
-    background-color: #003366;
-    background-image: url(https://fontawesome.com/images/icons-gray-bg.svg);
-}
+    body {
+        height: 100vh;
+        background-color: #003366;
+        background-image: url(https://fontawesome.com/images/icons-gray-bg.svg);
+    }
+    #progress-bar {
+      display: none;
+    }
   </style>
 </head>
 <body>
-
+    <!-- Cabeçalho -->
     <header>
         <nav class="navbar-voltar">
             <div class="voltar-svg">
-              <a href="menu-simulados.html">
+              <a href="index.html">
                 <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 0 448 512"><style>svg{fill:#003366}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
                 Voltar
               </a>
@@ -26,21 +29,41 @@ body {
         </nav>
     </header>
 
-<section class="simulado">
-    <div id="quiz-container">
-    <div id="question"></div>
-    <ul id="options"></ul>
-    <button id="next-button" onclick="nextQuestion()" disabled>Próxima Pergunta</button>
-    <div id="result"></div>
-  </div>
+    <!-- Seção do simulado -->
+    <section class="simulado" id="simulado-container" style="display: none;">
+        
+        <div id="quiz-container">
+        <h1 id="materia-name"></h1>
+          <div id="question"></div>
+          <ul id="options"></ul>
+          <button id="next-button" onclick="nextQuestion()" disabled>Próxima Pergunta</button>
+          <div id="result"></div>
+        </div>
+    
+        <div id="navigation">
+          <span id="question-number"></span>
+          <progress id="progress-bar" max="100"></progress>
+        </div>
+    </section>
 
-  <div id="navigation">
-    <span id="question-number"></span>
-    <progress id="progress-bar" max="100"></progress>
-  </div>
-</section>
-  
-
+    <!-- Seção dos cards representando as matérias -->
+    <section class="section-menu-simulados">
+        <div class="container-menu-simulados">
+            <div class="card-simulado" id="geografia" onclick="openSimulado('geografia')">Geografia</div>
+            <div class="card-simulado" id="matematica" onclick="openSimulado('matematica')">Matemática</div>
+            <div class="card-simulado" id="historia" onclick="openSimulado('historia')">História</div>
+            <div class="card-simulado" id="portugues" onclick="openSimulado('portugues')">Língua Portuguesa</div>
+            <div class="card-simulado" id="filosofia" onclick="openSimulado('filosofia')">Filosofia</div>
+            <div class="card-simulado" id="fisica" onclick="openSimulado('fisica')">Física</div>
+            <div class="card-simulado" id="quimica" onclick="openSimulado('quimica')">Química</div>
+            <div class="card-simulado" id="sociologia" onclick="openSimulado('sociologia')">Sociologia</div>
+            <div class="card-simulado" id="ingles" onclick="openSimulado('ingles')">Língua Inglesa</div>
+            <div class="card-simulado" id="espanhol" onclick="openSimulado('espanhol')">Língua Espanhola</div>
+        </div>
+    </section>
+ 
+  <!-- Script -->
   <script src="./script.js"></script>
+
 </body>
 </html>

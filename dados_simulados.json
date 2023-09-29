@@ -1,0 +1,258 @@
+{
+    "geografia": [
+      {
+        "question": "Qual é a capital do Brasil?",
+        "options": ["Brasília", "Rio de Janeiro", "São Paulo", "Belo Horizonte"],
+        "correctAnswer": "Brasília"
+      },
+      {
+        "question": "Qual é a capital da França?",
+        "options": ["Madri", "Paris", "Londres", "Berlim"],
+        "correctAnswer": "Paris"
+      }
+    ],
+    "matematica": [
+      {
+        "question": "Quanto é 2 + 2?",
+        "options": ["3", "4", "5", "6"],
+        "correctAnswer": "4"
+      },
+      {
+        "question": "Qual é a raiz quadrada de 25?",
+        "options": ["3", "5", "7", "10"],
+        "correctAnswer": "5"
+      },
+      {
+        "question": "Qual é o resultado de 10 * 5?",
+        "options": ["30", "40", "50", "60"],
+        "correctAnswer": "50"
+      },
+      {
+        "question": "Qual é o próximo número na sequência: 2, 4, 6, ...?",
+        "options": ["8", "10", "12", "14"],
+        "correctAnswer": "8"
+      },
+      {
+        "question": "Qual é o resultado de 15 / 3?",
+        "options": ["3", "5", "7", "10"],
+        "correctAnswer": "5"
+      }
+    ],
+    "portugues": [
+      {
+        "question": "Qual é a definição de 'onomatopeia'?",
+        "options": ["Figura de linguagem", "Substantivo próprio", "Pronome", "Adjetivo"],
+        "correctAnswer": "Figura de linguagem"
+      },
+      {
+        "question": "Qual é a classe gramatical da palavra 'casa'?",
+        "options": ["Substantivo", "Verbo", "Adjetivo", "Advérbio"],
+        "correctAnswer": "Substantivo"
+      },
+      {
+        "question": "O que é um oxímoro?",
+        "options": ["Combinação de palavras opostas", "Substantivo composto", "Pronome indefinido", "Adjetivo qualificativo"],
+        "correctAnswer": "Combinação de palavras opostas"
+      },
+      {
+        "question": "Qual é a forma verbal correta: 'nós vamos' ou 'nós vairemos'?",
+        "options": ["Nós vamos", "Nós vairemos"],
+        "correctAnswer": "Nós vamos"
+      },
+      {
+        "question": "O que é uma antítese?",
+        "options": ["Contraposição de ideias", "Figura de linguagem", "Locução adverbial", "Advérbio"],
+        "correctAnswer": "Contraposição de ideias"
+      }
+    ],
+    "ingles": [
+      {
+        "question": "What is the capital of the United States?",
+        "options": ["Washington D.C.", "New York City", "Los Angeles", "Chicago"],
+        "correctAnswer": "Washington D.C."
+      },
+      {
+        "question": "Which of these is a fruit: 'banana', 'car', or 'table'?",
+        "options": ["Banana", "Car", "Table"],
+        "correctAnswer": "Banana"
+      },
+      {
+        "question": "What is the plural of 'child'?",
+        "options": ["Children", "Childs", "Childes", "Childs"],
+        "correctAnswer": "Children"
+      },
+      {
+        "question": "Which tense is used to describe an action that will happen in the future?",
+        "options": ["Future tense", "Present tense", "Past tense", "Past perfect tense"],
+        "correctAnswer": "Future tense"
+      },
+      {
+        "question": "Which word is a synonym of 'happy'?",
+        "options": ["Joyful", "Sad", "Angry", "Tired"],
+        "correctAnswer": "Joyful"
+      }
+    ],
+    "historia": [
+      {
+        "question": "Quem foi o primeiro presidente do Brasil?",
+        "options": ["Deodoro da Fonseca", "Getúlio Vargas", "Juscelino Kubitschek", "Fernando Collor"],
+        "correctAnswer": "Deodoro da Fonseca"
+      },
+      {
+        "question": "Qual foi o evento que marcou o início da Idade Moderna?",
+        "options": ["Queda do Império Romano", "Revolução Francesa", "Renascimento", "Descobrimento da América"],
+        "correctAnswer": "Descobrimento da América"
+      },
+      {
+        "question": "Quem foi o líder da Revolução Russa de 1917?",
+        "options": ["Vladimir Lenin", "Joseph Stalin", "Leon Trotsky", "Mikhail Gorbachev"],
+        "correctAnswer": "Vladimir Lenin"
+      },
+      {
+        "question": "Em que ano ocorreu a Revolução Industrial?",
+        "options": ["Século XVIII", "Século XIX", "Século XX", "Século XVII"],
+        "correctAnswer": "Século XVIII"
+      },
+      {
+        "question": "Qual foi o tratado que pôs fim à Primeira Guerra Mundial?",
+        "options": ["Tratado de Versalhes", "Tratado de Tordesilhas", "Tratado de Roma", "Tratado de Lisboa"],
+        "correctAnswer": "Tratado de Versalhes"
+      }
+    ],
+    "quimica": [
+      {
+        "question": "Qual é o símbolo químico do oxigênio?",
+        "options": ["O", "Ox", "Oi", "Oxy"],
+        "correctAnswer": "O"
+      },
+      {
+        "question": "Qual é a fórmula química da água?",
+        "options": ["H2O", "CO2", "O2", "CH4"],
+        "correctAnswer": "H2O"
+      },
+      {
+        "question": "Qual é o gás mais abundante na atmosfera da Terra?",
+        "options": ["Nitrogênio", "Oxigênio", "Dióxido de carbono", "Hélio"],
+        "correctAnswer": "Nitrogênio"
+      },
+      {
+        "question": "Qual é o elemento químico conhecido como 'rei dos gases nobres'?",
+        "options": ["Hélio", "Neônio", "Criptônio", "Xenônio"],
+        "correctAnswer": "Xenônio"
+      },
+      {
+        "question": "Qual é o ácido presente no limão?",
+        "options": ["Ácido cítrico", "Ácido acético", "Ácido sulfúrico", "Ácido clorídrico"],
+        "correctAnswer": "Ácido cítrico"
+      }
+    ],
+    "fisica": [
+      {
+        "question": "Qual é a unidade de medida da corrente elétrica?",
+        "options": ["Ampère", "Volts", "Watt", "Ohm"],
+        "correctAnswer": "Ampère"
+      },
+      {
+        "question": "Qual é a fórmula que relaciona a massa, a aceleração e a força?",
+        "options": ["F = m * a", "a = F / m", "m = F / a", "F = m + a"],
+        "correctAnswer": "F = m * a"
+      },
+      {
+        "question": "Qual é a lei da física que descreve a força entre duas cargas elétricas?",
+        "options": ["Lei de Coulomb", "Lei de Newton", "Lei de Faraday", "Lei de Ampère"],
+        "correctAnswer": "Lei de Coulomb"
+      },
+      {
+        "question": "Qual é a unidade de medida da resistência elétrica?",
+        "options": ["Ohm", "Ampère", "Watt", "Volt"],
+        "correctAnswer": "Ohm"
+      },
+      {
+        "question": "Qual é a fórmula que relaciona a energia, a massa e a velocidade?",
+        "options": ["E = m * v^2", "E = m * a^2", "E = m * v", "E = m * a"],
+        "correctAnswer": "E = m * v^2"
+      }
+    ],
+    "filosofia": [
+      {
+        "question": "Quem é considerado o pai da Filosofia?",
+        "options": ["Tales de Mileto", "Sócrates", "Platão", "Aristóteles"],
+        "correctAnswer": "Tales de Mileto"
+      },
+      {
+        "question": "O que é o 'cogito, ergo sum'?",
+        "options": ["Penso, logo existo", "A vida é bela", "Carpe Diem", "Veni, vidi, vici"],
+        "correctAnswer": "Penso, logo existo"
+      },
+      {
+        "question": "Qual filósofo formulou a teoria do contrato social?",
+        "options": ["Jean-Jacques Rousseau", "John Locke", "Thomas Hobbes", "Montesquieu"],
+        "correctAnswer": "Jean-Jacques Rousseau"
+      },
+      {
+        "question": "O que é a 'alma' segundo a filosofia de Platão?",
+        "options": ["A sede da razão", "Imortal e pré-existente", "Conjunto de órgãos", "Expressão dos sentimentos"],
+        "correctAnswer": "Imortal e pré-existente"
+      },
+      {
+        "question": "Qual corrente filosófica se baseia na 'vontade de poder'?",
+        "options": ["Nietzscheanismo", "Existencialismo", "Racionalismo", "Empirismo"],
+        "correctAnswer": "Nietzscheanismo"
+      }
+    ],
+    "sociologia": [
+      {
+        "question": "O que é 'estratificação social'?",
+        "options": ["Divisão da sociedade em camadas hierárquicas", "Movimento de protesto", "Estratégia de marketing", "Forma de governo"],
+        "correctAnswer": "Divisão da sociedade em camadas hierárquicas"
+      },
+      {
+        "question": "O que é 'cultura' na sociologia?",
+        "options": ["Conjunto de valores, crenças e práticas de uma sociedade", "Cultivo de plantas", "Características físicas", "Conjunto de regras de etiqueta"],
+        "correctAnswer": "Conjunto de valores, crenças e práticas de uma sociedade"
+      },
+      {
+        "question": "O que é 'mobilidade social'?",
+        "options": ["Mudança de posição social", "Conjunto de leis", "Forma de governo", "Mudança de cidade"],
+        "correctAnswer": "Mudança de posição social"
+      },
+      {
+        "question": "O que é 'anomia' na sociologia?",
+        "options": ["Desintegração das normas sociais", "Integração social", "Desenvolvimento econômico", "Conjunto de leis"],
+        "correctAnswer": "Desintegração das normas sociais"
+      },
+      {
+        "question": "O que é 'interacionismo simbólico'?",
+        "options": ["Abordagem sociológica que se concentra nas interações e símbolos", "Movimento político", "Corrente filosófica", "Teoria do contrato social"],
+        "correctAnswer": "Abordagem sociológica que se concentra nas interações e símbolos"
+      }
+    ],
+    "espanhol": [
+      {
+        "question": "Qual é a tradução de 'casa' em espanhol?",
+        "options": ["Casa", "Hogar", "Edificio", "Apartamento"],
+        "correctAnswer": "Casa"
+      },
+      {
+        "question": "Qual é a tradução de 'amigo' em espanhol?",
+        "options": ["Amigo", "Amor", "Amistad", "Compañero"],
+        "correctAnswer": "Amigo"
+      },
+      {
+        "question": "Qual é a tradução de 'água' em espanhol?",
+        "options": ["Agua", "Aguila", "Ola", "Piscina"],
+        "correctAnswer": "Agua"
+      },
+      {
+        "question": "Qual é a tradução de 'comer' em espanhol?",
+        "options": ["Comer", "Beber", "Jugar", "Dormir"],
+        "correctAnswer": "Comer"
+      },
+      {
+        "question": "Qual é a tradução de 'livro' em espanhol?",
+        "options": ["Libro", "Livre", "Lectura", "Escrito"],
+        "correctAnswer": "Libro"
+      }
+    ]
+  }
+  

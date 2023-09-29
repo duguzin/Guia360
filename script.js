@@ -1,41 +1,15 @@
 const toggleMenuOpen = () => document.body.classList.toggle("open");
 const togglePesquisaOpen = () => document.body.classList.toggle("open-pesquisa");
 const questionElement = document.getElementById('question');
-const optionsElement = document.getElementById('options');
 const nextButton = document.getElementById('next-button');
 const resultElement = document.getElementById('result');
 const questionNumberElement = document.getElementById('question-number');
 const progressBar = document.getElementById('progress-bar');
-const questions = [
-  {
-    question: "Qual é a capital do Brasil?",
-    options: ["Brasília", "Rio de Janeiro", "São Paulo", "Belo Horizonte"],
-    correctAnswer: "Brasília"
-  },
-  {
-    question: "Qual é a capital da França?",
-    options: ["Madri", "Paris", "Londres", "Berlim"],
-    correctAnswer: "Paris"
-  },
-  {
-    question: "Quanto é 1+1?",
-    options: ["10000", "100000000", "2", "7"],
-    correctAnswer: "2"
-  },
-  {
-    question: "Qual é a capital do Japão?",
-    options: ["Seul", "Pequim", "Tóquio", "Bangcoc"],
-    correctAnswer: "Tóquio"
-  }
-];
-
 
 fetch('api.json')
 .then(res => res.json())
 .then((json) => {
     console.log(json);
-    const ul = document.getElementById('lista-titulos');
-    const ulPc = document.getElementById('lista-titulos-pc');
     json.forEach((titulo) => {
         const lista = `
         <a href="${titulo.link}">
@@ -163,33 +137,71 @@ function filtrarPc() {
 
 }
 
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 400) {
-    document.getElementById("btnVoltarTopo").classList.add("show");
-  } else {
-    document.getElementById("btnVoltarTopo").classList.remove("show");
-  }
-}
-
-function voltarAoTopo() {
-  document.body.scrollTop = 0; // Para navegadores que suportam o scrollTop
-  document.documentElement.scrollTop = 0; // Para navegadores modernos
-}
-
+let currentMateria = null;
 let currentQuestionIndex = 0;
 let numCorrect = 0;
 
+function resetSimulado() {
+  numCorrect = 0;
+  const resultElement = document.getElementById('result');
+  resultElement.style.display = 'none';
+}
+
+let questions;  // Vamos armazenar as perguntas aqui após carregar do JSON
+
+    // Função para carregar o JSON
+    function loadJSON(callback) {
+      const xhr = new XMLHttpRequest();
+      xhr.overrideMimeType('application/json');
+      xhr.open('GET', 'dados_simulados.json', true);
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          callback(JSON.parse(xhr.responseText));
+        }
+      };
+      xhr.send(null);
+    }
+
+    function openSimulado(materia) {
+  currentMateria = materia;
+  currentQuestionIndex = 0;
+  resetSimulado();
+
+  loadJSON(function(response) {
+    questions = response;
+    displayMateriaName(); // Adiciona a exibição do nome da matéria
+    displayQuestion();
+    document.getElementById('simulado-container').style.display = 'block';
+    document.getElementById('progress-bar').style.display = 'block';
+
+    // Rolar a página para o topo
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+function displayMateriaName() {
+  const materiaNome = questions[currentMateria].materia_nome;
+  const materiaNameElement = document.getElementById('materia-name');
+  materiaNameElement.textContent = `Matéria: ${materiaNome}`;
+}
+
+
 function displayQuestion() {
+  const currentQuestion = questions[currentMateria][currentQuestionIndex];
+  const questionElement = document.getElementById('question');
+  const optionsElement = document.getElementById('options');
+  const questionNumberElement = document.getElementById('question-number');
+  const progressBar = document.getElementById('progress-bar');
+  const nextButton = document.getElementById('next-button');
+
   // Verificar se é a última pergunta
-  if (currentQuestionIndex === questions.length - 1) {
+  if (currentQuestionIndex === questions[currentMateria].length - 1) {
     nextButton.textContent = 'Verificar Respostas';
   } else {
     nextButton.textContent = 'Próxima Pergunta';
   }
 
-  const currentQuestion = questions[currentQuestionIndex];
   questionElement.textContent = currentQuestion.question;
 
   optionsElement.innerHTML = '';
@@ -205,10 +217,9 @@ function displayQuestion() {
     optionsElement.appendChild(li);
   }
 
-  questionNumberElement.textContent = `Pergunta ${currentQuestionIndex + 1} de ${questions.length}`;
-  progressBar.value = ((currentQuestionIndex + 1) / questions.length) * 100;
+  questionNumberElement.textContent = `Pergunta ${currentQuestionIndex + 1} de ${questions[currentMateria].length}`;
+  progressBar.value = ((currentQuestionIndex + 1) / questions[currentMateria].length) * 100;
 }
-
 
 function nextQuestion() {
   const userAnswer = document.querySelector('input[name="answer"]:checked');
@@ -218,50 +229,43 @@ function nextQuestion() {
     return;
   }
 
-  if (userAnswer.value === questions[currentQuestionIndex].correctAnswer) {
+  if (userAnswer.value === questions[currentMateria][currentQuestionIndex].correctAnswer) {
     numCorrect++;
   }
 
   currentQuestionIndex++;
 
-  if (currentQuestionIndex === questions.length) {
+  if (currentQuestionIndex === questions[currentMateria].length) {
     displayResults();
   } else {
     displayQuestion();
   }
 }
 
-
+// Modificação na função displayResults() para exibir e ocultar os resultados
 function displayResults() {
-  const percentage = ((numCorrect / questions.length) * 100).toFixed(2);
+  const resultElement = document.getElementById('result');
+  const percentage = ((numCorrect / questions[currentMateria].length) * 100).toFixed(2);
   const resultText = `
-    Você acertou ${numCorrect} pergunta(s) de ${questions.length}.<br>
+    Você acertou ${numCorrect} pergunta(s) de ${questions[currentMateria].length}.<br>
     Porcentagem de acertos: ${percentage}%
   `;
 
   resultElement.innerHTML = resultText;
 
-  if (numCorrect / questions.length >= 0.5) {
+  if (numCorrect / questions[currentMateria].length >= 0.5) {
     resultElement.style.color = 'green';
   } else {
     resultElement.style.color = 'red';
   }
+
+  resultElement.style.display = 'block'; // Exibir os resultados
 }
-
-
+const optionsElement = document.getElementById('options');
 optionsElement.addEventListener('change', () => {
+  const nextButton = document.getElementById('next-button');
   nextButton.disabled = false;
 });
 
 
 
-// Mostrar a primeira pergunta quando a página carregar
-displayQuestion();
-
-
-  
-  
-  
-  
-  
-  

@@ -60,8 +60,8 @@
             <!-- <li class="nav-list"><a href="./cadastro.html" class="nav-link-menu" id="link-cadastrar">Cadastrar</a></li>  -->
           </div>
             <li class="nav-list"><a href="./login.html" class="nav-link-menu" id="active">Home</a></li>
-            <li class="nav-list"><a href="./menu-simulados.html" class="nav-link-menu">Simulados</a></li>
-            <li class="nav-list"><a href="./menu-simulados.html" class="nav-link-menu">Cronograma</a></li>
+            <li class="nav-list"><a href="./simulado.html" class="nav-link-menu">Simulados</a></li>
+            <li class="nav-list"><a href="./simulado.html" class="nav-link-menu">Cronograma</a></li>
             <li class="nav-list"><a href="./simulado.html" class="nav-link-menu">Aulão</a></li>
             <li class="nav-list"><a href="#" class="nav-link-menu">Materiais de Revisão</a></li>
             <li class="nav-list"><a href="#" class="nav-link-menu">Provas</a></li>
@@ -361,6 +361,21 @@
         prevEl: ".swiper-button-prev",
       },
     });
+
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 400) {
+    document.getElementById("btnVoltarTopo").classList.add("show");
+  } else {
+    document.getElementById("btnVoltarTopo").classList.remove("show");
+  }
+}
+
+function voltarAoTopo() {
+  document.body.scrollTop = 0; // Para navegadores que suportam o scrollTop
+  document.documentElement.scrollTop = 0; // Para navegadores modernos
+}
        </script>
 
         <button onclick="voltarAoTopo()" id="btnVoltarTopo" class="escondido">
