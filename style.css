@@ -1402,4 +1402,96 @@ input[type="radio"] {
     outline: none;
     box-shadow: 0 0 5px #003366;
   }
-    
+
+  .container-perfil {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container-perfil header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo-perfil {
+    width: 100px; 
+  }
+  
+  .container-perfil h1, h2 {
+    color: #003366; 
+  }
+  
+  .profile-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .profile-info {
+    font-size: 20px;
+    flex: 1;
+    padding: 20px;
+    background-color: #2ca0da; 
+    border: #003366 solid 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url(https://fontawesome.com/images/icons-gray-bg.svg);
+  }
+  
+  .profile-info img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: #003366 solid 3px;
+  }
+  
+  .profile-details {
+    padding: 1rem;
+    flex: 1;
+    background-color: #003366; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    background-image: url(https://fontawesome.com/images/icons-gray-bg.svg);
+  }
+  
+  .profile-details li {
+      list-style-type: none;
+      margin-bottom: 10px;
+      font-size: 20px;
+  }
+  
+  .study-interests {
+    border: #003366 solid 3px;
+    background-image: url(https://fontawesome.com/images/icons-gray-bg.svg);
+    background-color: #ff9900; 
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-size: 20px;
+  }
+  
+   
+  .profile-info p, .profile-details p, .study-interests p {
+      color: #fff;
+  }
+  
+  .profile-info, .profile-details, .study-interests, footer {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .profile-info:hover, .profile-details:hover, .study-interests:hover {
+    transform: translateY(-5px);
+  }
+  
+  @media (max-width: 767px) {
+    .profile-section {
+      flex-direction: column;
+    }
+  
+    .profile-info, .profile-details, .study-interests {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
