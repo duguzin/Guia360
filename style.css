@@ -186,7 +186,7 @@ body.open-pesquisa {
     right: 0;
     translate: 0 -100%;
     width: 100%;
-    height: 80px;
+    height: 100px;
     background: #003366;
     visibility: hidden;
     transition: all .5s;
@@ -196,16 +196,16 @@ body.open-pesquisa {
 }
 
 
-.navbar-pesquisa button {
+/* .navbar-pesquisa button {
     border: 0;
     background: #2ca0da;
     cursor: pointer;
     width: 15%;
     height: 50px;
     padding: .5em;
-}
+} */
 
-#nav-input {
+/* #nav-input {
     width: 85%;
     height: 50px;
     padding: 1rem 2rem;
@@ -215,6 +215,25 @@ body.open-pesquisa {
     font-weight: 600;
     background-color: #fff;
     margin-right: 5px;
+} */
+
+.navbar-pesquisa svg {
+    position: absolute;
+    top: 30px;
+    margin-left: 320px;
+}
+
+#nav-input {
+    width: 100%;
+    height: 60px;
+    padding: 1rem 0;
+    padding-left: 1rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #fff;
+    border: #676767 solid 2px;
 }
 
 
@@ -1131,18 +1150,16 @@ input[type="tel"] {
     position: relative;
   }
 
-  .div-nav-pesquisa button {
-    border: 0;
-    background: #218abe;
-    cursor: pointer;
-    width: 80px;
-    height: 60px;
-    border-radius: 5px;
+  .div-nav-pesquisa svg {
+    position: absolute;
+    margin-left: 540px;
+    margin-bottom: 10px;
 }
 
 .div-nav-pesquisa input {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     width: 600px;
-    height: 60px;
+    height: 70px;
     padding: 1rem 2rem;
     border-radius: 5px;
     border: none;
@@ -1150,12 +1167,13 @@ input[type="tel"] {
     font-weight: 600;
     background-color: #fff;
     border: #676767 solid 2px;
+    margin-bottom: 0;
 }
 
 
 #lista-titulos {
     position: absolute;
-    top: 80px;
+    top: 90px;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -1165,7 +1183,7 @@ input[type="tel"] {
 
 #lista-titulos-pc {
     position: absolute;
-    top: 60px;
+    top: 75px;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -1184,6 +1202,11 @@ input[type="tel"] {
     background-color: #f6f6f6;
     padding: 12px;
 }
+
+#lista-titulos-pc li a {
+    border-radius: 5px;
+}
+
 
 #lista-titulos li a:hover, #lista-titulos-pc li a:hover {
     background-color: #eee;
@@ -1373,3 +1396,10 @@ input[type="radio"] {
   } 
 
   /* ------------ */
+
+
+  input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #003366;
+  }
+    
