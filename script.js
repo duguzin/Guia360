@@ -181,31 +181,39 @@ let questions;  // Vamos armazenar as perguntas aqui após carregar do JSON
     }
 
     function openSimulado(materia) {
-  currentMateria = materia;
-  currentQuestionIndex = 0;
-  resetSimulado();
-
-  loadJSON(function(response) {
-    questions = response;
-    displayMateriaName(); // Adiciona a exibição do nome da matéria
-    displayQuestion();
-    document.getElementById('simulado-container').style.display = 'block';
-    document.getElementById('progress-bar').style.display = 'block';
-
-    const optionsTexts = document.querySelectorAll('#options li');
-    optionsTexts.forEach((optionText, index) => {
-      optionText.addEventListener('click', () => {
-        const input = optionText.querySelector('input[type="radio"]');
-        if (input) {
-          input.click();
-        }
+      currentMateria = materia;
+      currentQuestionIndex = 0;
+      resetSimulado();
+    
+      loadJSON(function(response) {
+        questions = response;
+        displayMateriaName(); // Adiciona a exibição do nome da matéria
+        displayQuestion();
+        document.getElementById('simulado-container').style.display = 'block';
+        document.getElementById('progress-bar').style.display = 'block';
+    
+        const optionsTexts = document.querySelectorAll('#options li');
+        optionsTexts.forEach((optionText, index) => {
+          // Adiciona evento de clique para o texto
+          optionText.addEventListener('click', () => {
+            const input = optionText.querySelector('input[type="radio"]');
+            if (input) {
+              input.click();
+            }
+          });
+    
+          // Adiciona evento de clique para o input
+          const input = optionText.querySelector('input[type="radio"]');
+          input.addEventListener('click', () => {
+            input.click();
+          });
+        });
+    
+        // Rolar a página para o topo
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       });
-    });
-
-    // Rolar a página para o topo
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-}
+    }
+    
 
 function displayMateriaName() {
   const materiaNome = questions[currentMateria].materia_nome;
@@ -242,6 +250,19 @@ function displayQuestion() {
     li.appendChild(input);
     li.appendChild(document.createTextNode(currentQuestion.options[i]));
     optionsElement.appendChild(li);
+
+    // Adiciona evento de clique para o texto
+    li.addEventListener('click', () => {
+      const input = li.querySelector('input[type="radio"]');
+      if (input) {
+        input.click();
+      }
+    });
+
+    // Adiciona evento de clique para o input
+    input.addEventListener('click', () => {
+      input.click();
+    });
   }
 
   questionNumberElement.textContent = `Pergunta ${currentQuestionIndex + 1} de ${questions[currentMateria].length}`;
@@ -282,7 +303,7 @@ function showGabarito() {
     const question = questions[currentMateria][i];
     const respostaCorreta = question.correctAnswer;
 
-    modalText.innerHTML += `<span style="color: #003366;">Pergunta ${i + 1}:<br></span> Resposta correta: 
+    modalText.innerHTML += `<span style="color: #003366;">Pergunta ${i + 1}<br></span> Resposta correta: 
       <span style="color: green;">${respostaCorreta}</span><br>`;
   }
 
@@ -299,17 +320,26 @@ function tryAgain() {
 
 
 function displayResults() {
-  const percentage = ((numCorrect / questions[currentMateria].length) * 100).toFixed(2);
-  const resultText = `
-    Você acertou ${numCorrect} pergunta(s) de ${questions[currentMateria].length}.<br>
+  const totalQuestions = questions[currentMateria].length;
+  const percentage = ((numCorrect / totalQuestions) * 100).toFixed(2);
+  let resultText = `
+    Você acertou ${numCorrect} pergunta(s) de ${totalQuestions}.<br>
     Porcentagem de acertos: ${percentage}%
   `;
 
   const modalText = document.getElementById('modal-text');
-  modalText.innerHTML = resultText;
+  const buttonContainer = document.getElementById('modal-buttons');
+
+  // Adiciona a classe de estilo dependendo da porcentagem de acertos
+  if (percentage < 50) {
+    resultText = `<span style="color: red;">${resultText}</span>`;
+    modalText.innerHTML = resultText;
+  } else {
+    resultText = `<span style="color: green;">${resultText}</span>`;
+    modalText.innerHTML = resultText;
+  }
 
   // Adicionando os botões
-  const buttonContainer = document.getElementById('modal-buttons');
   buttonContainer.innerHTML = `
     <button id="buttons-modal" onclick="showGabarito()">Ver Gabarito</button>
     <button id="buttons-modal" onclick="tryAgain()">Tente De Novo</button>
@@ -322,6 +352,7 @@ function displayResults() {
   const modal = document.getElementById('modal');
   modal.style.display = 'block';
 }
+
 
 
 function closeModal() {
