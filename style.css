@@ -854,6 +854,7 @@ footer {
     font-weight: 600;
     display: flex;
     gap: 8px;
+    position: absolute;
 }
   
 .container-login {
