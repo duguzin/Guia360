@@ -354,7 +354,8 @@ div.swiper-button-next, div.swiper-button-prev {
 
 
 .section-home {
-    padding: 2rem 4rem;
+    padding: 0 4rem;
+    padding-bottom: 2rem;
 }
 
 .section-home h1 {
@@ -1403,6 +1404,8 @@ input[type="radio"] {
     outline: none;
     box-shadow: 0 0 5px #003366;
   }
+
+  
 
   .container-perfil {
     max-width: 1200px;
