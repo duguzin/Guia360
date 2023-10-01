@@ -53,7 +53,7 @@ function filtrar() {
       i,
       span,
       txtValue,
-      count = 0
+      count = 0;
 
   // Puxar Elementos HTML
   input = document.getElementById('nav-input');
@@ -67,37 +67,45 @@ function filtrar() {
 
   //Percorre pels Li's
   for (i = 0; i < li.length; i++) {
-      //Puxa a Tag A
-      a = li[i].getElementsByTagName("a")[0];
-      //Puxa os textos da Tag A
-      txtValue = a.textContent || a.innerText;
-      //Verifica o que o Usuário Digitou
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-
-          li[i].style.display = "";
-
-          count++
-
-          span = li[i].querySelector(".titulo-name");
-  
-          if (span) {
-              span.innerHTML = txtValue.replace(new RegExp(filter, "gi"), (match) => {
-                  return "<strong>" + match + "</strong>";
-              })
-          }
-      } else {
-          li[i].style.display = "none";
+    //Puxa a Tag A
+    a = li[i].getElementsByTagName("a")[0];
+    //Puxa os textos da Tag A
+    txtValue = a.textContent || a.innerText;
+    //Verifica o que o Usuário Digitou
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+      count++;
+      span = li[i].querySelector(".titulo-name");
+      if (span) {
+        span.innerHTML = txtValue.replace(new RegExp(filter, "gi"), (match) => {
+          return "<strong>" + match + "</strong>";
+        });
       }
+    } else {
+      li[i].style.display = "none";
+    }
   }
-  
-//Verifica se tem Itens na Lista
-   if (filter ===""){ 
- ul.style.display = "none";
- } else { 
- ul.style.display = "block";
- }
 
+  // Verifica se tem Itens na Lista
+  if (filter === "") {
+    ul.style.display = "none";
+  } else {
+    ul.style.display = "block";
+  }
 }
+
+// Adicionar event listener para o input
+const input = document.getElementById('nav-input');
+input.addEventListener('focus', () => {
+  const ul = document.getElementById('lista-titulos');
+  ul.style.display = 'block';
+});
+
+input.addEventListener('blur', () => {
+  const ul = document.getElementById('lista-titulos');
+  ul.style.display = 'none';
+});
+
 
 function filtrarPc() {
   var input,
@@ -108,7 +116,7 @@ function filtrarPc() {
       i,
       span,
       txtValue,
-      count = 0
+      count = 0;
 
   // Puxar Elementos HTML
   input = document.getElementById('inputBusca');
@@ -122,37 +130,45 @@ function filtrarPc() {
 
   //Percorre pels Li's
   for (i = 0; i < li.length; i++) {
-      //Puxa a Tag A
-      a = li[i].getElementsByTagName("a")[0];
-      //Puxa os textos da Tag A
-      txtValue = a.textContent || a.innerText;
-      //Verifica o que o Usuário Digitou
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-
-          li[i].style.display = "";
-
-          count++
-
-          span = li[i].querySelector(".titulo-name");
-  
-          if (span) {
-              span.innerHTML = txtValue.replace(new RegExp(filter, "gi"), (match) => {
-                  return "<strong>" + match + "</strong>";
-              })
-          }
-      } else {
-          li[i].style.display = "none";
+    //Puxa a Tag A
+    a = li[i].getElementsByTagName("a")[0];
+    //Puxa os textos da Tag A
+    txtValue = a.textContent || a.innerText;
+    //Verifica o que o Usuário Digitou
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+      count++;
+      span = li[i].querySelector(".titulo-name");
+      if (span) {
+        span.innerHTML = txtValue.replace(new RegExp(filter, "gi"), (match) => {
+          return "<strong>" + match + "</strong>";
+        });
       }
+    } else {
+      li[i].style.display = "none";
+    }
   }
-  
-//Verifica se tem Itens na Lista
-   if (filter ===""){ 
- ul.style.display = "none";
- } else { 
- ul.style.display = "block";
- }
 
+  // Verifica se tem Itens na Lista
+  if (filter === "") {
+    ul.style.display = "none";
+  } else {
+    ul.style.display = "block";
+  }
 }
+
+// Adicionar event listener para o input associado à função filtrarPc
+const inputPc = document.getElementById('inputBusca');
+inputPc.addEventListener('focus', () => {
+  const ulPc = document.getElementById('lista-titulos-pc');
+  ulPc.style.display = 'block';
+});
+
+inputPc.addEventListener('blur', () => {
+  const ulPc = document.getElementById('lista-titulos-pc');
+  ulPc.style.display = 'none';
+});
+
 
 
 let currentMateria = null;
