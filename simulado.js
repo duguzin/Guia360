@@ -14,6 +14,9 @@ function voltarAoTopo() {
   document.documentElement.scrollTop = 0; // Para navegadores modernos
 }
 
+
+
+
 let currentMateria = null;
 let currentQuestionIndex = 0;
 let numCorrect = 0;
@@ -24,6 +27,13 @@ function resetSimulado() {
   resultElement.style.display = 'none';
 }
 
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
 let questions;  // Vamos armazenar as perguntas aqui após carregar do JSON
 
     // Função para carregar o JSON
@@ -43,9 +53,11 @@ let questions;  // Vamos armazenar as perguntas aqui após carregar do JSON
       currentMateria = materia;
       currentQuestionIndex = 0;
       resetSimulado();
-    
+
       loadJSON(function(response) {
         questions = response;
+        questions[currentMateria] = shuffleArray(questions[currentMateria]);
+
         displayMateriaName(); // Adiciona a exibição do nome da matéria
         displayQuestion();
         document.getElementById('simulado-container').style.display = 'block';
