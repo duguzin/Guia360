@@ -173,7 +173,8 @@ body.open-pesquisa {
      translate: 100% 0;
      width: 280px;
      height: 100%;
-     padding: 2rem;
+     padding: 2rem 0;
+     padding-left: 2rem;
      background: #003366;
      visibility: hidden;
      transition: all .5s;
@@ -323,6 +324,10 @@ body.open-pesquisa .navbar-overlay-pesquisa {
 
 div.swiper-button-next, div.swiper-button-prev {
     color: #003366;
+}
+
+div.swiper-button-next:hover, div.swiper-button-prev:hover {
+    color: #ff9900;
 }
 
 
@@ -1140,9 +1145,11 @@ input[type="tel"] {
     
   }
 
-  .section-pesquisa img {
+  /* .section-pesquisa img {
     width: 80px;
-  }
+    position: absolute;
+    left: 0;
+  } */
 
   .div-nav-pesquisa {
     display: flex;
