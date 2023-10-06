@@ -1,0 +1,412 @@
+{
+    "matematica": [
+      {
+        "question": "Qual é o resultado da seguinte operação: 15 + 7 x 3?",
+        "options": ["22", "36", "26", "78"],
+        "correctAnswer": "22"
+      },
+      {
+        "question": "Qual é a área de um quadrado com lado de comprimento igual a 6 centímetros?",
+        "options": ["12 cm²", "18 cm²", "24 cm²", "36 cm²"],
+        "correctAnswer": "36 cm²"
+      },
+      {
+        "question": "Qual é o valor de x na equação 3x - 8 = 13?",
+        "options": ["7", "8", "9", "10"],
+        "correctAnswer": "7"
+      },
+      {
+        "question": "Qual é a fração equivalente a 0,75?",
+        "options": ["3/4", "2/3", "1/4", "4/5"],
+        "correctAnswer": "3/4"
+      },
+      {
+        "question": "Se um triângulo tem um ângulo de 90 graus, como ele é classificado?",
+        "options": ["Triângulo equilátero", "Triângulo isósceles", "Triângulo escaleno", "Triângulo retângulo"],
+        "correctAnswer": "Triângulo retângulo"
+      },
+      {
+        "question": "Qual é o resultado da seguinte divisão: 48 ÷ 6?",
+        "options": ["6", "8", "12", "16"],
+        "correctAnswer": "12"
+      },
+      {
+        "question": "Qual é o volume de um cubo com aresta de 5 centímetros?",
+        "options": ["25 cm³", "100 cm³", "125 cm³", "500 cm³"],
+        "correctAnswer": "125 cm³"
+      },
+      {
+        "question": "Qual é o próximo número na sequência: 2, 5, 10, 17, ...?",
+        "options": ["24", "25", "26", "27"],
+        "correctAnswer": "25"
+      },
+      {
+        "question": "Qual é o resultado da seguinte subtração: 57 - 29?",
+        "options": ["26", "28", "29", "30"],
+        "correctAnswer": "28"
+      },
+      {
+        "question": "Se um carro percorre uma distância de 240 quilômetros em 4 horas, qual é a sua velocidade média em quilômetros por hora?",
+        "options": ["40 km/h", "60 km/h", "80 km/h", "120 km/h"],
+        "correctAnswer": "60 km/h"
+      },
+      {
+        "question": "Qual é o valor de x na equação 2x + 5 = 17?",
+        "options": ["5", "6", "7", "8"],
+        "correctAnswer": "7"
+      },
+      {
+        "question": "Qual é a área de um triângulo com base de 10 metros e altura de 8 metros?",
+        "options": ["20 m²", "40 m²", "60 m²", "80 m²"],
+        "correctAnswer": "40 m²"
+      },
+      {
+        "question": "Qual é o resultado da seguinte operação: (4 + 2) x (3 - 1)?",
+        "options": ["6", "8", "10", "12"],
+        "correctAnswer": "10"
+      },
+      {
+        "question": "Qual é o resultado da seguinte operação: (4 + 2) x (3 - 1)?",
+        "options": ["25", "30", "36", "49"],
+        "correctAnswer": "49"
+      },
+      {
+        "question": "Qual é o volume de uma esfera com raio de 5 centímetros?",
+        "options": ["100 π cm³", "125 π cm³", "150 π cm³", "200 π cm"],
+        "correctAnswer": "125 π cm"
+      },
+      {
+        "question": "Se um produto custa R$ 80 e é vendido com um desconto de 20%, qual é o preço de venda?",
+        "options": ["R$ 16", "R$ 60", "R$ 64", "R$ 80"],
+        "correctAnswer": "R$ 64"
+      },
+      {
+        "question": "Qual é a raiz quadrada de 144?",
+        "options": ["10", "12", "14", "16"],
+        "correctAnswer": "12"
+      },
+      {
+        "question": "Qual é o resultado da seguinte multiplicação: 3/4 x 8/5?",
+        "options": ["2/3", "3/2", "4/5", "6/5"],
+        "correctAnswer": "3/2"
+      },
+      {
+        "question": "Qual é a raiz quadrada de 144?",
+        "options": ["10", "12", "14", "16"],
+        "correctAnswer": "12"
+      },
+      {
+        "question": "Qual é o número primo mais próximo de 50?",
+        "options": ["47", "51", "53", "57"],
+        "correctAnswer": "47"
+      }
+    ],
+      "portugues": [
+        {
+          "question": "Qual é o nome do processo de formação de palavras que consiste em combinar partes de diferentes palavras para criar uma nova palavra, como \"televisão\" (tele + visão)?",
+          "options": ["Derivação", "Aglutinação", "Composição", "Abreviação"],
+          "correctAnswer": "Composição"
+        },
+        {
+          "question": "Qual é o nome da figura de linguagem que consiste em atribuir características humanas a objetos, animais ou seres inanimados?",
+          "options": ["Hipérbole", "Metáfora", "Personificação", "Antítese"],
+          "correctAnswer": "Personificação"
+        },
+        {
+          "question": "Qual é o nome da técnica literária em que um som é repetido no início de várias palavras consecutivas em uma frase ou verso?",
+          "options": ["Aliteração", "Assonância", "Onomatopeia", "Anáfora"],
+          "correctAnswer": "Aliteração"
+        },
+        {
+          "question": "Quem é o autor da obra \"Dom Casmurro\"?",
+          "options": ["Machado de Assis", "José de Alencar", "Lima Barreto", "Graciliano Ramos"],
+          "correctAnswer": "Machado de Assis"
+        },
+        {
+          "question": "Qual é o nome da figura de linguagem que consiste em usar uma palavra para representar algo relacionado a ela, como usar \"coroa\" para se referir a um rei?",
+          "options": ["Pleonasmo", "Catacrese", "Eufemismo", "Metonímia"],
+          "correctAnswer": "Metonímia"
+        },
+        {
+          "question": "Qual é o significado da sigla \"UNESCO\"?",
+          "options": ["União das Nações Europeias para Ciência e Organizações", "União Nacional de Escritores e Cientistas", "Organização das Nações Unidas para a Educação, a Ciência e a Cultura", "União Nacional de Cidades e Estados Organizados"],
+          "correctAnswer": "Organização das Nações Unidas para a Educação, a Ciência e a Cultura"
+        },
+        {
+          "question": "Qual é o nome do processo de formação de palavras que consiste em combinar partes de diferentes palavras para criar uma nova palavra, como \"televisão\" (tele + visão)?",
+          "options": ["Derivação", "Aglutinação", "Composição", "Abreviação"],
+          "correctAnswer": "Composição"
+        },
+        {
+          "question": "Qual é o autor da obra \"Memórias Póstumas de Brás Cubas\"?",
+          "options": ["José de Alencar", "Lima Barreto", "Graciliano Ramos", "Machado de Assis"],
+          "correctAnswer": "Machado de Assis"
+        },
+        {
+          "question": "Qual é o nome da língua mais falada no mundo como língua nativa?",
+          "options": ["Espanhol", "Inglês", "Mandarim (chinês)", "Hindi"],
+          "correctAnswer": "Mandarim (chinês)"
+        },
+        {
+          "question": "Qual é o nome da técnica de escrita que consiste em usar palavras que imitam sons naturais, como \"zum-zum\" ou \"tic-tac\"?",
+          "options": ["Anáfora", "Onomatopeia", "Aliteração", "Paradoxo"],
+          "correctAnswer": "Onomatopeia"
+        },
+        {
+          "question": "Qual é o período literário em que se destacaram autores como Machado de Assis, José de Alencar e Aluísio Azevedo?",
+          "options": ["Romantismo", "Realismo", "Modernismo", "Simbolismo"],
+          "correctAnswer": "Realismo"
+        },
+        {
+          "question": "Qual é o nome da figura de linguagem que consiste em atribuir características opostas a um mesmo objeto ou ser, criando um contraste?",
+          "options": ["Hipérbole", "Metáfora", "Antítese", "Ironia"],
+          "correctAnswer": "Antítese"
+        },
+        {
+          "question": "Qual é o autor da obra \"Iracema\"?",
+          "options": ["Machado de Assis", "José de Alencar", "Lima Barreto", "Graciliano Ramos"],
+          "correctAnswer": "José de Alencar"
+        },
+        {
+          "question": "Qual é o nome do processo de formação de palavras que consiste em adicionar um prefixo ou sufixo a uma palavra existente para criar uma nova palavra?",
+          "options": ["Aglutinação", "Derivação", "Composição", "Abreviação"],
+          "correctAnswer": "Derivação"
+        },
+        {
+          "question": "Qual é o nome da língua oficial do Brasil?",
+          "options": ["Inglês", "Francês", "Espanhol", "Português"],
+          "correctAnswer": "Português"
+        },
+        {
+          "question": "Quem é o autor da obra \"Vidas Secas\"?",
+          "options": ["José de Alencar", "Lima Barreto", "Graciliano Ramos", "Machado de Assis"],
+          "correctAnswer": "Graciliano Ramos"
+        },
+        {
+          "question": "Qual é o nome da figura de linguagem que consiste em usar uma palavra em lugar de outra, estabelecendo uma relação de semelhança entre elas, como \"ele é um leão\"?",
+          "options": ["Hipérbole", "Metonímia", "Paradoxo", "Metáfora"],
+          "correctAnswer": "Metáfora"
+        },
+        {
+          "question": "Qual é o nome da técnica de escrita que consiste em repetir uma mesma palavra ou expressão no início de frases ou versos diferentes?",
+          "options": ["Assonância", "Eufemismo", "Anáfora", "Antítese"],
+          "correctAnswer": "Anáfora"
+        },
+        {
+          "question": "Qual é o autor da obra \"Memórias de um Sargento de Milícias\"?",
+          "options": ["José de Alencar", "Machado de Assis", "Manuel Antônio de Almeida", "Lima Barreto"],
+          "correctAnswer": "Manuel Antônio de Almeida"
+        },
+        {
+          "question": "Qual é o nome da técnica de escrita que consiste em dar a um objeto inanimado características humanas, como emoções e ações?",
+          "options": ["Antítese", "Onomatopeia", "Personificação", "Pleonasmo"],
+          "correctAnswer": "Personificação"
+        }
+      ],
+        "ciencias": [
+          {
+            "question": "Qual é o nome do processo pelo qual as plantas convertem a luz solar em energia química para produzir seu próprio alimento?",
+            "options": ["Respiração", "Fotossíntese", "Digestão", "Transpiração"],
+            "correctAnswer": "Fotossíntese"
+          },
+          {
+            "question": "Qual dos seguintes elementos químicos é conhecido por ser o principal constituinte da atmosfera terrestre, com aproximadamente 78% de sua composição?",
+            "options": ["Oxigênio (O2)", "Dióxido de carbono (CO2)", "Nitrogênio (N2)", "Hidrogênio (H2)"],
+            "correctAnswer": "Nitrogênio (N2)"
+          },
+          {
+            "question": "Qual é o nome do processo pelo qual a energia é produzida nas mitocôndrias das células a partir da quebra de moléculas de glicose?",
+            "options": ["Fotossíntese", "Respiração celular", "Digestão", "Fermentação"],
+            "correctAnswer": "Respiração celular"
+          },
+          {
+            "question": "Qual é a unidade básica da estrutura dos ácidos nucleicos, como o DNA e o RNA?",
+            "options": ["Aminoácido", "Glicose", "Nucleotídeo", "Proteína"],
+            "correctAnswer": "Nucleotídeo"
+          },
+          {
+            "question": "Qual é o processo pelo qual as rochas e minerais são quebrados e desgastados ao longo do tempo devido à ação de agentes externos, como a água, o vento e as mudanças de temperatura?",
+            "options": ["Fusão", "Erosão", "Evaporação", "Sublimação"],
+            "correctAnswer": "Erosão"
+          },
+          {
+            "question": "Qual é o nome do processo físico pelo qual a água passa do estado líquido para o estado gasoso, geralmente devido ao aumento da temperatura?",
+            "options": ["Evaporação", "Condensação", "Solidificação", "Fusão"],
+            "correctAnswer": "Evaporação"
+          },
+          {
+            "question": "Qual é o órgão responsável por bombear o sangue pelo sistema circulatório humano?",
+            "options": ["Pulmão", "Cérebro", "Coração", "Rim"],
+            "correctAnswer": "Coração"
+          },
+          {
+            "question": "Qual é o processo pelo qual as plantas liberam oxigênio na atmosfera como subproduto da fotossíntese?",
+            "options": ["Respiração celular", "Transpiração", "Fermentação", "Fotossíntese"],
+            "correctAnswer": "Fotossíntese"
+          },
+          {
+            "question": "Qual é o nome da principal camada da atmosfera terrestre, onde ocorrem fenômenos como a formação das auroras boreais e a absorção de radiações ultravioleta?",
+            "options": ["Estratosfera", "Troposfera", "Mesosfera", "Termosfera"],
+            "correctAnswer": "Estratosfera"
+          },
+          {
+            "question": "Qual é o nome do processo natural pelo qual os seres vivos se adaptam ao ambiente ao longo das gerações, resultando em mudanças genéticas que podem favorecer sua sobrevivência?",
+            "options": ["Seleção artificial", "Evolução", "Mutação", "Reprodução assexuada"],
+            "correctAnswer": "Evolução"
+          },
+          {
+            "question": "Qual é o nome da principal unidade estrutural e funcional dos seres vivos, composta por membrana plasmática, citoplasma e material genético?",
+            "options": ["Átomo", "Molécula", "Célula", "Tecido"],
+            "correctAnswer": "Célula"
+          },
+          {
+            "question": "Qual é o fenômeno natural responsável por causar a separação das placas tectônicas da litosfera terrestre?",
+            "options": ["Erosão", "Terremoto", "Vulcanismo", "Tsunami"],
+            "correctAnswer": "Terremoto"
+          },
+          {
+            "question": "Qual é o nome do gás que é liberado durante a fotossíntese e absorvido durante a respiração celular, desempenhando um papel fundamental no ciclo do oxigênio?",
+            "options": ["Nitrogênio (N2)", "Dióxido de enxofre (SO2)", "Dióxido de carbono (CO2)", "Ozônio (O3)"],
+            "correctAnswer": "Dióxido de carbono (CO2)"
+          },
+          {
+            "question": "Qual é o nome do processo pelo qual os organismos produtores, como as plantas, convertem energia luminosa em energia química, armazenando-a em moléculas orgânicas?",
+            "options": ["Fotossíntese", "Respiração celular", "Fermentação", "Digestão"],
+            "correctAnswer": "Fotossíntese"
+          },
+          {
+            "question": "Qual é o nome do ácido presente no estômago humano que desempenha um papel importante na digestão dos alimentos?",
+            "options": ["Ácido acético", "Ácido cítrico", "Ácido sulfúrico", "Ácido clorídrico"],
+            "correctAnswer": "Ácido clorídrico"
+          },
+          {
+            "question": "Qual é o nome da camada da Terra que compreende a crosta terrestre, o manto superior e a litosfera, e é dividida em placas tectônicas?",
+            "options": ["Núcleo interno", "Núcleo externo", "Manto inferior", "Crosta terrestre"],
+            "correctAnswer": "Crosta terrestre"
+          },
+          {
+            "question": "Qual é o nome da organela celular responsável por armazenar água, nutrientes e resíduos em células vegetais e em algumas células animais?",
+            "options": ["Mitocôndria", "Lisossomo", "Retículo endoplasmático", "Vacúolo"],
+            "correctAnswer": "Vacúolo"
+          },
+          {
+            "question": "Qual é o nome do processo de produção de energia nas células que ocorre na ausência de oxigênio, resultando em uma quantidade limitada de ATP?",
+            "options": ["Fotossíntese", "Respiração celular", "Fermentação", "Oxidação"],
+            "correctAnswer": "Fermentação"
+          },
+          {
+            "question": "Qual é o nome da camada atmosférica que contém a maior parte do ozônio e é importante para a proteção contra a radiação ultravioleta do Sol?",
+            "options": ["Estratosfera", "Troposfera", "Mesosfera", "Termosfera"],
+            "correctAnswer": "Estratosfera"
+          },
+          {
+            "question": "Qual é o nome da reação química na qual uma substância perde elétrons e aumenta seu estado de oxidação?",
+            "options": ["Redução", "Oxidação", "Neutralização", "Combustão"],
+            "correctAnswer": "Oxidação"
+          }
+        ],
+  "historia": [
+    {
+      "question": "Qual foi o período histórico marcado pela Revolução Francesa, que resultou na queda da monarquia absoluta e na ascensão do poder burguês?",
+      "options": ["Renascimento", "Idade Média", "Idade Antiga", "Idade Contemporânea"],
+      "correctAnswer": "Idade Contemporânea"
+    },
+    {
+      "question": "Quem foi o líder político responsável pela independência de diversos países da América do Sul, incluindo a Argentina, Chile e Peru?",
+      "options": ["Simón Bolívar", "Getúlio Vargas", "Francisco Franco", "Hernán Cortés"],
+      "correctAnswer": "Simón Bolívar"
+    },
+    {
+      "question": "Qual é o termo utilizado para descrever o período de intensa produção artística, literária e científica que ocorreu na Europa durante os séculos XIV ao XVI?",
+      "options": ["Renascimento", "Iluminismo", "Barroco", "Romantismo"],
+      "correctAnswer": "Renascimento"
+    },
+    {
+      "question": "Qual é o nome do movimento que defendeu a separação da Igreja do Estado na França e resultou na promulgação da Lei de Separação, em 1905?",
+      "options": ["Reforma Protestante", "Revolução Industrial", "Iluminismo", "Laicismo"],
+      "correctAnswer": "Laicismo"
+    },
+    {
+      "question": "Qual filósofo grego é conhecido por suas contribuições à filosofia política, incluindo a obra \"A República\"?",
+      "options": ["Aristóteles", "Sócrates", "Platão", "Epicuro"],
+      "correctAnswer": "Platão"
+    },
+    {
+      "question": "Qual foi o conflito armado que ocorreu entre 1861 e 1865 nos Estados Unidos e envolveu a luta pela abolição da escravidão?",
+      "options": ["Primeira Guerra Mundial", "Guerra Civil Americana", "Segunda Guerra Mundial", "Guerra Fria"],
+      "correctAnswer": "Guerra Civil Americana"
+    },
+    {
+      "question": "Quem foi o líder do movimento de independência da Índia, conhecido por sua resistência não violenta ao domínio britânico?",
+      "options": ["Nelson Mandela", "Che Guevara", "Mahatma Gandhi", "Fidel Castro"],
+      "correctAnswer": "Mahatma Gandhi"
+    },
+    {
+      "question": "Qual é o nome dado ao período de intensa exploração e comércio de escravos africanos para as Américas, principalmente entre os séculos XVI e XIX?",
+      "options": ["Renascimento", "Iluminismo", "Idade Média", "Tráfico Transatlântico de Escravos"],
+      "correctAnswer": "Tráfico Transatlântico de Escravos"
+    },
+    {
+      "question": "Quem foi o líder político e militar que liderou a Revolução Cubana, resultando na instauração de um governo socialista em Cuba?",
+      "options": ["Ernesto Che Guevara", "Fidel Castro", "Hugo Chávez", "Augusto Pinochet"],
+      "correctAnswer": "Fidel Castro"
+    },
+    {
+      "question": "Qual é o nome do período da história europeia que foi marcado pela busca por novas rotas comerciais e pelas descobertas geográficas?",
+      "options": ["Idade Média", "Renascimento", "Idade Moderna", "Idade Contemporânea"],
+      "correctAnswer": "Idade Moderna"
+    },
+    {
+      "question": "Qual filósofo grego é conhecido por suas reflexões sobre a política, incluindo a obra \"A Política\"?",
+      "options": ["Sócrates", "Aristóteles", "Platão", "Epicuro"],
+      "correctAnswer": "Aristóteles"
+    },
+    {
+      "question": "Quem foi o líder político e militar que desempenhou um papel crucial na independência do México do domínio espanhol?",
+      "options": ["Simón Bolívar", "Emiliano Zapata", "Pancho Villa", "Miguel Hidalgo"],
+      "correctAnswer": "Miguel Hidalgo"
+    },
+    {
+      "question": "Qual foi o movimento cultural, artístico e intelectual que surgiu na Europa no século XVIII, promovendo a valorização da razão, ciência e liberdade individual?",
+      "options": ["Renascimento", "Iluminismo", "Barroco", "Romantismo"],
+      "correctAnswer": "Iluminismo"
+    },
+    {
+      "question": "Qual é o nome do processo histórico que envolveu a divisão da Alemanha em duas nações após a Segunda Guerra Mundial, com a criação da República Federal da Alemanha (Alemanha Ocidental) e da República Democrática Alemã (Alemanha Oriental)?",
+      "options": ["Guerra Fria", "Revolução Industrial", "Partilha da Alemanha", "Queda do Muro de Berlim"],
+      "correctAnswer": "Partilha da Alemanha"
+    },
+    {
+      "question": "Quem foi a líder política que desempenhou um papel importante na luta pelos direitos civis dos afro-americanos nos Estados Unidos, sendo conhecida por seu ativismo não violento?",
+      "options": ["Angela Davis", "Rosa Parks", "Harriet Tubman", "Martin Luther King Jr."],
+      "correctAnswer": "Martin Luther King Jr."
+    },
+    {
+      "question": "Qual é o nome do movimento artístico e cultural que surgiu nas décadas de 1950 e 1960 nos Estados Unidos, promovendo a liberdade de expressão, o questionamento da autoridade e a busca por novas formas de arte?",
+      "options": ["Renascimento", "Iluminismo", "Movimento Hippie", "Pop Art"],
+      "correctAnswer": "Movimento Hippie"
+    },
+    {
+      "question": "Quem foi o líder sul-africano que desempenhou um papel fundamental na luta contra o apartheid e se tornou o primeiro presidente negro da África do Sul?",
+      "options": ["Nelson Mandela", "Desmond Tutu", "Steve Biko", "Thabo Mbeki"],
+      "correctAnswer": "Nelson Mandela"
+    },
+    {
+      "question": "Qual é o nome da teoria científica que propõe que todas as espécies de seres vivos evoluíram ao longo do tempo a partir de um ancestral comum por meio do processo de seleção natural?",
+      "options": ["Criacionismo", "Evolucionismo", "Lamarckismo", "Fixismo"],
+      "correctAnswer": "Evolucionismo"
+    },
+    {
+      "question": "Qual foi o conflito armado que ocorreu entre 1914 e 1918, envolvendo várias nações europeias e outras regiões, e é conhecido como a Primeira Guerra Mundial?",
+      "options": ["Guerra Fria", "Revolução Russa", "Primeira Guerra Mundial", "Segunda Guerra Mundial"],
+      "correctAnswer": "Primeira Guerra Mundial"
+    },
+    {
+      "question": "Quem foi o autor da obra \"O Príncipe\", que discute os princípios da política e do poder, e é considerado um dos textos fundamentais da filosofia política?",
+      "options": ["Thomas Hobbes", "John Locke", "Maquiavel", "Montesquieu"],
+      "correctAnswer": "Maquiavel"
+    }
+  ]
+
+}
+  

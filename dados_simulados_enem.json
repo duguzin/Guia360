@@ -1,0 +1,569 @@
+{
+    "geografia": [
+      {
+        "question": "Qual é a capital do Brasil?",
+        "options": ["Brasília", "Rio de Janeiro", "São Paulo", "Belo Horizonte"],
+        "correctAnswer": "Brasília"
+      },
+      {
+        "question": "Qual é a capital da França?",
+        "options": ["Madri", "Paris", "Londres", "Berlim"],
+        "correctAnswer": "Paris"
+      }
+    ],
+    "matematica": [
+      {
+        "question": "Qual é o resultado da seguinte operação: 15 + 7 x 3?",
+        "options": ["22", "36", "26", "78"],
+        "correctAnswer": "22"
+      },
+      {
+        "question": "Qual é a área de um quadrado com lado de comprimento igual a 6 centímetros?",
+        "options": ["12 cm²", "18 cm²", "24 cm²", "36 cm²"],
+        "correctAnswer": "36 cm²"
+      },
+      {
+        "question": "Qual é o valor de x na equação 3x - 8 = 13?",
+        "options": ["7", "8", "9", "10"],
+        "correctAnswer": "7"
+      },
+      {
+        "question": "Qual é a fração equivalente a 0,75?",
+        "options": ["3/4", "2/3", "1/4", "4/5"],
+        "correctAnswer": "3/4"
+      },
+      {
+        "question": "Se um triângulo tem um ângulo de 90 graus, como ele é classificado?",
+        "options": ["Triângulo equilátero", "Triângulo isósceles", "Triângulo escaleno", "Triângulo retângulo"],
+        "correctAnswer": "Triângulo retângulo"
+      },
+      {
+        "question": "Qual é o resultado da seguinte divisão: 48 ÷ 6?",
+        "options": ["6", "8", "12", "16"],
+        "correctAnswer": "12"
+      },
+      {
+        "question": "Qual é o volume de um cubo com aresta de 5 centímetros?",
+        "options": ["25 cm³", "100 cm³", "125 cm³", "500 cm³"],
+        "correctAnswer": "125 cm³"
+      },
+      {
+        "question": "Qual é o próximo número na sequência: 2, 5, 10, 17, ...?",
+        "options": ["24", "25", "26", "27"],
+        "correctAnswer": "25"
+      },
+      {
+        "question": "Qual é o resultado da seguinte subtração: 57 - 29?",
+        "options": ["26", "28", "29", "30"],
+        "correctAnswer": "28"
+      },
+      {
+        "question": "Se um carro percorre uma distância de 240 quilômetros em 4 horas, qual é a sua velocidade média em quilômetros por hora?",
+        "options": ["40 km/h", "60 km/h", "80 km/h", "120 km/h"],
+        "correctAnswer": "60 km/h"
+      },
+      {
+        "question": "Qual é o valor de x na equação 2x + 5 = 17?",
+        "options": ["5", "6", "7", "8"],
+        "correctAnswer": "7"
+      },
+      {
+        "question": "Qual é a área de um triângulo com base de 10 metros e altura de 8 metros?",
+        "options": ["20 m²", "40 m²", "60 m²", "80 m²"],
+        "correctAnswer": "40 m²"
+      },
+      {
+        "question": "Qual é o resultado da seguinte operação: (4 + 2) x (3 - 1)?",
+        "options": ["6", "8", "10", "12"],
+        "correctAnswer": "10"
+      },
+      {
+        "question": "Qual é o resultado da seguinte operação: (4 + 2) x (3 - 1)?",
+        "options": ["25", "30", "36", "49"],
+        "correctAnswer": "49"
+      },
+      {
+        "question": "Qual é o volume de uma esfera com raio de 5 centímetros?",
+        "options": ["100 π cm³", "125 π cm³", "150 π cm³", "200 π cm"],
+        "correctAnswer": "125 π cm"
+      },
+      {
+        "question": "Se um produto custa R$ 80 e é vendido com um desconto de 20%, qual é o preço de venda?",
+        "options": ["R$ 16", "R$ 60", "R$ 64", "R$ 80"],
+        "correctAnswer": "R$ 64"
+      },
+      {
+        "question": "Qual é a raiz quadrada de 144?",
+        "options": ["10", "12", "14", "16"],
+        "correctAnswer": "12"
+      },
+      {
+        "question": "Qual é o resultado da seguinte multiplicação: 3/4 x 8/5?",
+        "options": ["2/3", "3/2", "4/5", "6/5"],
+        "correctAnswer": "3/2"
+      },
+      {
+        "question": "Qual é a raiz quadrada de 144?",
+        "options": ["10", "12", "14", "16"],
+        "correctAnswer": "12"
+      },
+      {
+        "question": "Qual é o número primo mais próximo de 50?",
+        "options": ["47", "51", "53", "57"],
+        "correctAnswer": "47"
+      }
+    ],
+      "portugues": [
+        {
+          "question": "Qual é o nome do processo de formação de palavras que consiste em combinar partes de diferentes palavras para criar uma nova palavra, como \"televisão\" (tele + visão)?",
+          "options": ["Derivação", "Aglutinação", "Composição", "Abreviação"],
+          "correctAnswer": "Composição"
+        },
+        {
+          "question": "Qual é o nome da figura de linguagem que consiste em atribuir características humanas a objetos, animais ou seres inanimados?",
+          "options": ["Hipérbole", "Metáfora", "Personificação", "Antítese"],
+          "correctAnswer": "Personificação"
+        },
+        {
+          "question": "Qual é o nome da técnica literária em que um som é repetido no início de várias palavras consecutivas em uma frase ou verso?",
+          "options": ["Aliteração", "Assonância", "Onomatopeia", "Anáfora"],
+          "correctAnswer": "Aliteração"
+        },
+        {
+          "question": "Quem é o autor da obra \"Dom Casmurro\"?",
+          "options": ["Machado de Assis", "José de Alencar", "Lima Barreto", "Graciliano Ramos"],
+          "correctAnswer": "Machado de Assis"
+        },
+        {
+          "question": "Qual é o nome da figura de linguagem que consiste em usar uma palavra para representar algo relacionado a ela, como usar \"coroa\" para se referir a um rei?",
+          "options": ["Pleonasmo", "Catacrese", "Eufemismo", "Metonímia"],
+          "correctAnswer": "Metonímia"
+        },
+        {
+          "question": "Qual é o significado da sigla \"UNESCO\"?",
+          "options": ["União das Nações Europeias para Ciência e Organizações", "União Nacional de Escritores e Cientistas", "Organização das Nações Unidas para a Educação, a Ciência e a Cultura", "União Nacional de Cidades e Estados Organizados"],
+          "correctAnswer": "Organização das Nações Unidas para a Educação, a Ciência e a Cultura"
+        },
+        {
+          "question": "Qual é o nome do processo de formação de palavras que consiste em combinar partes de diferentes palavras para criar uma nova palavra, como \"televisão\" (tele + visão)?",
+          "options": ["Derivação", "Aglutinação", "Composição", "Abreviação"],
+          "correctAnswer": "Composição"
+        },
+        {
+          "question": "Qual é o autor da obra \"Memórias Póstumas de Brás Cubas\"?",
+          "options": ["José de Alencar", "Lima Barreto", "Graciliano Ramos", "Machado de Assis"],
+          "correctAnswer": "Machado de Assis"
+        },
+        {
+          "question": "Qual é o nome da língua mais falada no mundo como língua nativa?",
+          "options": ["Espanhol", "Inglês", "Mandarim (chinês)", "Hindi"],
+          "correctAnswer": "Mandarim (chinês)"
+        },
+        {
+          "question": "Qual é o nome da técnica de escrita que consiste em usar palavras que imitam sons naturais, como \"zum-zum\" ou \"tic-tac\"?",
+          "options": ["Anáfora", "Onomatopeia", "Aliteração", "Paradoxo"],
+          "correctAnswer": "Onomatopeia"
+        },
+        {
+          "question": "Qual é o período literário em que se destacaram autores como Machado de Assis, José de Alencar e Aluísio Azevedo?",
+          "options": ["Romantismo", "Realismo", "Modernismo", "Simbolismo"],
+          "correctAnswer": "Realismo"
+        },
+        {
+          "question": "Qual é o nome da figura de linguagem que consiste em atribuir características opostas a um mesmo objeto ou ser, criando um contraste?",
+          "options": ["Hipérbole", "Metáfora", "Antítese", "Ironia"],
+          "correctAnswer": "Antítese"
+        },
+        {
+          "question": "Qual é o autor da obra \"Iracema\"?",
+          "options": ["Machado de Assis", "José de Alencar", "Lima Barreto", "Graciliano Ramos"],
+          "correctAnswer": "José de Alencar"
+        },
+        {
+          "question": "Qual é o nome do processo de formação de palavras que consiste em adicionar um prefixo ou sufixo a uma palavra existente para criar uma nova palavra?",
+          "options": ["Aglutinação", "Derivação", "Composição", "Abreviação"],
+          "correctAnswer": "Derivação"
+        },
+        {
+          "question": "Qual é o nome da língua oficial do Brasil?",
+          "options": ["Inglês", "Francês", "Espanhol", "Português"],
+          "correctAnswer": "Português"
+        },
+        {
+          "question": "Quem é o autor da obra \"Vidas Secas\"?",
+          "options": ["José de Alencar", "Lima Barreto", "Graciliano Ramos", "Machado de Assis"],
+          "correctAnswer": "Graciliano Ramos"
+        },
+        {
+          "question": "Qual é o nome da figura de linguagem que consiste em usar uma palavra em lugar de outra, estabelecendo uma relação de semelhança entre elas, como \"ele é um leão\"?",
+          "options": ["Hipérbole", "Metonímia", "Paradoxo", "Metáfora"],
+          "correctAnswer": "Metáfora"
+        },
+        {
+          "question": "Qual é o nome da técnica de escrita que consiste em repetir uma mesma palavra ou expressão no início de frases ou versos diferentes?",
+          "options": ["Assonância", "Eufemismo", "Anáfora", "Antítese"],
+          "correctAnswer": "Anáfora"
+        },
+        {
+          "question": "Qual é o autor da obra \"Memórias de um Sargento de Milícias\"?",
+          "options": ["José de Alencar", "Machado de Assis", "Manuel Antônio de Almeida", "Lima Barreto"],
+          "correctAnswer": "Manuel Antônio de Almeida"
+        },
+        {
+          "question": "Qual é o nome da técnica de escrita que consiste em dar a um objeto inanimado características humanas, como emoções e ações?",
+          "options": ["Antítese", "Onomatopeia", "Personificação", "Pleonasmo"],
+          "correctAnswer": "Personificação"
+        }
+      ],
+
+    "ingles": [
+      {
+        "question": "What is the capital of the United States?",
+        "options": ["Washington D.C.", "New York City", "Los Angeles", "Chicago"],
+        "correctAnswer": "Washington D.C."
+      },
+      {
+        "question": "Which of these is a fruit: 'banana', 'car', or 'table'?",
+        "options": ["Banana", "Car", "Table"],
+        "correctAnswer": "Banana"
+      },
+      {
+        "question": "What is the plural of 'child'?",
+        "options": ["Children", "Childs", "Childes", "Childs"],
+        "correctAnswer": "Children"
+      },
+      {
+        "question": "Which tense is used to describe an action that will happen in the future?",
+        "options": ["Future tense", "Present tense", "Past tense", "Past perfect tense"],
+        "correctAnswer": "Future tense"
+      },
+      {
+        "question": "Which word is a synonym of 'happy'?",
+        "options": ["Joyful", "Sad", "Angry", "Tired"],
+        "correctAnswer": "Joyful"
+      }
+    ],
+  "historia": [
+    {
+      "question": "Qual foi o período histórico marcado pela Revolução Francesa, que resultou na queda da monarquia absoluta e na ascensão do poder burguês?",
+      "options": ["Renascimento", "Idade Média", "Idade Antiga", "Idade Contemporânea"],
+      "correctAnswer": "Idade Contemporânea"
+    },
+    {
+      "question": "Quem foi o líder político responsável pela independência de diversos países da América do Sul, incluindo a Argentina, Chile e Peru?",
+      "options": ["Simón Bolívar", "Getúlio Vargas", "Francisco Franco", "Hernán Cortés"],
+      "correctAnswer": "Simón Bolívar"
+    },
+    {
+      "question": "Qual é o termo utilizado para descrever o período de intensa produção artística, literária e científica que ocorreu na Europa durante os séculos XIV ao XVI?",
+      "options": ["Renascimento", "Iluminismo", "Barroco", "Romantismo"],
+      "correctAnswer": "Renascimento"
+    },
+    {
+      "question": "Qual é o nome do movimento que defendeu a separação da Igreja do Estado na França e resultou na promulgação da Lei de Separação, em 1905?",
+      "options": ["Reforma Protestante", "Revolução Industrial", "Iluminismo", "Laicismo"],
+      "correctAnswer": "Laicismo"
+    },
+    {
+      "question": "Qual filósofo grego é conhecido por suas contribuições à filosofia política, incluindo a obra \"A República\"?",
+      "options": ["Aristóteles", "Sócrates", "Platão", "Epicuro"],
+      "correctAnswer": "Platão"
+    },
+    {
+      "question": "Qual foi o conflito armado que ocorreu entre 1861 e 1865 nos Estados Unidos e envolveu a luta pela abolição da escravidão?",
+      "options": ["Primeira Guerra Mundial", "Guerra Civil Americana", "Segunda Guerra Mundial", "Guerra Fria"],
+      "correctAnswer": "Guerra Civil Americana"
+    },
+    {
+      "question": "Quem foi o líder do movimento de independência da Índia, conhecido por sua resistência não violenta ao domínio britânico?",
+      "options": ["Nelson Mandela", "Che Guevara", "Mahatma Gandhi", "Fidel Castro"],
+      "correctAnswer": "Mahatma Gandhi"
+    },
+    {
+      "question": "Qual é o nome dado ao período de intensa exploração e comércio de escravos africanos para as Américas, principalmente entre os séculos XVI e XIX?",
+      "options": ["Renascimento", "Iluminismo", "Idade Média", "Tráfico Transatlântico de Escravos"],
+      "correctAnswer": "Tráfico Transatlântico de Escravos"
+    },
+    {
+      "question": "Quem foi o líder político e militar que liderou a Revolução Cubana, resultando na instauração de um governo socialista em Cuba?",
+      "options": ["Ernesto Che Guevara", "Fidel Castro", "Hugo Chávez", "Augusto Pinochet"],
+      "correctAnswer": "Fidel Castro"
+    },
+    {
+      "question": "Qual é o nome do período da história europeia que foi marcado pela busca por novas rotas comerciais e pelas descobertas geográficas?",
+      "options": ["Idade Média", "Renascimento", "Idade Moderna", "Idade Contemporânea"],
+      "correctAnswer": "Idade Moderna"
+    },
+    {
+      "question": "Qual filósofo grego é conhecido por suas reflexões sobre a política, incluindo a obra \"A Política\"?",
+      "options": ["Sócrates", "Aristóteles", "Platão", "Epicuro"],
+      "correctAnswer": "Aristóteles"
+    },
+    {
+      "question": "Quem foi o líder político e militar que desempenhou um papel crucial na independência do México do domínio espanhol?",
+      "options": ["Simón Bolívar", "Emiliano Zapata", "Pancho Villa", "Miguel Hidalgo"],
+      "correctAnswer": "Miguel Hidalgo"
+    },
+    {
+      "question": "Qual foi o movimento cultural, artístico e intelectual que surgiu na Europa no século XVIII, promovendo a valorização da razão, ciência e liberdade individual?",
+      "options": ["Renascimento", "Iluminismo", "Barroco", "Romantismo"],
+      "correctAnswer": "Iluminismo"
+    },
+    {
+      "question": "Qual é o nome do processo histórico que envolveu a divisão da Alemanha em duas nações após a Segunda Guerra Mundial, com a criação da República Federal da Alemanha (Alemanha Ocidental) e da República Democrática Alemã (Alemanha Oriental)?",
+      "options": ["Guerra Fria", "Revolução Industrial", "Partilha da Alemanha", "Queda do Muro de Berlim"],
+      "correctAnswer": "Partilha da Alemanha"
+    },
+    {
+      "question": "Quem foi a líder política que desempenhou um papel importante na luta pelos direitos civis dos afro-americanos nos Estados Unidos, sendo conhecida por seu ativismo não violento?",
+      "options": ["Angela Davis", "Rosa Parks", "Harriet Tubman", "Martin Luther King Jr."],
+      "correctAnswer": "Martin Luther King Jr."
+    },
+    {
+      "question": "Qual é o nome do movimento artístico e cultural que surgiu nas décadas de 1950 e 1960 nos Estados Unidos, promovendo a liberdade de expressão, o questionamento da autoridade e a busca por novas formas de arte?",
+      "options": ["Renascimento", "Iluminismo", "Movimento Hippie", "Pop Art"],
+      "correctAnswer": "Movimento Hippie"
+    },
+    {
+      "question": "Quem foi o líder sul-africano que desempenhou um papel fundamental na luta contra o apartheid e se tornou o primeiro presidente negro da África do Sul?",
+      "options": ["Nelson Mandela", "Desmond Tutu", "Steve Biko", "Thabo Mbeki"],
+      "correctAnswer": "Nelson Mandela"
+    },
+    {
+      "question": "Qual é o nome da teoria científica que propõe que todas as espécies de seres vivos evoluíram ao longo do tempo a partir de um ancestral comum por meio do processo de seleção natural?",
+      "options": ["Criacionismo", "Evolucionismo", "Lamarckismo", "Fixismo"],
+      "correctAnswer": "Evolucionismo"
+    },
+    {
+      "question": "Qual foi o conflito armado que ocorreu entre 1914 e 1918, envolvendo várias nações europeias e outras regiões, e é conhecido como a Primeira Guerra Mundial?",
+      "options": ["Guerra Fria", "Revolução Russa", "Primeira Guerra Mundial", "Segunda Guerra Mundial"],
+      "correctAnswer": "Primeira Guerra Mundial"
+    },
+    {
+      "question": "Quem foi o autor da obra \"O Príncipe\", que discute os princípios da política e do poder, e é considerado um dos textos fundamentais da filosofia política?",
+      "options": ["Thomas Hobbes", "John Locke", "Maquiavel", "Montesquieu"],
+      "correctAnswer": "Maquiavel"
+    }
+  ],
+    "quimica": [
+      {
+        "question": "Qual é o símbolo químico do oxigênio?",
+        "options": ["O", "Ox", "Oi", "Oxy"],
+        "correctAnswer": "O"
+      },
+      {
+        "question": "Qual é a fórmula química da água?",
+        "options": ["H2O", "CO2", "O2", "CH4"],
+        "correctAnswer": "H2O"
+      },
+      {
+        "question": "Qual é o gás mais abundante na atmosfera da Terra?",
+        "options": ["Nitrogênio", "Oxigênio", "Dióxido de carbono", "Hélio"],
+        "correctAnswer": "Nitrogênio"
+      },
+      {
+        "question": "Qual é o elemento químico conhecido como 'rei dos gases nobres'?",
+        "options": ["Hélio", "Neônio", "Criptônio", "Xenônio"],
+        "correctAnswer": "Xenônio"
+      },
+      {
+        "question": "Qual é o ácido presente no limão?",
+        "options": ["Ácido cítrico", "Ácido acético", "Ácido sulfúrico", "Ácido clorídrico"],
+        "correctAnswer": "Ácido cítrico"
+      }
+    ],
+    "fisica": [
+      {
+        "question": "Qual é a unidade de medida da corrente elétrica?",
+        "options": ["Ampère", "Volts", "Watt", "Ohm"],
+        "correctAnswer": "Ampère"
+      },
+      {
+        "question": "Qual é a fórmula que relaciona a massa, a aceleração e a força?",
+        "options": ["F = m * a", "a = F / m", "m = F / a", "F = m + a"],
+        "correctAnswer": "F = m * a"
+      },
+      {
+        "question": "Qual é a lei da física que descreve a força entre duas cargas elétricas?",
+        "options": ["Lei de Coulomb", "Lei de Newton", "Lei de Faraday", "Lei de Ampère"],
+        "correctAnswer": "Lei de Coulomb"
+      },
+      {
+        "question": "Qual é a unidade de medida da resistência elétrica?",
+        "options": ["Ohm", "Ampère", "Watt", "Volt"],
+        "correctAnswer": "Ohm"
+      },
+      {
+        "question": "Qual é a fórmula que relaciona a energia, a massa e a velocidade?",
+        "options": ["E = m * v^2", "E = m * a^2", "E = m * v", "E = m * a"],
+        "correctAnswer": "E = m * v^2"
+      }
+    ],
+    "filosofia": [
+      {
+        "question": "Quem é considerado o pai da Filosofia?",
+        "options": ["Tales de Mileto", "Sócrates", "Platão", "Aristóteles"],
+        "correctAnswer": "Tales de Mileto"
+      },
+      {
+        "question": "O que é o 'cogito, ergo sum'?",
+        "options": ["Penso, logo existo", "A vida é bela", "Carpe Diem", "Veni, vidi, vici"],
+        "correctAnswer": "Penso, logo existo"
+      },
+      {
+        "question": "Qual filósofo formulou a teoria do contrato social?",
+        "options": ["Jean-Jacques Rousseau", "John Locke", "Thomas Hobbes", "Montesquieu"],
+        "correctAnswer": "Jean-Jacques Rousseau"
+      },
+      {
+        "question": "O que é a 'alma' segundo a filosofia de Platão?",
+        "options": ["A sede da razão", "Imortal e pré-existente", "Conjunto de órgãos", "Expressão dos sentimentos"],
+        "correctAnswer": "Imortal e pré-existente"
+      },
+      {
+        "question": "Qual corrente filosófica se baseia na 'vontade de poder'?",
+        "options": ["Nietzscheanismo", "Existencialismo", "Racionalismo", "Empirismo"],
+        "correctAnswer": "Nietzscheanismo"
+      }
+    ],
+    "sociologia": [
+      {
+        "question": "O que é 'estratificação social'?",
+        "options": ["Divisão da sociedade em camadas hierárquicas", "Movimento de protesto", "Estratégia de marketing", "Forma de governo"],
+        "correctAnswer": "Divisão da sociedade em camadas hierárquicas"
+      },
+      {
+        "question": "O que é 'cultura' na sociologia?",
+        "options": ["Conjunto de valores, crenças e práticas de uma sociedade", "Cultivo de plantas", "Características físicas", "Conjunto de regras de etiqueta"],
+        "correctAnswer": "Conjunto de valores, crenças e práticas de uma sociedade"
+      },
+      {
+        "question": "O que é 'mobilidade social'?",
+        "options": ["Mudança de posição social", "Conjunto de leis", "Forma de governo", "Mudança de cidade"],
+        "correctAnswer": "Mudança de posição social"
+      },
+      {
+        "question": "O que é 'anomia' na sociologia?",
+        "options": ["Desintegração das normas sociais", "Integração social", "Desenvolvimento econômico", "Conjunto de leis"],
+        "correctAnswer": "Desintegração das normas sociais"
+      },
+      {
+        "question": "O que é 'interacionismo simbólico'?",
+        "options": ["Abordagem sociológica que se concentra nas interações e símbolos", "Movimento político", "Corrente filosófica", "Teoria do contrato social"],
+        "correctAnswer": "Abordagem sociológica que se concentra nas interações e símbolos"
+      }
+    ],
+      "espanol": [
+        {
+          "question": "Cuál es el tema principal del texto?",
+          "options": ["Deportes", "Viajes", "Ciencia", "Comida"],
+          "correctAnswer": "Viajes"
+        },
+        {
+          "question": "Según el texto, qué país visitó el autor?",
+          "options": ["España", "Francia", "Italia", "Alemania"],
+          "correctAnswer": "Italia"
+        },
+        {
+          "question": "Cuál es el propósito principal del texto?",
+          "options": ["Entretener al lector", "Informar sobre un descubrimiento científico", "Promocionar un producto", "Convencer al lector de tomar una decisión"],
+          "correctAnswer": "Entretener al lector"
+        },
+        {
+          "question": "Qué significa la palabra \"experimento\" en el contexto del texto?",
+          "options": ["Una aventura", "Un viaje", "Una prueba científica", "Un plato de comida"],
+          "correctAnswer": "Una prueba científica"
+        },
+        {
+          "question": "Cuál es la conclusión del autor sobre su viaje a Italia?",
+          "options": ["Fue una experiencia negativa", "Fue una experiencia emocionante", "Fue un fracaso", "No se menciona la conclusión"],
+          "correctAnswer": "Fue una experiencia emocionante"
+        },
+        {
+          "question": "Cuál es la palabra en español para \"discovery\" en el texto?",
+          "options": ["Descubrimiento", "Aventura", "Experimento", "Viaje"],
+          "correctAnswer": "Descubrimiento"
+        },
+        {
+          "question": "Qué tipo de texto es este?",
+          "options": ["Un anuncio publicitario", "Un cuento de hadas", "Un informe científico", "Un relato de viaje"],
+          "correctAnswer": "Un relato de viaje"
+        },
+        {
+          "question": "Cuál es el objetivo del autor al compartir su experiencia?",
+          "options": ["Vender un producto", "Entretener al lector", "Presentar datos científicos", "Promover una causa social"],
+          "correctAnswer": "Entretener al lector"
+        },
+        {
+          "question": "Qué elemento del texto sugiere que el autor disfrutó de su viaje?",
+          "options": ["Utiliza un lenguaje negativo", "Expresa nostalgia por su hogar", "Usa palabras emocionantes y positivas", "Describe problemas constantes"],
+          "correctAnswer": "Usa palabras emocionantes y positivas"
+        },
+        {
+          "question": "Cuál es la relación del autor con Italia antes de su viaje?",
+          "options": ["Nunca había estado en Italia", "Era un residente italiano", "Había visitado Italia muchas veces", "Vivió en Italia toda su vida"],
+          "correctAnswer": "Nunca había estado en Italia"
+        },
+        {
+          "question": "Cuál es el pronombre personal de la primera persona del singular en español?",
+          "options": ["Tú", "Yo", "Él", "Nosotros"],
+          "correctAnswer": "Yo"
+        },
+        {
+          "question": "Cuál es el pronombre personal de la segunda persona del singular en español?",
+          "options": ["Tú", "Yo", "Él", "Nosotros"],
+          "correctAnswer": "Tú"
+        },
+        {
+          "question": "Cuál es el pronombre personal de la tercera persona del singular en masculino en español?",
+          "options": ["Tú", "Yo", "Él", "Nosotros"],
+          "correctAnswer": "Él"
+        },
+        {
+          "question": "Cuál es el pronombre personal de la tercera persona del singular en femenino en español?",
+          "options": ["Tú", "Yo", "Ella", "Nosotros"],
+          "correctAnswer": "Ella"
+        },
+        {
+          "question": "Cuál es el pronombre personal de la primera persona del plural en español?",
+          "options": ["Tú", "Yo", "Él", "Nosotros"],
+          "correctAnswer": "Nosotros"
+        },
+        {
+          "question": "Cuál es el pronombre personal de la segunda persona del plural en español?",
+          "options": ["Usted", "Tú", "Vosotros", "Nosotros"],
+          "correctAnswer": "Vosotros"
+        },
+        {
+          "question": "Cuál es el pronombre personal de la tercera persona del plural en español?",
+          "options": ["Ustedes", "Tú", "Ellos", "Nosotros"],
+          "correctAnswer": "Ellos"
+        },
+        {
+          "question": "Cuál es el pronombre personal de la tercera persona del singular en español que puede ser neutro y referirse a una cosa?",
+          "options": ["Tú", "Yo", "Él", "Se"],
+          "correctAnswer": "Se"
+        },
+        {
+          "question": "Cuál es el pronombre interrogativo que se utiliza para preguntar \"¿Qué?\" en español?",
+          "options": ["¿Cuál?", "¿Cómo?", "¿Quién?", "¿Dónde?"],
+          "correctAnswer": "¿Cuál?"
+        },
+        {
+          "question": "Cuál es el pronombre interrogativo que se utiliza para preguntar \"¿Quién?\" en español?",
+          "options": ["¿Cuál?", "¿Cómo?", "¿Quién?", "¿Dónde?"],
+          "correctAnswer": "¿Quién?"
+        },
+        {
+          "question": "Cuál es la forma plural correcta de la palabra \"menino\" en español?",
+          "options": ["Niñes", "Niñas", "Niños", "Niñoss"],
+          "correctAnswer": "Niños"
+        },
+        {
+          "question": "Cuál es la forma plural correcta de la palabra \"flor\" en español?",
+          "options": ["Flores", "Flors", "Floress", "Floras"],
+          "correctAnswer": "Flores"
+        }
+      ]
+  }
+  

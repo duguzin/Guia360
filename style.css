@@ -501,6 +501,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     border: #009900 solid 2px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
     font-size: 14px;
+    text-align: justify;
 }
 
 .content7 {
@@ -1335,8 +1336,12 @@ input[type="radio"] {
     font-weight: bold;
     cursor: pointer;
   }
+
+  .card-simulado a {
+    color: #003366;
+  }
   
-  .card-simulado:hover {
+  .card-simulado:hover, .card-simulado a:hover {
     color: #ff9900;
   }
   
