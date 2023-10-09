@@ -190,8 +190,8 @@ function showGabarito() {
     const question = questions[currentMateria][i];
     const respostaCorreta = question.correctAnswer;
 
-    modalText.innerHTML += `<span style="color: #003366;">Pergunta ${i + 1}<br></span> Resposta correta: 
-      <span style="color: green;">${respostaCorreta}</span><br>`;
+    modalText.innerHTML += `<span style="color: #003366;">${i + 1} - ${perguntasMateria}<br></span> Resposta correta: 
+    <span style="color: green;">${respostaCorreta}</span><br>`;
   }
 
   hideGabaritoButton(); // Oculta o botão "Ver Gabarito"

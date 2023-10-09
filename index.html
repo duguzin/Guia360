@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <title>Home - Guia360</title>
     <style>
-      body {
+      /* body {
         background-image: url(https://fontawesome.com/images/icons-gray-bg.svg);
-      }
+      } */
     </style>
 </head>
 <body>
+  <div class="fundo-body"></div>
     <header>
         <nav class="navbar">
             <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
@@ -48,7 +49,7 @@
 
         <nav class="navbar-pesquisa">
           <input type="text" id="nav-input" onkeyup="filtrar()" placeholder="procure aqui...">
-          <svg class="svg-div" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><style>.svg-div{fill:#676767}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+          <svg class="svg-div" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><style>.svg-div{fill:#676767}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
           <ul id="lista-titulos"></ul>
         </nav>
 
@@ -109,7 +110,7 @@
       <div class="overlay-slide"></div>
       <img src="https://th.bing.com/th/id/R.02549b58df319c593ef1e692838a4514?rik=GQAB%2bBF6oaSGog&pid=ImgRaw&r=0" alt="Banner 2">
       <div class="container-slide">
-        <div class="title" data-swiper-parallax="-300">Descubra Seu Próprio Caminho para o Conhecimento!</div>
+        <div class="title" data-swiper-parallax="-300">Descubra Seu Próprio Caminho!</div>
       <div class="subtitle" data-swiper-parallax="-200">O Guia360: Sua bússola personalizada para o aprendizado.</div>
       <div class="text" data-swiper-parallax="-100">
         <p>
@@ -140,17 +141,17 @@
 </div>
     <section class="section-pesquisa">
           <div class="div-nav-pesquisa">
-            <!-- <a href="./index.html"><img src="./logo.png" alt=""></a> -->
+            <a href="./index.html"><img src="./logo.png" alt=""></a>
             <input id="inputBusca" onkeyup="filtrarPc()" type="text" placeholder="pesquise aqui...">
       
-              <svg class="svg-div" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><style>.svg-div{fill:#676767}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+              <svg class="svg-div" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><style>.svg-div{fill:#003366}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
 
             <ul id="lista-titulos-pc"></ul>
           </div>
           
     </section>
    <section class="section-home">
-        <h1>Seja bem-vindo ao Guia360: Sua Bússola 🧭 na Jornada Acadêmica!</h1>
+        <h1 class="h1-home">Seja bem-vindo ao Guia360: Sua Bússola 🧭 na Jornada Acadêmica!</h1>
         <!-- <h2>Sua Jornada Rumo ao Sucesso Acadêmico Começa Aqui</h2> -->
 
         <div class="container3">
@@ -191,7 +192,7 @@
         <p>Acreditamos firmemente em seu potencial e estamos dedicados a ajudá-lo a alcançar seus objetivos acadêmicos. Por meio de nosso guia de estudos, você terá a oportunidade de não apenas adquirir conhecimento, mas também desenvolver habilidades essenciais para o sucesso a longo prazo. Estamos aqui para investir em você, proporcionando uma plataforma robusta que permitirá que seu potencial brilhe e o coloque no caminho do sucesso.</p>
     </div>
     </div>
-        <h1>Como Alcançaremos Isso:</h1>
+        <h1 style="color: #003366; font-size: 28px; margin-bottom: 20px;">Como Alcançaremos Isso:</h1>
 
       <div class="fundo-content">
         <div class="container">
@@ -229,7 +230,7 @@
          </div>
         </div>
         
-         <h1>Junte-se a Nós e Comece Sua Jornada de Preparação</h1>
+         <h1 class="h1-home">Junte-se a Nós e Comece Sua Jornada de Preparação</h1>
 
          <!-- <div class="container3">
             <div class="content5">
@@ -242,8 +243,8 @@
           </div> -->
 
 
-
-          <div class="content7">
+<div class="container7">
+  <div class="content7">
 
             <h3>Uma Comunidade que Valoriza o Conhecimento e a Dedicação</h3>
             <p>
@@ -271,6 +272,8 @@
             </p>
             
           </div>
+</div>
+          
 
   </section>
 

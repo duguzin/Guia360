@@ -59,7 +59,7 @@ body {
      align-items: center;
      justify-content: space-between;
      width: 100%;
-     height: 60px;
+     height: 45px;
      /* background-image: linear-gradient(to right, #327a9e, #003366); */
      background-color: #003366;
      color: #fff;
@@ -78,6 +78,16 @@ body {
     visibility: hidden;
     opacity: 0;
     transition: 0.05s;
+}
+
+.fundo-body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://fontawesome.com/images/icons-gray-bg.svg);
 }
 
 body.open .navbar-overlay {
@@ -108,8 +118,8 @@ body.open-pesquisa {
     right: 0;
     display: grid;
     place-items: center;
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     padding: 0;
     z-index: 4;
 }
@@ -120,8 +130,8 @@ body.open-pesquisa {
     right: 40px;
     display: grid;
     place-items: center;
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     padding: 0;
     z-index: 3;
 }
@@ -186,11 +196,11 @@ body.open-pesquisa {
     right: 0;
     translate: 0 -100%;
     width: 100%;
-    height: 100px;
+    height: 60px;
     background: #003366;
     visibility: hidden;
     transition: all .5s;
-    padding: 1rem;
+    padding: .5rem;
     display: flex;
     justify-content: center;
 }
@@ -219,18 +229,18 @@ body.open-pesquisa {
 
 .navbar-pesquisa svg {
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 18px;
+    right: 20px;
 }
 
 #nav-input {
     width: 100%;
-    height: 60px;
+    height: 45px;
     padding: 1rem 0;
     padding-left: 1rem;
     border-radius: 5px;
     border: none;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     background-color: #fff;
     border: #676767 solid 2px;
@@ -282,7 +292,7 @@ body.open-pesquisa .navbar-overlay-pesquisa {
         display: none;
     }
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     .navbar-links, .button-menu-pc, .container-postagens, section.section-pesquisa {
         display: none;
     }
@@ -290,6 +300,12 @@ body.open-pesquisa .navbar-overlay-pesquisa {
         display: block;
     }
    
+}
+
+@media (max-width: 1100px) {
+    .section-pesquisa img {
+        display: none;
+    }
 }
 
 .swiper {
@@ -346,10 +362,12 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     width: 350px;
     line-height: 1.3rem;
     font-weight: 300;
+    border: #fff solid 2px;
+    padding: .6rem;
 }
 
 .container-slide {
-    padding: 5rem;
+    padding: 4rem 5rem;
     color: #fff;
     z-index: 2;
     position: relative;
@@ -361,10 +379,11 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     padding-bottom: 2rem;
 }
 
-.section-home h1 {
+.h1-home {
     font-size: 30px;
-    color: #003366;
-    margin-bottom: 20px;
+    color: #ffff;
+    background-color: #003366;
+    padding: 1rem;
 }
 
 .section-home h2 {
@@ -455,17 +474,21 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     margin-bottom: 30px;
 }
 
-.container3 {
+.container3, .container7 {
     display: flex;
     justify-content: center;
     gap: 4rem;
     margin-bottom: 30px;
+    background-color: #fff;
+    padding: 1rem;
+    border: #003366 solid 2px;
+    border-top: none;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
 .content5 img, .content6 img {
     height: 400px;
     width: auto;
-    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -501,12 +524,8 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     border: #009900 solid 2px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
     font-size: 14px;
-    text-align: justify;
 }
 
-.content7 {
-    background-color: #fff;
-}
 
 .content8 h3 {
     color: #ff9900;
@@ -514,7 +533,6 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
 
 .content7 h3 {
     color: #003366;
-    font-size: 22px;
 }
 
 .content7 p {
@@ -528,7 +546,6 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
 .content8 p {
     font-size: 14px;
     margin-bottom: 10px;
-    text-align: justify;
 }
 
 .span-home {
@@ -673,7 +690,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
     .container-slide .text {
         font-size: 16px;
-        margin-top: 260px;
+        margin-top: 280px;
         width: 360px;
     }
     .container-slide {
@@ -683,6 +700,9 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
 @media screen and (max-width: 420px) {
     .section-home {
         padding: 1rem 1.5rem;
+    }
+    .section-home h3 {
+        font-size: 20px;
     }
     .section-home h1 {
         font-size: 1.4rem;
@@ -706,7 +726,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
         width: 100%;
     }
     .content5, .content6, .content5 img, .content6 img {
-        height: 300px;
+        height: 250px;
         width: 100%;
         margin-bottom: 20px;
     } 
@@ -732,11 +752,11 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
     .container-slide .text {
         font-size: 15px;
-        margin-top: 180px;
+        margin-top: 220px;
         width: 320px;
     }
     .container-slide {
-        padding: 5rem 2rem;
+        padding: 4rem 2rem;
     }
 }
 @media screen and (max-width: 330px) {
@@ -765,7 +785,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
         font-size: 12px;
     }
     .content5, .content6, .content5 img, .content6 img {
-        max-height: 250px;
+        max-height: 220px;
         width: 100%;
     }
     .content7 h3 {
@@ -807,7 +827,8 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
     .container-slide .text {
         font-size: 12px;
-        margin-top: 140px;
+        margin-top: 110px;
+        position: absolute;
         width: 260px;
     }
     .container-slide {
@@ -1144,11 +1165,12 @@ input[type="tel"] {
     
   }
 
-  /* .section-pesquisa img {
+  .section-pesquisa img {
     width: 80px;
     position: absolute;
     left: 0;
-  } */
+    margin-left: 40px;
+  }
 
   .div-nav-pesquisa {
     display: flex;
@@ -1157,6 +1179,11 @@ input[type="tel"] {
     justify-content: center;
     width: 100%;
     position: relative;
+    background-color: #003366;
+    height: 120px;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 80px;
+    border: #2ca0da solid 3px;
   }
 
   .div-nav-pesquisa svg {
@@ -1166,7 +1193,6 @@ input[type="tel"] {
 }
 
 .div-nav-pesquisa input {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     width: 600px;
     height: 70px;
     padding: 1rem 2rem;
@@ -1175,14 +1201,14 @@ input[type="tel"] {
     font-size: 16px;
     font-weight: 600;
     background-color: #fff;
-    border: #676767 solid 2px;
+    border: #2ca0da solid 3px;
     margin-bottom: 0;
 }
 
 
 #lista-titulos {
     position: absolute;
-    top: 90px;
+    top: 60px;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -1192,7 +1218,7 @@ input[type="tel"] {
 
 #lista-titulos-pc {
     position: absolute;
-    top: 75px;
+    top: 100px;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -1388,6 +1414,10 @@ input[type="radio"] {
       padding: .5rem;
       font-weight: 600;
       margin-top: 20px;
+  }
+
+  #buttons-modal:hover {
+    background-color: #093c6f;
   }
   
   .modal-text {

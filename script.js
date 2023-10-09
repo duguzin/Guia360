@@ -30,8 +30,8 @@ fetch('api.json')
     json.forEach((titulo) => {
         const lista = `
         <a href="${titulo.link}">
-         <img width="50"
-            src="${titulo.image}">
+         <!-- <img width="50"
+            src="${titulo.image}"> --!>
          <span class="titulo-name">${titulo.title}</span>
         </a>
         `

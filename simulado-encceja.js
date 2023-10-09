@@ -188,9 +188,11 @@ function showGabarito() {
 
   for (let i = 0; i < questions[currentMateria].length; i++) {
     const question = questions[currentMateria][i];
+    const perguntasMateria = question.question
     const respostaCorreta = question.correctAnswer;
 
-    modalText.innerHTML += `<span style="color: #003366;">Pergunta ${i + 1}<br></span> Resposta correta: 
+
+    modalText.innerHTML += `<span style="color: #003366;">${i + 1} - ${perguntasMateria}<br></span> Resposta correta: 
       <span style="color: green;">${respostaCorreta}</span><br>`;
   }
 
