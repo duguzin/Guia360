@@ -410,7 +410,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
 .content {
     padding: 1rem;
     background-color: #2ca0da;
-    border: 2px solid #003366;
+    border: 3px solid #003366;
     /* box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5); */
     height: 180px;
     width: 700px;
@@ -428,7 +428,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
 }
 .svg-content {
     background-color: #2ca0da;
-    border: #003366 solid 2px;
+    border: #003366 solid 3px;
     border-left: none;
     height: 180px;
     padding: 4rem 2rem;
@@ -438,7 +438,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
 
 .svg-content2 {
     background-color: #003366;
-    border: #ff9900 solid 2px;
+    border: #ff9900 solid 3px;
     border-left: none;
     height: 200px;
     padding: 4rem 2rem;
@@ -446,7 +446,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
 
 .svg-content3 {
     background-color: #fff;
-    border: #2ca0da solid 2px;
+    border: #2ca0da solid 3px;
     border-left: none;
     height: 200px;
     padding: 4rem 2rem;
@@ -459,7 +459,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
 
 .svg-content4 {
     background-color: #ff9900;
-    border: #003366 solid 2px;
+    border: #003366 solid 3px;
     border-left: none;
     height: 180px;
     padding: 4rem 2rem;
@@ -468,7 +468,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
 .content2 {
     padding: 1rem;
     background-color: #003366;
-    border: 2px solid #ff9900;
+    border: 3px solid #ff9900;
     /* box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5); */
     height: 200px;
     width: auto;
@@ -491,7 +491,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     background-color: #fff;
     height: 200px;
     width: auto;
-    border: 2px solid #2ca0da;
+    border: 3px solid #2ca0da;
     border-right: none;
     /* box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5); */
 }
@@ -504,7 +504,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
 .content4 {
     padding: 1rem;
     background-color: #ff9900;
-    border: 2px solid #003366;
+    border: 3px solid #003366;
     /* box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5); */
     height: 180px;
     width: 700px;
@@ -529,7 +529,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     margin-bottom: 30px;
     background-color: #fff;
     padding: 1rem;
-    border: #003366 solid 2px;
+    border: #003366 solid 3px;
     border-top: none;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
 }
@@ -560,7 +560,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     padding: 1.5rem;
     color: #fff;
     font-weight: 400;
-    border: #003366 solid 2px;
+    border: #003366 solid 3px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
     font-size: 14px;
 }
@@ -569,7 +569,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     background-color: #fff;
     padding: 1rem;
     color: #676767;
-    border: #009900 solid 2px;
+    border: #009900 solid 3px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
     font-size: 14px;
 }
@@ -652,24 +652,24 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
         margin-bottom: 250px;
     }
     .content {
-        border-right: #003366 solid 2px;
-        border-bottom: none;
+        border-right: #003366 solid 3px;
+        border-bottom: #fff solid 1px;
     }
     .content2 {
-        border-right: #ff9900 solid 2px;
-        border-bottom: none;
+        border-right: #ff9900 solid 3px;
+        border-bottom: #fff solid 1px;
     }
     .content3 {
-        border-right: #2ca0da solid 2px;
+        border-right: #2ca0da solid 3px;
         border-bottom: #2ca0da solid 1px;
     }
     .content4 {
-        border-right: #003366 solid 2px;
+        border-right: #003366 solid 3px;
         border-bottom: none;
     }
     .svg-content {
         border-top: none;
-        border-left: #003366 solid 2px;
+        border-left: #003366 solid 3px;
         width: 100%;
         margin-right: 0;
         text-align: center;
@@ -680,7 +680,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
     .svg-content2 {
         border-top: none;
-        border-left: #ff9900 solid 2px;
+        border-left: #ff9900 solid 3px;
         width: 100%;
         margin-right: 0;
         text-align: center;
@@ -689,7 +689,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
     .svg-content3 {
         border-top: none;
-        border-left: #2ca0da solid 2px;
+        border-left: #2ca0da solid 3px;
         width: 100%;
         margin-right: 0;
         text-align: center;
@@ -699,7 +699,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
     .svg-content4 {
         border-top: none;
-        border-left: #003366 solid 2px;
+        border-left: #003366 solid 3px;
         width: 100%;
         margin-right: 0;
         text-align: center;
@@ -760,24 +760,24 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
         width: 100%;
     }
     .content {
-        border-right: #003366 solid 2px;
+        border-right: #003366 solid 3px;
         border-bottom: none;
     }
     .content2 {
-        border-right: #ff9900 solid 2px;
+        border-right: #ff9900 solid 3px;
         border-bottom: none;
     }
     .content3 {
-        border-right: #2ca0da solid 2px;
+        border-right: #2ca0da solid 3px;
         border-bottom: #2ca0da solid 1px;
     }
     .content4 {
-        border-right: #003366 solid 2px;
+        border-right: #003366 solid 3px;
         border-bottom: none;
     }
     .svg-content {
         border-top: none;
-        border-left: #003366 solid 2px;
+        border-left: #003366 solid 3px;
         width: 100%;
         margin-right: 0;
         text-align: center;
@@ -788,7 +788,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
     .svg-content2 {
         border-top: none;
-        border-left: #ff9900 solid 2px;
+        border-left: #ff9900 solid 3px;
         width: 100%;
         margin-right: 0;
         text-align: center;
@@ -797,7 +797,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
     .svg-content3 {
         border-top: none;
-        border-left: #2ca0da solid 2px;
+        border-left: #2ca0da solid 3px;
         width: 100%;
         margin-right: 0;
         text-align: center;
@@ -807,7 +807,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
     .svg-content4 {
         border-top: none;
-        border-left: #003366 solid 2px;
+        border-left: #003366 solid 3px;
         width: 100%;
         margin-right: 0;
         text-align: center;
@@ -880,24 +880,24 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
         width: 100%;
     }
     .content {
-        border-right: #003366 solid 2px;
+        border-right: #003366 solid 3px;
         border-bottom: none;
     }
     .content2 {
-        border-right: #ff9900 solid 2px;
+        border-right: #ff9900 solid 3px;
         border-bottom: none;
     }
     .content3 {
-        border-right: #2ca0da solid 2px;
+        border-right: #2ca0da solid 3px;
         border-bottom: #2ca0da solid 1px;
     }
     .content4 {
-        border-right: #003366 solid 2px;
+        border-right: #003366 solid 3px;
         border-bottom: none;
     }
     .svg-content {
         border-top: none;
-        border-left: #003366 solid 2px;
+        border-left: #003366 solid 3px;
         width: 100%;
         margin-right: 0;
         text-align: center;
@@ -908,7 +908,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
     .svg-content2 {
         border-top: none;
-        border-left: #ff9900 solid 2px;
+        border-left: #ff9900 solid 3px;
         width: 100%;
         margin-right: 0;
         text-align: center;
@@ -927,7 +927,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
     .svg-content4 {
         border-top: none;
-        border-left: #003366 solid 2px;
+        border-left: #003366 solid 3px;
         width: 100%;
         margin-right: 0;
         text-align: center;
@@ -1004,24 +1004,24 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
         width: 100%;
     }
     .content {
-        border-right: #003366 solid 2px;
+        border-right: #003366 solid 3px;
         border-bottom: none;
     }
     .content2 {
-        border-right: #ff9900 solid 2px;
+        border-right: #ff9900 solid 3px;
         border-bottom: none;
     }
     .content3 {
-        border-right: #2ca0da solid 2px;
+        border-right: #2ca0da solid 3px;
         border-bottom: #2ca0da solid 1px;
     }
     .content4 {
-        border-right: #003366 solid 2px;
+        border-right: #003366 solid 3px;
         border-bottom: none;
     }
     .svg-content {
         border-top: none;
-        border-left: #003366 solid 2px;
+        border-left: #003366 solid 3px;
         width: 100%;
         margin-right: 0;
         text-align: center;
@@ -1032,7 +1032,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
     .svg-content2 {
         border-top: none;
-        border-left: #ff9900 solid 2px;
+        border-left: #ff9900 solid 3px;
         width: 100%;
         margin-right: 0;
         text-align: center;
@@ -1041,7 +1041,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
     .svg-content3 {
         border-top: none;
-        border-left: #2ca0da solid 2px;
+        border-left: #2ca0da solid 3px;
         width: 100%;
         margin-right: 0;
         text-align: center;
@@ -1051,7 +1051,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
     .svg-content4 {
         border-top: none;
-        border-left: #003366 solid 2px;
+        border-left: #003366 solid 3px;
         width: 100%;
         margin-right: 0;
         text-align: center;
@@ -1461,7 +1461,7 @@ input[type="tel"] {
     height: 120px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
     border-radius: 80px;
-    border: #2ca0da solid 2px;
+    border: #2ca0da solid 3px;
   }
 
   .div-nav-pesquisa svg {
@@ -1479,7 +1479,7 @@ input[type="tel"] {
     font-size: 16px;
     font-weight: 600;
     background-color: #fff;
-    border: #2ca0da solid 2px;
+    border: #2ca0da solid 3px;
     margin-bottom: 0;
 }
 
