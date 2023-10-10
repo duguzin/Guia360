@@ -259,9 +259,11 @@ body.open-pesquisa .navbar-overlay-pesquisa {
     opacity: 1;
 }
 
-
-
-
+.svg-comunidade {
+    text-align: center;
+    height: 140px;
+    padding: 1rem;
+}
 /* .navbar-menu > .nav-link {
     color: rgba(2, 1, 1, 0.5);
     background: transparent;
@@ -406,12 +408,13 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
 }
 
 .content {
-    padding: 1rem 1rem;
+    padding: 1rem;
     background-color: #2ca0da;
     border: 2px solid #003366;
-    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5); */
     height: 180px;
     width: 700px;
+    border-right: none;
 }
 
 .content p {
@@ -419,13 +422,57 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     font-size: 14px;
 }
 
+.svg-content svg {
+    transform: rotate(-45deg);
+    fill: #fff;
+}
+.svg-content {
+    background-color: #2ca0da;
+    border: #003366 solid 2px;
+    border-left: none;
+    height: 180px;
+    padding: 4rem 2rem;
+    margin-right: 16px;
+    
+}
+
+.svg-content2 {
+    background-color: #003366;
+    border: #ff9900 solid 2px;
+    border-left: none;
+    height: 200px;
+    padding: 4rem 2rem;
+}
+
+.svg-content3 {
+    background-color: #fff;
+    border: #2ca0da solid 2px;
+    border-left: none;
+    height: 200px;
+    padding: 4rem 2rem;
+    margin-right: 16px;
+}
+
+.svg-content3 svg {
+    fill: #2ca0da;
+}
+
+.svg-content4 {
+    background-color: #ff9900;
+    border: #003366 solid 2px;
+    border-left: none;
+    height: 180px;
+    padding: 4rem 2rem;
+}
+
 .content2 {
-    padding: 1rem 1rem;
+    padding: 1rem;
     background-color: #003366;
     border: 2px solid #ff9900;
-    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5); */
     height: 200px;
     width: auto;
+    border-right: none;
 }
 
 .content2 p {
@@ -435,9 +482,8 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
 
 .container {
     display: flex;
-    gap: 1rem;
+    /* gap: 1rem; */
     margin-bottom: 30px;
-    
 }
 
 .content3 {
@@ -446,7 +492,8 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     height: 200px;
     width: auto;
     border: 2px solid #2ca0da;
-    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+    border-right: none;
+    /* box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5); */
 }
 
 .content3 p {
@@ -455,12 +502,13 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
 }
 
 .content4 {
-    padding: 1rem 1rem;
+    padding: 1rem;
     background-color: #ff9900;
     border: 2px solid #003366;
-    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5); */
     height: 180px;
-    width: 650px;
+    width: 700px;
+    border-right: none;
 }
 
 .content4 p {
@@ -470,7 +518,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
 
 .container2 {
     display: flex;
-    gap: 1rem;
+    /* gap: 1rem; */
     margin-bottom: 30px;
 }
 
@@ -538,9 +586,8 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
 .content7 p {
     font-size: 15px;
     margin-bottom: 10px;
-    text-align: justify;
     color: #676767;
-    line-height: 2rem;
+    line-height: 28px;
 }
 
 .content8 p {
@@ -591,7 +638,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
        
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1010px) {
     .section-home {
         padding: 1rem 1.5rem;
     }
@@ -602,6 +649,62 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     .container, .container2 {
         height: 400px;
         flex-wrap: wrap;
+        margin-bottom: 250px;
+    }
+    .content {
+        border-right: #003366 solid 2px;
+        border-bottom: none;
+    }
+    .content2 {
+        border-right: #ff9900 solid 2px;
+        border-bottom: none;
+    }
+    .content3 {
+        border-right: #2ca0da solid 2px;
+        border-bottom: #2ca0da solid 1px;
+    }
+    .content4 {
+        border-right: #003366 solid 2px;
+        border-bottom: none;
+    }
+    .svg-content {
+        border-top: none;
+        border-left: #003366 solid 2px;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        height: 120px;
+        margin-bottom: 1rem;
+        padding: 2rem 0;
+        
+    }
+    .svg-content2 {
+        border-top: none;
+        border-left: #ff9900 solid 2px;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        height: 120px;
+        padding: 1.5rem 0;
+    }
+    .svg-content3 {
+        border-top: none;
+        border-left: #2ca0da solid 2px;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        height: 120px;
+        padding: 1.5rem 0;
+        margin-bottom: 1rem;
+    }
+    .svg-content4 {
+        border-top: none;
+        border-left: #003366 solid 2px;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        height: 120px;
+        padding: 1.5rem 0;
     }
     .container3 {
         flex-wrap: wrap;
@@ -651,6 +754,65 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     .container, .container2 {
         height: 400px;
         flex-wrap: wrap;
+        margin-bottom: 250px;
+    }
+    .content, .content2, .content3, .content4 {
+        width: 100%;
+    }
+    .content {
+        border-right: #003366 solid 2px;
+        border-bottom: none;
+    }
+    .content2 {
+        border-right: #ff9900 solid 2px;
+        border-bottom: none;
+    }
+    .content3 {
+        border-right: #2ca0da solid 2px;
+        border-bottom: #2ca0da solid 1px;
+    }
+    .content4 {
+        border-right: #003366 solid 2px;
+        border-bottom: none;
+    }
+    .svg-content {
+        border-top: none;
+        border-left: #003366 solid 2px;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        height: 120px;
+        margin-bottom: 1rem;
+        padding: 2rem 0;
+        
+    }
+    .svg-content2 {
+        border-top: none;
+        border-left: #ff9900 solid 2px;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        height: 120px;
+        padding: 1.5rem 0;
+    }
+    .svg-content3 {
+        border-top: none;
+        border-left: #2ca0da solid 2px;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        height: 120px;
+        padding: 1.5rem 0;
+        margin-bottom: 1rem;
+    }
+    .svg-content4 {
+        border-top: none;
+        border-left: #003366 solid 2px;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        height: 120px;
+        padding: 1.5rem 0;
     }
     .container3 {
         flex-wrap: wrap;
@@ -712,6 +874,65 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     .container, .container2 {
         height: 400px;
         flex-wrap: wrap;
+        margin-bottom: 250px;
+    }
+    .content, .content2, .content3, .content4 {
+        width: 100%;
+    }
+    .content {
+        border-right: #003366 solid 2px;
+        border-bottom: none;
+    }
+    .content2 {
+        border-right: #ff9900 solid 2px;
+        border-bottom: none;
+    }
+    .content3 {
+        border-right: #2ca0da solid 2px;
+        border-bottom: #2ca0da solid 1px;
+    }
+    .content4 {
+        border-right: #003366 solid 2px;
+        border-bottom: none;
+    }
+    .svg-content {
+        border-top: none;
+        border-left: #003366 solid 2px;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        height: 120px;
+        margin-bottom: 1rem;
+        padding: 2rem 0;
+        
+    }
+    .svg-content2 {
+        border-top: none;
+        border-left: #ff9900 solid 2px;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        height: 120px;
+        padding: 1.5rem 0;
+    }
+    .svg-content3 {
+        border-top: none;
+        border-left: #2ca0da solid 2px;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        height: 120px;
+        padding: 1.5rem 0;
+        margin-bottom: 1rem;
+    }
+    .svg-content4 {
+        border-top: none;
+        border-left: #003366 solid 2px;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        height: 120px;
+        padding: 1.5rem 0;
     }
     .container5 {
         flex-wrap: wrap;
@@ -771,6 +992,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     .container, .container2 {
         height: 400px;
         flex-wrap: wrap;
+        margin-bottom: 250px;
     }
 
     .container3, .container5 {
@@ -781,6 +1003,62 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     .content, .content2, .content3, .content4 {
         width: 100%;
     }
+    .content {
+        border-right: #003366 solid 2px;
+        border-bottom: none;
+    }
+    .content2 {
+        border-right: #ff9900 solid 2px;
+        border-bottom: none;
+    }
+    .content3 {
+        border-right: #2ca0da solid 2px;
+        border-bottom: #2ca0da solid 1px;
+    }
+    .content4 {
+        border-right: #003366 solid 2px;
+        border-bottom: none;
+    }
+    .svg-content {
+        border-top: none;
+        border-left: #003366 solid 2px;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        height: 120px;
+        margin-bottom: 1rem;
+        padding: 2rem 0;
+        
+    }
+    .svg-content2 {
+        border-top: none;
+        border-left: #ff9900 solid 2px;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        height: 120px;
+        padding: 1.5rem 0;
+    }
+    .svg-content3 {
+        border-top: none;
+        border-left: #2ca0da solid 2px;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        height: 120px;
+        padding: 1.5rem 0;
+        margin-bottom: 1rem;
+    }
+    .svg-content4 {
+        border-top: none;
+        border-left: #003366 solid 2px;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        height: 120px;
+        padding: 1.5rem 0;
+    }
+
     .content p, .content2 p, .content3 p, .content4 p, .content7 p {
         font-size: 12px;
     }
@@ -1183,7 +1461,7 @@ input[type="tel"] {
     height: 120px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
     border-radius: 80px;
-    border: #2ca0da solid 3px;
+    border: #2ca0da solid 2px;
   }
 
   .div-nav-pesquisa svg {
@@ -1201,7 +1479,7 @@ input[type="tel"] {
     font-size: 16px;
     font-weight: 600;
     background-color: #fff;
-    border: #2ca0da solid 3px;
+    border: #2ca0da solid 2px;
     margin-bottom: 0;
 }
 
