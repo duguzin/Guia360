@@ -540,6 +540,8 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
 }
 
 
+
+
 /* .content6 img {
     height: 400px;
     width: auto;
@@ -653,15 +655,15 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
     .content {
         border-right: #003366 solid 3px;
-        border-bottom: #fff solid 1px;
+        border-bottom: none;
     }
     .content2 {
         border-right: #ff9900 solid 3px;
-        border-bottom: #fff solid 1px;
+        border-bottom: none;
     }
     .content3 {
         border-right: #2ca0da solid 3px;
-        border-bottom: #2ca0da solid 1px;
+        border-bottom: none;
     }
     .content4 {
         border-right: #003366 solid 3px;
@@ -917,7 +919,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
     .svg-content3 {
         border-top: none;
-        border-left: #2ca0da solid 2px;
+        border-left: #2ca0da solid 3px;
         width: 100%;
         margin-right: 0;
         text-align: center;
