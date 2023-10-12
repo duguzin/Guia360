@@ -293,6 +293,7 @@ body.open-pesquisa .navbar-overlay-pesquisa {
     #navbar-burguer, #navbar-lupa {
         display: none;
     }
+   
 }
 @media (max-width: 850px) {
     .navbar-links, .button-menu-pc, .container-postagens, section.section-pesquisa {
@@ -304,6 +305,7 @@ body.open-pesquisa .navbar-overlay-pesquisa {
     .h1-home {
         padding-top: 3rem
     }
+    
 }
 
 @media (max-width: 1100px) {
@@ -382,6 +384,8 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     padding: 0 4rem;
     padding-bottom: 2rem;
 }
+
+
 
 .h1-home {
     font-size: 30px;
@@ -576,6 +580,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     border: #009900 solid 3px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
     font-size: 14px;
+    width: 50%;
 }
 
 
@@ -606,7 +611,11 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     font-size: 14px; 
     line-height: 20px;
 }
-
+@media screen and (max-width: 850px) {
+    #section-padding {
+        padding-top: 6rem;
+    }
+}
 @media screen and (max-width: 1300px) {
     .container3 {
         display: flex;
@@ -655,6 +664,9 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
         height: 400px;
         flex-wrap: wrap;
         margin-bottom: 250px;
+    }
+    .container5 {
+        flex-wrap: wrap;
     }
     .content {
         border-right: #003366 solid 3px;
@@ -724,7 +736,13 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
     .content5 img, .content6 img {
         height: 400px;
+    }
+    .content8, .content9 {
+        width: 100%;
     } 
+    .content8 {
+        margin-bottom: 15px;
+    }
     .swiper-slide img {
         padding: 2rem 0 0 0;
         height: 100%;
@@ -835,6 +853,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     .content5, .content6, .content5 img, .content6 img {
         height: 300px;
     } 
+    
     .swiper-slide img {
         padding: 2rem 0 0 0;
         height: 100%;
@@ -866,10 +885,13 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
 }
 @media screen and (max-width: 420px) {
     .section-home {
-        padding: 1rem 1rem;
+        padding: 1rem;
     }
     .section-home h3 {
         font-size: 20px;
+    }
+    .section-padding {
+        padding-top: 0;
     }
     .h1-home {
         font-size: 18px;
@@ -988,6 +1010,9 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
 @media screen and (max-width: 330px) {
     .section-home {
         padding: 0.5rem 1rem;
+    }
+    #section-padding {
+        padding-top: 3rem;
     }
     .h1-home {
         font-size: 16px;
