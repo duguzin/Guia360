@@ -13,6 +13,7 @@
       body {
         background-image: url(https://fontawesome.com/images/icons-gray-bg.svg);
       }
+      
     </style>
 </head>
 <body>
@@ -93,7 +94,7 @@
   <div class="swiper-wrapper">
 
     <div class="swiper-slide">
-      <img src="https://yesofcorsa.com/wp-content/uploads/2019/05/4K-Landscape-Scenery-Wallpaper-HQ.jpg" alt="Banner 1">
+      <img class="image-slide" src="https://yesofcorsa.com/wp-content/uploads/2019/05/4K-Landscape-Scenery-Wallpaper-HQ.jpg" alt="Banner 1">
       <div class="overlay-slide"></div>
       <div class="container-slide">
         <div class="title" data-swiper-parallax="-300">Navegue seu Caminho para o Sucesso!</div>
@@ -108,7 +109,7 @@
       </div>
     <div class="swiper-slide">
       <div class="overlay-slide"></div>
-      <img src="https://th.bing.com/th/id/R.02549b58df319c593ef1e692838a4514?rik=GQAB%2bBF6oaSGog&pid=ImgRaw&r=0" alt="Banner 2">
+      <img class="image-slide" src="https://th.bing.com/th/id/R.02549b58df319c593ef1e692838a4514?rik=GQAB%2bBF6oaSGog&pid=ImgRaw&r=0" alt="Banner 2">
       <div class="container-slide">
         <div class="title" data-swiper-parallax="-300">Descubra Seu Próprio Caminho!</div>
       <div class="subtitle" data-swiper-parallax="-200">O Guia360: Sua bússola personalizada para o aprendizado.</div>
@@ -121,7 +122,7 @@
     </div> 
       
     <div class="swiper-slide">
-      <img src="https://www.itl.cat/pngfile/big/206-2066198_new-zealand-4k-free-hd-wallpaper-free-download.jpg" alt="Banner 3">
+      <img class="image-slide" src="https://www.itl.cat/pngfile/big/206-2066198_new-zealand-4k-free-hd-wallpaper-free-download.jpg" alt="Banner 3">
       <div class="overlay-slide"></div>
       <div class="container-slide">
         <div class="title" data-swiper-parallax="-300">Explore, Aprenda e Conquiste!</div>
@@ -296,9 +297,59 @@
   </section>
 
     <section class="section-2">
-        
 
-        <div class="container-postagens2">
+      <div class="swiper-card cardSwiper">
+
+        <h3 class="title-depoimentos">DEPOIMENTOS:</h3>
+
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide" id="swiper-card">
+            <img src="https://c1.staticflickr.com/3/2372/2380183266_bd37c42cdb.jpg" alt="">
+            <div class="container-content-card">
+              <h3>Guia360 - Estudos</h3>
+              <h1>GUSTAVO</h1>
+            </div>
+          </div>
+    
+          <div class="swiper-slide" id="swiper-card">
+            <img src="https://c1.staticflickr.com/3/2372/2380183266_bd37c42cdb.jpg" alt="">
+            <div class="container-content-card">
+              <h3>Guia360 - Estudos</h3>
+              <h1>FELIPE</h1>
+            </div>
+          </div>
+
+          <div class="swiper-slide" id="swiper-card">
+            <img src="https://c1.staticflickr.com/3/2372/2380183266_bd37c42cdb.jpg" alt="">
+            <div class="container-content-card">
+              <h3>Guia360 - Estudos</h3>
+              <h1>DIEGO</h1>
+            </div>
+          </div>
+
+          <div class="swiper-slide" id="swiper-card">
+            <img src="https://c1.staticflickr.com/3/2372/2380183266_bd37c42cdb.jpg" alt="">
+            <div class="container-content-card">
+              <h3>Guia360 - Estudos</h3>
+              <h1>JOÃO</h1>
+            </div>
+          </div>
+    
+          <div class="swiper-slide" id="swiper-card">
+            <img src="https://c1.staticflickr.com/3/2372/2380183266_bd37c42cdb.jpg" alt="">
+            <div class="container-content-card">
+              <h3>Guia360 - Estudos</h3>
+              <h1>LARISSA</h1>
+            </div>
+          </div>
+          
+        </div>
+        <div class="swiper-pagination-card"></div>
+      </div>
+
+        <!-- <div class="container-postagens2">
           <div class="div-pesquisa">
             <input type="text" id="input-postagens" placeholder="procure aqui">
             <button id="btn-pesquisar">
@@ -345,7 +396,7 @@
               <div class="card">
                 <a href="#">Questões Encceja</a>
               </div>
-        </div> 
+        </div>  -->
         
 
         
@@ -356,11 +407,40 @@
     <p>Desenvolvimento de Sistemas &copy; 2023. Todos os direitos reservados.</p>
     
   </footer>
-      </main> 
+</main> 
     
     <script src="./script.js"></script>
     <script type="module">
       import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.js'
+
+      var swiper = new Swiper(".cardSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination-card",
+    clickable: true,
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    }
+  }
+});
+
+window.addEventListener('resize', function () {
+  swiper.update(); // Atualiza o swiper quando a janela for redimensionada
+});
+
           var swiper = new Swiper(".mySwiper", {
         autoplay: {
         delay: 10000,
