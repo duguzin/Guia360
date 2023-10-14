@@ -379,7 +379,6 @@ body.open-pesquisa .navbar-overlay-pesquisa {
 
 .swiper-pagination-card {
     position: relative;
-    background-color: #003366;
     text-align: center;
     margin-top: 20px;
     padding: .5rem;
@@ -704,8 +703,8 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
        
 }
 @media screen and (max-width: 1030px) {
-    .section-2 {
-        padding: 2rem;
+    section.section-2 {
+        padding: 4rem;
     }
     /* .section-home {
         padding: 1rem 1.5rem;
@@ -821,7 +820,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
 }
 @media screen and (max-width: 700px) {
-    .section-2 {
+    section.section-2 {
         padding: 2rem;
     }
     .section-home {
@@ -942,8 +941,8 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
 }
 @media screen and (max-width: 420px) {
-    .section-2 {
-        padding: 2rem;
+    section.section-2 {
+        padding: 1rem;
     }
     .section-home {
         padding: 1rem;
@@ -1069,8 +1068,8 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
 }
 @media screen and (max-width: 330px) {
-    .section-2 {
-        padding: 2rem;
+    section.section-2 {
+        padding: 1rem;
     }
     .section-home {
         padding: 0.5rem 1rem;
@@ -1389,7 +1388,7 @@ input[type="tel"] {
 }
 
 .section-2 {
-    padding: 2rem;
+    padding: 2rem 4rem;
     /* display: flex; */
     background-color: #ccc;
     /* gap: 20px; */
