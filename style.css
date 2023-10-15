@@ -65,6 +65,7 @@ body {
      background-color: #003366;
      color: #fff;
      z-index: 3;
+     font-weight: 800;
      
 }
 
@@ -323,7 +324,21 @@ body.open-pesquisa .navbar-overlay-pesquisa {
     align-items: center;
     padding: 1rem;
     box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
+    height: auto;
+    background-image: url(https://fontawesome.com/images/icons-gray-bg.svg);
   }
+
+  /* .teste-image {
+    border: #003366 solid 3px; 
+    width: 100%;
+    height: 65%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://c1.staticflickr.com/3/2372/2380183266_bd37c42cdb.jpg);
+  } */
+
+
 
   #swiper-card img {
     width: 100%;
@@ -335,7 +350,6 @@ body.open-pesquisa .navbar-overlay-pesquisa {
       color: #009900;
       font-size: 18px;
       font-weight: 300;
-      margin-bottom: 15px;
   }
   .container-content-card h1 {
     color: #003366;
@@ -348,6 +362,29 @@ body.open-pesquisa .navbar-overlay-pesquisa {
     border: #003366 solid 2px;
     height: 300px;
   }
+  .swiper-card a svg {
+    margin: 20px;
+    margin-left: 25px;
+  }
+  .swiper-card a {
+    cursor: pointer;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -120%);
+    background-color: #488ed3;
+    color: #fff;
+    border-radius: 50%;
+    width: 4.5em;
+    height: 4.5em;
+    z-index: 2;
+  }
+
+  .swiper-card a:hover {
+    background-color: #5aa3ec;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+  }
+
 .swiper {
     width: 100%;
     height: 650px;
@@ -376,6 +413,7 @@ body.open-pesquisa .navbar-overlay-pesquisa {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
 }
+
 
 .swiper-pagination-card {
     position: relative;
@@ -1390,7 +1428,7 @@ input[type="tel"] {
 .section-2 {
     padding: 2rem 4rem;
     /* display: flex; */
-    background-color: #ccc;
+    background-color: #eee;
     /* gap: 20px; */
 }
 
