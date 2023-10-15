@@ -13,6 +13,57 @@
       body {
         background-image: url(https://fontawesome.com/images/icons-gray-bg.svg);
       }
+      #swiper-apostila {
+        background-color: #0f4983;
+      }
+      .navbar {
+        box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+      }
+      #navbar-burguer-pc {
+        box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+      }
+      #swiper-apostila {
+        width: 100%;
+        height: 450px;
+        display: flex;
+        padding: 14rem;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+      }
+      #swiper-apostila img {
+        width: 250px;
+        height: auto;
+      }
+      .title-apostila {
+        font-size: 32px;
+        width: 650px;
+        color: #fff;
+        font-weight: 800;
+        margin-bottom: 15px;
+      }
+      .subtitle-apostila {
+        font-size: 16px;
+        color: #fff;
+        font-weight: 300;
+        margin-bottom: 15px;
+      }
+      .button-apostila a {
+        color: #ff9900;
+        text-decoration: none;
+      }
+      .button-apostila a:hover {
+        color: #df6e08;
+      }
+      .button-apostila {
+        background-color: #fff;
+        padding: 1rem;
+        width: 200px;
+        text-align: center;
+        border-radius: 3px;
+        box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2)
+      }
+
     </style>
 </head>
 <body>
@@ -75,7 +126,30 @@
         </div>
         
 
+    
+          <!-- <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #2ca0da" class="swiper-apostila mySwiper">
+          <div class="swiper-wrapper">
         
+            <div class="swiper-slide" id="swiper-apostila">
+              <div class="image-apostila"><img src="https://pngimg.com/uploads/spongebob/spongebob_PNG3.png" alt=""></div>
+              <div class="container-apostila">
+                <div class="title-apostila" data-swiper-parallax="-300">APOSTILAS ENEM 2023: PDF grátis para download</div>
+              <div class="subtitle-apostila" data-swiper-parallax="-200">O melhor e mais completo conteúdo para você estudar para o ENEM. Material organizado em apostilas PDF para você ler e consultar quando quiser!</div>
+              <div class="button-apostila" data-swiper-parallax="-100">
+                <a href="#">BAIXAR AGORA</a>
+              </div>
+            </div>
+            
+              </div>
+ 
+
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div> -->
+        
+
     <section class="section-pesquisa">
           <div class="div-nav-pesquisa">
             <a href="./index.html"><img src="./logo.png" alt=""></a>
@@ -268,6 +342,30 @@
       </main> 
     
     <script src="./script.js"></script>
+    <script type="module">
+      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.js'
+
+      var swiper = new Swiper(".mySwiper", {
+        autoplay: {
+        delay: 10000,
+        disableOnInteraction: false,
+      },
+      speed: 600,
+      parallax: true,
+      direction: 'horizontal',
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        centeredSlides: true,
+
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    </script>
         <button onclick="voltarAoTopo()" id="btnVoltarTopo" class="escondido">
           <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#fff}</style><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
         </button>
