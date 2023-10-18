@@ -652,10 +652,10 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
 }
 
 .content7 img {
-    height: 400px;
+    height: 500px;
     width: 80%;
     border: #003366 solid 3px;
-    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5); */
     margin-bottom: 30px;
     position: relative;
 }
@@ -885,10 +885,19 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     .section-home {
         padding: 2rem;
     }
+    .section-home h3 {
+        font-size: 18px;
+    }
     .h1-home {
         font-size: 20px;
         font-weight: 600;
         margin-top: 20px;
+    }
+    .content7 img {
+        height: 350px;
+    }
+    .content7 h2 {
+        font-size: 16px;
     }
     .container, .container2 {
         height: 400px;
@@ -1007,7 +1016,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
         padding: 1rem;
     }
     .section-home h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
     .section-padding {
         padding-top: 0;
@@ -1125,6 +1134,12 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     .container-slide {
         padding: 4rem 2rem;
     }
+    .content7 img {
+        height: 300px;
+    }
+    .content7 h2 {
+        font-size: 16px;
+    }
 }
 @media screen and (max-width: 330px) {
     section.section-2 {
@@ -1132,6 +1147,9 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
     .section-home {
         padding: 0.5rem 1rem;
+    }
+    .section-home h3 {
+        font-size: 16px;
     }
     #section-padding {
         padding-top: 3rem;
@@ -1218,9 +1236,6 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
         max-height: 220px;
         width: 100%;
     }
-    .content7 h3 {
-        font-size: 16px;
-    }
     .swiper-slide img {
         padding: 2rem 0 0 0;
         height: 100%;
@@ -1263,6 +1278,12 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
     .container-slide {
         padding: 4rem 2rem;
+    }
+    .content7 img {
+        height: 250px;
+    }
+    .content7 h2 {
+        font-size: 14px;
     }
 }
 
