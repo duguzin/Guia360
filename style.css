@@ -617,7 +617,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     margin-bottom: 30px;
 }
 
-.container3, .container7 {
+.container3 {
     display: flex;
     justify-content: center;
     gap: 4rem;
@@ -628,19 +628,36 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     border-top: none;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
 }
+.container7 {
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 1rem;
+    border: #003366 solid 3px;
+    border-top: none;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+}
 
-.content5 img, .content6 img {
+.content5 img {
     height: 400px;
     width: auto;
 }
 
+.content7 h2 {
+    text-align: start;
+    margin-left: 20px;
+    color: #ff9900;
+}
 
-
-
-/* .content6 img {
+.content7 img {
     height: 400px;
-    width: auto;
-} */
+    width: 90%;
+    border: #003366 solid 3px;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    position: relative;
+}
 
 .container5 {
     display: flex;
