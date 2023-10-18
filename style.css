@@ -646,13 +646,14 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
 
 .content7 h2 {
     text-align: start;
-    margin-left: 20px;
+    margin-left: 18px;
     color: #ff9900;
+    font-size: 18px;
 }
 
 .content7 img {
     height: 400px;
-    width: 90%;
+    width: 80%;
     border: #003366 solid 3px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
     margin-bottom: 30px;
@@ -720,6 +721,9 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
 @media screen and (max-width: 850px) {
     #section-padding {
         padding-top: 6rem;
+    }
+    .content7 img {
+        width: 100%;
     }
 }
 @media screen and (max-width: 1300px) {
