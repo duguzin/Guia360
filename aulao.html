@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <title>Aulão - Guia360</title>
+  <style>
+    body {
+        background-image: url(https://fontawesome.com/images/icons-gray-bg.svg);
+    }
+  </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+        <div class="navbar-overlay-pesquisa" onclick="togglePesquisaOpen()"></div>
+
+    <button type="button" class="button-pesquisa" id="navbar-lupa" onclick="togglePesquisaOpen()">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><style>svg{fill:#fff}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+    </button>
+
+    <button type="button" class="button-menu" id="navbar-burguer" onclick="toggleMenuOpen()">
+        <span class="material-symbols-outlined">menu</span>
+    </button>
+
+        <h1 class="navbar-title">Inter Ivan</h1>
+    
+    <nav class="navbar-links"> 
+        <li class="nav-list"><a href="#" class="nav-link">Fale Conosco  |</a></li>
+        <li class="nav-list"><a href="#" class="nav-link">Saiba Mais  |</a></li>
+        <li class="nav-list"><a href="#" class="nav-link">Novidades</a></li>
+    </nav>
+
+
+    <nav class="navbar-pesquisa">
+      <input type="text" id="nav-input" onkeyup="filtrar()" placeholder="procure aqui...">
+      <svg class="svg-div" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><style>.svg-div{fill:#676767}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+      <ul id="lista-titulos"></ul>
+    </nav>
+
+    <nav class="navbar-menu">
+
+      <div class="div-login">
+        <li class="nav-list"><a href="./login.html" class="nav-link-menu" id="link-entrar">Entrar</a></li>
+        <!-- <li class="nav-list"><a href="./cadastro.html" class="nav-link-menu" id="link-cadastrar">Cadastrar</a></li>  -->
+      </div>
+        <li class="nav-list"><a href="./index.html" class="nav-link-menu" id="active">Home</a></li>
+        <li class="nav-list"><a href="./menu-simulados.html" class="nav-link-menu">Simulados</a></li>
+        <li class="nav-list"><a href="./cronograma.html" class="nav-link-menu">Cronograma</a></li>
+        <li class="nav-list"><a href="./aulao.html" class="nav-link-menu">Aulão</a></li>
+        <li class="nav-list"><a href="./perfil.html" class="nav-link-menu">Materiais de Revisão</a></li>
+        <li class="nav-list"><a href="#" class="nav-link-menu">Provas</a></li>
+        <li class="nav-list"><a href="#" class="nav-link-menu">Notas de Corte</a></li>
+        
+       
+        
+    </nav>
+    </nav>
+
+    <main>
+          <div class="button-menu-pc">
+            <button type="button" class="button-menu" id="navbar-burguer-pc" onmouseover="toggleMenuOpen()">
+              Menu<span class="material-symbols-outlined">menu</span>
+            </button>  
+          </div>
+
+          <section class="section-home" id="section-padding" style="padding-top: 4rem;">
+            <h1 class="h1-home">Bem-vindo ao Guia360: Seu Portal de Estudos para Vestibulares e Concursos!</h1>
+        <!-- <h2>Sua Jornada Rumo ao Sucesso Acadêmico Começa Aqui</h2> -->
+
+        <div class="container3">
+          <div class="content5">
+              <img src="https://c1.staticflickr.com/3/2372/2380183266_bd37c42cdb.jpg" alt="">
+            </div> 
+            <div class="content7">
+              <h3>Vídeos de Aulões do Enem</h3>
+              <p>
+                Preparar-se para o Enem e outros concursos é uma jornada desafiadora, mas com a orientação certa, você pode alcançar o sucesso acadêmico e profissional que almeja. Aqui, no Guia360, estamos comprometidos em fornecer a você as ferramentas e recursos necessários para conquistar o seu futuro.
+              </p>
+
+              <p>
+                Nossa nova seção de "Vídeos de Aulões do Enem" é uma adição emocionante à nossa plataforma. Sabemos o quão valiosos são os aulões, e é por isso que reunimos uma seleção abrangente de vídeos de alta qualidade, ministrados por especialistas em cada matéria do Enem. Com o Guia360, você terá acesso a aulas que cobrem matemática, língua portuguesa, história, geografia, ciências, e muito mais, tudo em um só lugar.
+              </p>
+
+  
+          </div>
+        </div>
+          </section>
+
+          <section class="section-2">
+
+            <div class="swiper-card cardSwiper">
+      
+              <h3 class="title-depoimentos">História:</h3>
+      
+      
+              <div class="swiper-wrapper">
+      
+                <div class="swiper-slide" id="swiper-aulao">
+                  <a href="https://youtu.be/eHwWL2EsuRg"><img src="./historia-1.jpg" alt=""></a>
+                  <div class="container-content-card">
+                    <h3>Prof. felipe de Oliveira</h3>
+                    <h1>AULÃO ENEM DE HISTÓRIA (GERAL)</h1>
+                    <div class="link-aulao">
+                       <a href="https://youtu.be/eHwWL2EsuRg">ASSISTA AGORA!</a> 
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide" id="swiper-aulao">
+                  <a href="https://youtu.be/q9-PL5iFJPk"><img src="./historia-2.jpg" alt=""></a>
+                  <div class="container-content-card">
+                    <h3>Prof. Rodrigo</h3>
+                    <h1>AULÃO DE HISTÓRIA GERAL PARA O ENEM</h1>
+                    <div class="link-aulao">
+                       <a href="https://youtu.be/q9-PL5iFJPk">ASSISTA AGORA!</a> 
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide" id="swiper-aulao">
+                  <a href="https://www.youtube.com/watch?v=HjzaeHdw5LE"><img src="./historia-3.jpg" alt=""></a>
+                  <div class="container-content-card">
+                    <h3>Prof. Rafael Duarte</h3>
+                    <h1>TUDO DE HISTÓRIA DO BRASIL QUE CAI NO ENEM!</h1>
+                    <div class="link-aulao">
+                       <a href="https://www.youtube.com/watch?v=HjzaeHdw5LE">ASSISTA AGORA!</a> 
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide" id="swiper-aulao">
+                  <a href="https://www.youtube.com/watch?v=HjzaeHdw5LE"><img src="./historia-4.jpg" alt=""></a>
+                  <div class="container-content-card">
+                    <h3>Prof. Rafael Duarte</h3>
+                    <h1>TUDO DE HISTÓRIA GERAL [AULÃO COMPLETO!]</h1>
+                    <div class="link-aulao">
+                       <a href="https://www.youtube.com/watch?v=HjzaeHdw5LE">ASSISTA AGORA!</a> 
+                    </div>
+                  </div>
+                </div>
+     
+            
+         
+            </div>
+               <div class="swiper-pagination-card"></div>
+        </div>
+        </section>
+
+        <section class="section-2">
+
+            <div class="swiper-card cardSwiper">
+      
+              <h3 class="title-depoimentos">Biologia:</h3>
+      
+      
+              <div class="swiper-wrapper">
+      
+                <div class="swiper-slide" id="swiper-aulao">
+                  <a href="https://www.youtube.com/watch?v=f7Mx_tRu-F4"><img src="./biologia-1.jpg" alt=""></a>
+                  <div class="container-content-card">
+                    <h3>Profes. Juliana Evelyn e Claudia Aguiar</h3>
+                    <h1>AULÃO DE BIOLOGIA PARA O ENEM</h1>
+                    <div class="link-aulao">
+                       <a href="https://www.youtube.com/watch?v=f7Mx_tRu-F4">ASSISTA AGORA!</a> 
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide" id="swiper-aulao">
+                  <a href="https://youtu.be/q9-PL5iFJPk"><img src="./biologia-2.jpg" alt=""></a>
+                  <div class="container-content-card">
+                    <h3>Prof. Samuel Cunha</h3>
+                    <h1>AULÃO ENEM 2022 - Revisão de Biologia</h1>
+                    <div class="link-aulao">
+                       <a href="https://youtu.be/q9-PL5iFJPk">ASSISTA AGORA!</a> 
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide" id="swiper-aulao">
+                  <a href="https://www.youtube.com/watch?v=6Ug32AjUnzc"><img src="./biologia-3.jpg" alt=""></a>
+                  <div class="container-content-card">
+                    <h3>Prof. Paulo Jubilut</h3>
+                    <h1>Aulão ENEM 2020 | Biologia</h1>
+                    <div class="link-aulao">
+                       <a href="https://www.youtube.com/watch?v=6Ug32AjUnzc">ASSISTA AGORA!</a> 
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide" id="swiper-aulao">
+                  <a href="https://www.youtube.com/watch?v=I-2AK5Jq6Rs"><img src="./biologia-4.jpg" alt=""></a>
+                  <div class="container-content-card">
+                    <h3>Prof. Victor Tibúrcio</h3>
+                    <h1>REVISÃO DE BIOLOGIA MESTRES DO ENEM 2023</h1>
+                    <div class="link-aulao">
+                       <a href="https://www.youtube.com/watch?v=I-2AK5Jq6Rs">ASSISTA AGORA!</a> 
+                    </div>
+                  </div>
+                </div>
+     
+            
+         
+            </div>
+               <div class="swiper-pagination-card"></div>
+        </div>
+        </section>
+
+        <section class="section-2">
+
+            <div class="swiper-card cardSwiper">
+      
+              <h3 class="title-depoimentos">Geografia:</h3>
+      
+      
+              <div class="swiper-wrapper">
+      
+                <div class="swiper-slide" id="swiper-aulao">
+                  <a href="https://www.youtube.com/watch?v=jQMuIRbuUvM"><img src="./geografia-1.jpg" alt=""></a>
+                  <div class="container-content-card">
+                    <h3>Prof. Raphael Carrieri</h3>
+                    <h1>AULÃO ENEM DE GEOGRAFIA | AULÃO DA SALVAÇÃO ENEM</h1>
+                    <div class="link-aulao">
+                       <a href="https://www.youtube.com/watch?v=jQMuIRbuUvM">ASSISTA AGORA!</a> 
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide" id="swiper-aulao">
+                  <a href="https://www.youtube.com/watch?v=2MIwmh_hBt4"><img src="./geografia-2.jpg" alt=""></a>
+                  <div class="container-content-card">
+                    <h3>Prof. Raphael Carrieri</h3>
+                    <h1>AULÃO DE GEOGRAFIA PARA O ENEM</h1>
+                    <div class="link-aulao">
+                       <a href="https://www.youtube.com/watch?v=2MIwmh_hBt4">ASSISTA AGORA!</a> 
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide" id="swiper-aulao">
+                  <a href="https://www.youtube.com/watch?v=sPsPr7WbgLs"><img src="./geografia-3.jpg" alt=""></a>
+                  <div class="container-content-card">
+                    <h3>Prof. Rafael Duarte</h3>
+                    <h1>TUDO DE GEOGRAFIA QUE CAI NO ENEM!! [AULÃO COMPLETO!]</h1>
+                    <div class="link-aulao">
+                       <a href="https://www.youtube.com/watch?v=sPsPr7WbgLs">ASSISTA AGORA!</a> 
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide" id="swiper-aulao">
+                  <a href="https://www.youtube.com/live/usv6REqsnvg?feature=share"><img src="./geografia-4.jpg" alt=""></a>
+                  <div class="container-content-card">
+                    <h3>Prof. Ricardo Marcílio</h3>
+                    <h1>Aulão - ENEM - 2021 - Geografia</h1>
+                    <div class="link-aulao">
+                       <a href="https://www.youtube.com/live/usv6REqsnvg?feature=share">ASSISTA AGORA!</a> 
+                    </div>
+                  </div>
+                </div>
+     
+            
+         
+            </div>
+               <div class="swiper-pagination-card"></div>
+        </div>
+        </section>
+
+
+          <footer>
+            <div><a href="#"><img src="./logo.png" alt="logo"></a></div>
+            <p>Desenvolvimento de Sistemas &copy; 2023. Todos os direitos reservados.</p>
+          </footer>
+    </main>
+
+
+<script src="./script.js"></script>
+    <script type="module">
+      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.js'
+
+      var swiper = new Swiper(".cardSwiper", {
+        autoplay: {
+        delay: 30000,
+        disableOnInteraction: false,
+      },
+  slidesPerView: 1,
+  spaceBetween: 30,
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination-card",
+    clickable: true,
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    }
+  }
+});
+
+window.addEventListener('resize', function () {
+  swiper.update(); // Atualiza o swiper quando a janela for redimensionada
+});
+</script>
+
+  <button onclick="voltarAoTopo()" id="btnVoltarTopo" class="escondido">
+    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#fff}</style><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
+  </button>
+</body>
+</html>
