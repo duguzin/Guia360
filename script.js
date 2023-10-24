@@ -1,5 +1,6 @@
 const toggleMenuOpen = () => document.body.classList.toggle("open");
 const togglePesquisaOpen = () => document.body.classList.toggle("open-pesquisa");
+const toggleMenuApostilaOpen = () => document.body.classList.toggle("open-apostila");
 const questionElement = document.getElementById('question');
 const nextButton = document.getElementById('next-button');
 const resultElement = document.getElementById('result');
