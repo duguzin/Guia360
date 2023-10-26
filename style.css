@@ -2302,8 +2302,7 @@ input[type="radio"] {
     font-size: 20px;
 }
 
-.div-menu-apostila img {
-    width: 40px;
+.div-menu-apostila .svg-materias{
     margin-left: 1rem;
 }
 
