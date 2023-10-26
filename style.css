@@ -1650,11 +1650,15 @@ footer {
 @media (max-width: 768px) {
     footer {
         flex-direction: column; 
+        padding: 2rem;
     }
     .footer-column {
         flex: 1;
         margin-right: 0;
         margin-bottom: 20px;
+    }
+    .footer-column a {
+        font-size: 14px;
     }
 }
 
@@ -1662,7 +1666,25 @@ footer {
 .div-login {
     margin: 30px 0;
     display: flex;
+    gap: 8rem;
 }
+
+.link-perfil {
+    background-color: #ff9900;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+    padding: .7rem;
+    border: #fff solid 2px;
+    transition: .3s ease;
+}
+
+.link-perfil:hover {
+    background-color: #e08b0b;
+    border: #ccc solid 2px;
+}
+
 
 #link-cadastrar, #link-entrar {
     padding: 10px 15px;
@@ -2108,6 +2130,9 @@ input[type="radio"] {
     box-shadow: 0 0 5px #003366;
   }
 
+  .section-perfil { 
+    padding: 4rem;
+  }
   
 
   .container-perfil {
@@ -2116,6 +2141,7 @@ input[type="radio"] {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
   }
   
   .container-perfil header {
@@ -2129,6 +2155,7 @@ input[type="radio"] {
   
   .container-perfil h1, h2 {
     color: #003366; 
+    font-size: 20px;
   }
   
   .profile-section {
@@ -2138,13 +2165,14 @@ input[type="radio"] {
   }
   
   .profile-info {
-    font-size: 20px;
+    font-size: 18px;
     flex: 1;
     padding: 20px;
     background-color: #2ca0da; 
     border: #003366 solid 3px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-image: url(https://fontawesome.com/images/icons-gray-bg.svg);
+    border-radius: 5px;
   }
   
   .profile-info img {
@@ -2158,15 +2186,25 @@ input[type="radio"] {
     padding: 1rem;
     flex: 1;
     background-color: #003366; 
+    border: #ff9900 solid 3px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: #fff;
+    color: #003366;
     background-image: url(https://fontawesome.com/images/icons-gray-bg.svg);
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+
+  .profile-details ul {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    border: #ff9900 solid 3px;
   }
   
   .profile-details li {
       list-style-type: none;
       margin-bottom: 10px;
-      font-size: 20px;
+      font-size: 16px;
   }
   
   .study-interests {
@@ -2176,7 +2214,8 @@ input[type="radio"] {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
+    border-radius: 5px;
   }
   
    
@@ -2193,6 +2232,9 @@ input[type="radio"] {
   }
   
   @media (max-width: 767px) {
+    .section-perfil {
+        padding: 1rem;
+    }
     .profile-section {
       flex-direction: column;
     }
@@ -2201,6 +2243,13 @@ input[type="radio"] {
       margin-right: 0;
       margin-left: 0;
     }
+    .profile-details, .study-interests {
+        margin-top: 20px;
+    }
+    .study-interests p {
+        font-size: 16px;
+    }
+ 
   }
 
 
