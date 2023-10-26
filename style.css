@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Poppins:wght@300;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins';
+    /* font-family: 'Poppins'; */
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -989,7 +991,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
     .content3 {
         border-right: #2ca0da solid 3px;
-        border-bottom: #2ca0da solid 1px;
+        border-bottom: none;
     }
     .content4 {
         border-right: #003366 solid 3px;
@@ -1138,7 +1140,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
     .content3 {
         border-right: #2ca0da solid 3px;
-        border-bottom: #2ca0da solid 1px;
+        border-bottom: none;
     }
     .content4 {
         border-right: #003366 solid 3px;
@@ -1302,7 +1304,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
     .content3 {
         border-right: #2ca0da solid 3px;
-        border-bottom: #2ca0da solid 1px;
+        border-bottom: none;
     }
     .content4 {
         border-right: #003366 solid 3px;
@@ -1428,21 +1430,6 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
         padding: 2rem 1rem;
     }
 }
-
-footer {
-    background-color: #003366;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-    font-size: 14px;
-    bottom: 0;
-    width: 100%;
-  }
-
-  footer div img {
-    width: 45px;
-    margin-bottom: 10px;
-  }
 
 
   /* Estilos para tornar o footer responsivo */
@@ -1589,6 +1576,88 @@ input[type="tel"] {
     color: #ff9900;
     font-size: 14px;
 }
+
+
+footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-wrap: wrap; /* Permite que as colunas se ajustem a tamanhos menores de tela */
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 20px; 
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+}
+
+.footer-column ul {
+    list-style: none;
+    
+}
+
+.footer-column li {
+    margin: 5px 0;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #fff;
+    transition: .3s ease;
+    font-weight: 400;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 10px;
+}
+
+.social-icons li {
+    margin-right: 15px;
+}
+
+.social-icons svg {
+    transition: .3s ease;
+}
+
+.social-icons svg:hover {
+    fill: #ff9900;
+    transform: scale(1.1);
+}
+
+.links-footer a:hover {
+    color: #ff9900;
+}
+
+.footer-img img {
+    width: 30px;
+    height: 30px;
+    
+}
+
+.footer-img {
+    flex-direction: column;
+    text-align: center;
+    font-weight: 600;
+    
+}
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; 
+    }
+    .footer-column {
+        flex: 1;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
 
 .div-login {
     margin: 30px 0;
