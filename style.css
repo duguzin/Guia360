@@ -47,7 +47,6 @@ body {
     border-bottom: 2px solid #ff9900;
 }
 
-
 .nav-list {
     list-style: none;
 }
@@ -462,6 +461,7 @@ body.open-apostila .menu-apostila {
 
 div.swiper-button-next, div.swiper-button-prev {
     color: #003366;
+    transition: .3s ease;
 }
 
 div.swiper-button-next:hover, div.swiper-button-prev:hover {
@@ -1528,7 +1528,7 @@ input[type="tel"] {
     margin-bottom: 20px;
     font-size: 16px;
     font-weight: 600;
-    background-color: rgb(253, 247, 247);
+    background-color: #eee;
 }
 
 .btn-cadastrar {
@@ -1683,6 +1683,7 @@ footer {
 .link-perfil:hover {
     background-color: #e08b0b;
     border: #ccc solid 2px;
+    transform: scale(1.1);
 }
 
 
@@ -1694,12 +1695,20 @@ footer {
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
+    transition: .3s ease;
+}
+
+.div-login li {
+    transition: .3s ease;
 }
 
 #link-entrar:hover {
     background-color: #da8507;
 }
 
+.div-login li:hover {
+    transform: scale(1.1);
+}
 .section-2 {
     padding: 2rem 4rem;
     /* display: flex; */
@@ -2134,6 +2143,9 @@ input[type="radio"] {
     padding: 4rem;
   }
   
+  #inputBusca:focus, #nav-input:focus  {
+    border: #2ca0da solid 3px;
+  }
 
   .container-perfil {
     max-width: 1200px;
