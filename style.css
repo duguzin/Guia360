@@ -1585,7 +1585,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    animation: wave 12s infinite; 
+    /* animation: wave 12s infinite;  */
 }
 
 
@@ -1664,7 +1664,7 @@ footer {
     }
 }
 
-@keyframes wave {
+/* @keyframes wave {
     0% {
         background-color: #003366;
     }
@@ -1680,7 +1680,7 @@ footer {
     100% {
         background-color: #153a5f;
     }
-}
+} */
 
 
 
