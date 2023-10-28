@@ -1564,7 +1564,7 @@ input[type="tel"] {
 }
 
 .logo-login img {
-    width: 80px;
+    width: 120px;
 }
 
 .footer-form h3 {
@@ -1583,9 +1583,11 @@ footer {
     color: #fff;
     padding: 2rem 4rem;
     display: flex;
-    flex-wrap: wrap; /* Permite que as colunas se ajustem a tamanhos menores de tela */
+    flex-wrap: wrap;
     justify-content: space-between;
+    animation: wave 12s infinite; 
 }
+
 
 .footer-column {
     flex: 1;
@@ -1661,6 +1663,26 @@ footer {
         font-size: 14px;
     }
 }
+
+@keyframes wave {
+    0% {
+        background-color: #003366;
+    }
+    25% {
+        background-color: #0c325c;
+    }
+    50% {
+        background-color: #0f467e;
+    }
+    75% {
+        background-color: #133a61;
+    }
+    100% {
+        background-color: #153a5f;
+    }
+}
+
+
 
 
 .div-login {
@@ -2134,17 +2156,22 @@ input[type="radio"] {
   /* ------------ */
 
 
-  input[type="text"]:focus {
+  /* input[type="text"]:focus {
     outline: none;
     box-shadow: 0 0 5px #003366;
-  }
+  } */
 
   .section-perfil { 
     padding: 4rem;
   }
   
-  #inputBusca:focus, #nav-input:focus  {
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus, 
+#inputBusca:focus, #nav-input:focus  {
     border: #2ca0da solid 3px;
+    outline: none;
   }
 
   .container-perfil {
