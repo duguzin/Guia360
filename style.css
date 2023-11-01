@@ -61,6 +61,7 @@ body {
      justify-content: space-between;
      width: 100%;
      height: 45px;
+     box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
      /* background-image: linear-gradient(to right, #327a9e, #003366); */
      background-color: #003366;
      color: #fff;
@@ -1608,6 +1609,7 @@ footer {
     margin: 5px 0;
 }
 
+
 .footer-column a {
     text-decoration: none;
     color: #fff;
@@ -1640,7 +1642,16 @@ footer {
 .footer-img img {
     width: 30px;
     height: 30px;
-    
+}
+
+.footer-column img {
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.footer-column img:hover {
+    transform: scale(1.1);
 }
 
 .footer-img {
