@@ -369,6 +369,7 @@ body.open-apostila .menu-apostila {
   }
   .container-content-card {
     margin: 20px;
+    height: 85px;
   }
   .container-image-card {
     border: #003366 solid 2px;
@@ -1464,7 +1465,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
 }
   
 .container-login {
-    max-width: 500px;
+    max-width: 650px;
     margin: 0 auto;
     padding: 8rem 0;
 }
@@ -2008,6 +2009,7 @@ footer {
 
 input[type="radio"] {
     margin: 10px;
+    cursor: pointer;
 }
 
 #materia-name {
