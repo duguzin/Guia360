@@ -950,9 +950,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     .div-enem img {
         height: 250px;
     }
-    .section-apostilas {
-        padding: 2rem 1rem;
-    }
+  
 }
 @media screen and (max-width: 700px) {
     section.section-2 {
@@ -1102,8 +1100,8 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
         font-size: 14px;
         font-weight: 300;
     }
-    .section-apostilas {
-        padding: 2rem 1rem;
+    section.section-apostilas {
+        padding: 0 2rem;
     }
 }
 @media screen and (max-width: 420px) {
@@ -1260,8 +1258,8 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     .div-menu-apostila {
         width: 100%;
     }
-    .section-apostilas {
-        padding: 2rem 1rem;
+    section.section-apostilas {
+        padding: 0 1rem;
     }
 }
 @media screen and (max-width: 330px) {
@@ -2309,7 +2307,7 @@ input[type="tel"]:focus,
   .section-apostilas {
     display: flex;
     flex-wrap: wrap;
-    /* padding: 2rem 4rem; */
+    padding: 1rem 4rem;
     align-items: center;
     justify-content: center;
   }
@@ -2322,6 +2320,7 @@ input[type="tel"]:focus,
     display: none;
     position: relative;
     height: auto;
+    width: 100%;
 }
 .div-menu-apostila {
   position: relative;
@@ -2331,10 +2330,10 @@ input[type="tel"]:focus,
   align-items: center;
   padding: .5rem 0;
   background-color: #003366;
-  width: 350px;
+  width: 100%;
   border-radius: 5px;
   height: 60px;
-  margin: 10px;
+  margin: 10px 0;
 }
 
 .h3-menu-apostila {
@@ -2347,6 +2346,7 @@ input[type="tel"]:focus,
 
 .h3-menu-apostila h3 {
     font-size: 16px;
+    letter-spacing: 1px;
 }
 
 .h3-apostila {
@@ -2354,7 +2354,7 @@ input[type="tel"]:focus,
     font-size: 20px;
 }
 
-.div-menu-apostila .svg-materias{
+.div-menu-apostila .svg-materias {
     margin-left: 1rem;
 }
 
@@ -2374,15 +2374,19 @@ input[type="tel"]:focus,
 .content-menu-apostila p {
     color: #676767;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .menu-apostila svg {
     fill: #676767;
     position: absolute; 
-    top: 50px;
     right: 0;
-    margin: 25px;
+    margin: 0 25px;
+    transition: .3s ease;
+}
+
+.menu-apostila svg:hover {
+    transform: scale(1.1);
 }
 
 .dropdown-button {
