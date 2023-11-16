@@ -51,8 +51,6 @@ body {
     list-style: none;
 }
 
-
-
 .navbar {
      padding: 1rem;
      position: fixed;
@@ -153,7 +151,6 @@ body.open-pesquisa {
     width: 35px;
 }
 
-
 .logo a {
     text-decoration: none;
     color: #fff;
@@ -170,9 +167,12 @@ body.open-pesquisa {
     font-weight: 500;
 }
 .navbar-title {
-    padding: 0 1.5rem;
+    /* padding: 0 1rem; */
     margin: 0;
     font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
 }
 
 .navbar-menu {
@@ -438,6 +438,48 @@ body.open-apostila .menu-apostila {
       top: 0;
       width: 100%;
       height: 100%;
+}
+
+#swiper-slide-apostila {
+    background-color: #003366;
+    width: 100%;
+    height: 100%;
+}
+
+.container-slide-apostila {
+    padding: 8rem 3rem;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    gap: 4rem;
+}
+
+.title-apostila {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.subtitle-apostila {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+
+.img-slide-apostila {
+    width: 250px;
+}
+
+.link-apostila {
+    text-decoration: none;
+    color: #ff9900;
+    padding: 15px 45px;
+    background-color: #fff;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .overlay-slide {
@@ -810,9 +852,9 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
         height: 100%;
      
     }
-    .swiper {
+    /* .swiper {
         height: 550px;
-    }
+    } */
        
 }
 @media screen and (max-width: 1030px) {
@@ -930,25 +972,25 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     .container-slide {
         padding: 6rem 4rem;
     }
-    .swiper-apostila {
-        padding: 2rem;
-        flex-direction: column;
-        gap: 2rem;
-        text-align: center;
-    }
-    .swiper-apostila img {
-        width: 250px;
-    }
-    .title-apostila {
-        font-size: 22px;
-        width: 100%;
-    }
-    .subtitle-apostila {
-        font-size: 18px;
-        font-weight: 300;
-    }
     .div-enem img {
         height: 250px;
+    }
+    .container-slide-apostila {
+        flex-wrap: wrap;
+        padding: 4rem 1rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .img-slide-apostila {
+        width: 200px;
+    }
+    .title-apostila {
+        font-size: 26px;
+    }
+    .subtitle-apostila {
+        font-size: 15px;
     }
   
 }
@@ -1083,25 +1125,25 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     .container-slide {
         padding: 5rem 2rem;
     }
-    .swiper-apostila {
-        padding: 2rem;
-        flex-direction: column;
-        gap: 0;
+    .container-slide-apostila {
+        flex-wrap: wrap;
+        padding: 4rem 1rem;
         text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
     }
-    .swiper-apostila img {
+    .img-slide-apostila {
         width: 250px;
     }
     .title-apostila {
-        font-size: 20px;
-        width: 100%;
+        font-size: 26px;
     }
     .subtitle-apostila {
         font-size: 14px;
-        font-weight: 300;
     }
     section.section-apostilas {
-        padding: 0 2rem;
+        padding: 2rem;
     }
 }
 @media screen and (max-width: 420px) {
@@ -1238,28 +1280,25 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     .div-enem img {
         height: 220px;
     }
-    .swiper-apostila {
-        padding: 2rem;
-        flex-direction: column;
+    .container-slide-apostila {
+        flex-wrap: wrap;
+        padding: 4rem 1rem;
         text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
     }
-    .swiper-apostila img {
-        width: 250px;
-        margin-top: 10px;
+    .img-slide-apostila {
+        width: 200px;
     }
     .title-apostila {
-        font-size: 20px;
-        width: 100%;
+        font-size: 24px;
     }
     .subtitle-apostila {
         font-size: 12px;
-        font-weight: 300;
-    }
-    .div-menu-apostila {
-        width: 100%;
     }
     section.section-apostilas {
-        padding: 0 1rem;
+        padding: 1rem;
     }
 }
 @media screen and (max-width: 330px) {
@@ -1408,27 +1447,6 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     .div-enem img {
         height: 150px;
     }
-    #swiper-apostila {
-        padding: 1rem;
-        flex-direction: column;
-        gap: 0;
-        text-align: center;
-    }
-    #swiper-apostila img {
-        width: 200px;
-    }
-    #swiper-apostila.title-apostila {
-        font-size: 14px;
-        text-align: center;
-    }
-    .subtitle-apostila {
-        font-size: 12px;
-        font-weight: 300;
-        text-align: center;
-    }
-    .section-apostilas {
-        padding: 2rem 1rem;
-    }
 }
 
 
@@ -1463,7 +1481,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
 }
   
 .container-login {
-    max-width: 650px;
+    max-width: 550px;
     margin: 0 auto;
     padding: 8rem 0;
 }
@@ -2345,7 +2363,7 @@ input[type="tel"]:focus,
 }
 
 .h3-menu-apostila h3 {
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 1px;
 }
 
@@ -2375,6 +2393,10 @@ input[type="tel"]:focus,
     color: #676767;
     font-size: 14px;
     font-weight: 500;
+}
+
+.content-menu-apostila:hover {
+    background-color: #eee;
 }
 
 .menu-apostila svg {
