@@ -322,7 +322,7 @@ body.open-apostila .menu-apostila {
     }
 }
 
-#swiper-card, #swiper-aulao {
+#swiper-card, #swiper-aulao, #swiper-card-notas {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -333,6 +333,7 @@ body.open-apostila .menu-apostila {
     height: auto;
     background-image: url(https://fontawesome.com/images/icons-gray-bg.svg);
   }
+  
 
   /* .teste-image {
     border: #003366 solid 3px; 
@@ -352,6 +353,12 @@ body.open-apostila .menu-apostila {
     border: #003366 solid 3px;
   }
 
+  #swiper-card-notas img {
+    width: 100%;
+    height: 180px;
+    border: #003366 solid 3px;
+  }
+
   #swiper-aulao img {
     width: 100%;
     height: auto;
@@ -367,14 +374,33 @@ body.open-apostila .menu-apostila {
     color: #003366;
     font-size: 22px;
   }
-  .container-content-card {
+  .container-content-card  {
     margin: 20px;
     height: 85px;
   }
+
+  .container-content-card-notas {
+    margin: 15px 5px;
+    height: 140px;
+  }
+
+  .container-content-card-notas h1 {
+    color: #003366;
+    font-size: 16px;
+  }
+
+  .container-content-card-notas li {
+    font-size: 14px;
+    margin-top: 10px;
+    list-style-type: circle;
+    text-align: left;
+}
+
   .container-image-card {
     border: #003366 solid 2px;
     height: 300px;
   }
+
   #swiper-aulao h1 {
     font-size: 18px;
     margin-bottom: 10px;
@@ -424,6 +450,12 @@ body.open-apostila .menu-apostila {
 .swiper {
     width: 100%;
     height: 650px;
+}
+
+.swiper-apostila {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
 }
 
 .swiper-card {
@@ -983,8 +1015,12 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
         justify-content: center;
         gap: 1rem;
     }
+    .swiper-apostila {
+        height: 550px;
+    }
     .img-slide-apostila {
-        width: 200px;
+        width: 180px;
+        height: 100px;
     }
     .title-apostila {
         font-size: 26px;
@@ -1133,8 +1169,11 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
         justify-content: center;
         gap: 1rem;
     }
+    .swiper-apostila {
+        height: 620px;
+    }
     .img-slide-apostila {
-        width: 250px;
+        width: 200px;
     }
     .title-apostila {
         font-size: 26px;
@@ -1288,6 +1327,10 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
         justify-content: center;
         gap: 1rem;
     }
+
+    .swiper-apostila {
+        height: 600px;
+    }
     .img-slide-apostila {
         width: 200px;
     }
@@ -1402,6 +1445,12 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
     .swiper {
         height: 500px;
+    }
+    .swiper-apostila {
+        height: 600px;
+    }
+    .img-slide-apostila {
+        width: 150px;
     }
     .container-login {
         width: 280px;
@@ -2300,6 +2349,9 @@ input[type="tel"]:focus,
   }
   
   @media (max-width: 767px) {
+    .title-depoimentos {
+        font-size: 18px;
+    }
     .section-perfil {
         padding: 1rem;
     }
