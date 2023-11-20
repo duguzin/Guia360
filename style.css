@@ -59,13 +59,19 @@ body {
      justify-content: space-between;
      width: 100%;
      height: 45px;
-     box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
      /* background-image: linear-gradient(to right, #327a9e, #003366); */
      background-color: #003366;
      color: #fff;
      z-index: 3;
      font-weight: 800;
 }
+
+.navbar {
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.4);
+  }
+  #navbar-burguer-pc {
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.4);
+  }
 
 .navbar-overlay, .navbar-overlay-pesquisa {
     position: fixed;
@@ -479,7 +485,7 @@ body.open-apostila .menu-apostila {
 }
 
 .container-slide-apostila {
-    padding: 8rem 3rem;
+    padding: 8rem;
     color: #fff;
     z-index: 2;
     position: relative;
@@ -501,6 +507,7 @@ body.open-apostila .menu-apostila {
 
 .img-slide-apostila {
     width: 250px;
+    height: 300px;
 }
 
 .link-apostila {
@@ -514,6 +521,10 @@ body.open-apostila .menu-apostila {
     letter-spacing: 1px;
 }
 
+#swiper-pagination-apostila {
+    position: absolute;
+    top: 450px;
+}
 .overlay-slide {
     z-index: 1;
     position: absolute;
@@ -882,11 +893,17 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     .swiper-slide img {
         /* padding: 2rem 0 0 0; */
         height: 100%;
-     
+    }
+    .img-slide-apostila {
+        width: 200px;
     }
     /* .swiper {
         height: 550px;
     } */
+    #swiper-pagination-apostila {
+        position: absolute;
+        top: 450px;
+    }
        
 }
 @media screen and (max-width: 1030px) {
@@ -1016,7 +1033,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
         gap: 1rem;
     }
     .swiper-apostila {
-        height: 550px;
+        height: 560px;
     }
     .img-slide-apostila {
         width: 180px;
@@ -1028,7 +1045,10 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     .subtitle-apostila {
         font-size: 15px;
     }
-  
+    #swiper-pagination-apostila {
+        position: absolute;
+        top: 520px;
+    }
 }
 @media screen and (max-width: 700px) {
     section.section-2 {
@@ -1170,7 +1190,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
         gap: 1rem;
     }
     .swiper-apostila {
-        height: 620px;
+        height: 640px;
     }
     .img-slide-apostila {
         width: 200px;
@@ -1181,8 +1201,12 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     .subtitle-apostila {
         font-size: 14px;
     }
-    section.section-apostilas {
-        padding: 2rem;
+    section.section-apostilas, section.section-provas  {
+        padding: 1rem 2rem;
+    }
+    #swiper-pagination-apostila {
+        position: absolute;
+        top: 600px;
     }
 }
 @media screen and (max-width: 420px) {
@@ -1329,7 +1353,7 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     }
 
     .swiper-apostila {
-        height: 600px;
+        height: 620px;
     }
     .img-slide-apostila {
         width: 200px;
@@ -1340,8 +1364,12 @@ div.swiper-button-next:hover, div.swiper-button-prev:hover {
     .subtitle-apostila {
         font-size: 12px;
     }
-    section.section-apostilas {
-        padding: 1rem;
+    section.section-apostilas, section.section-provas  {
+        padding: 1rem 2rem;
+    }
+    #swiper-pagination-apostila {
+        position: absolute;
+        top: 580px;
     }
 }
 @media screen and (max-width: 330px) {
@@ -2374,7 +2402,7 @@ input[type="tel"]:focus,
 
 
 
-  .section-apostilas {
+  .section-apostilas, .section-provas {
     display: flex;
     flex-wrap: wrap;
     padding: 1rem 4rem;
@@ -2382,7 +2410,7 @@ input[type="tel"]:focus,
     justify-content: center;
   }
 
-  .menu-apostila {
+  .menu-apostila, .menu-provas {
     background-color: #003366;
     padding: 1rem;
     margin: 20px 0;
@@ -2392,7 +2420,7 @@ input[type="tel"]:focus,
     height: auto;
     width: 100%;
 }
-.div-menu-apostila {
+.div-menu-apostila, .div-menu-provas {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -2406,7 +2434,7 @@ input[type="tel"]:focus,
   margin: 10px 0;
 }
 
-.h3-menu-apostila {
+.h3-menu-apostila, .h3-menu-provas {
     text-align: center;
     color: #003366;
     background-color: #fff;
@@ -2414,21 +2442,21 @@ input[type="tel"]:focus,
     border-radius: 5px;
 }
 
-.h3-menu-apostila h3 {
+.h3-menu-apostila h3, .h3-menu-provas h3 {
     font-size: 18px;
     letter-spacing: 1px;
 }
 
-.h3-apostila {
+.h3-apostila, .h3-provas {
     color: #fff;
     font-size: 20px;
 }
 
-.div-menu-apostila .svg-materias {
+.div-menu-apostila .svg-materias, .div-menu-provas .svg-materias {
     margin-left: 1rem;
 }
 
-.content-menu-apostila {
+.content-menu-apostila, .content-menu-provas {
     background-color: #fff;
     padding: .5rem;
     border-radius: 5px;
@@ -2436,7 +2464,7 @@ input[type="tel"]:focus,
     text-align: center;
 }
 
-.content-menu-apostila h2 {
+.content-menu-apostila h2, .content-menu-provas h2 {
     color: #ff9900;
     font-size: 16px;
 }
@@ -2447,11 +2475,12 @@ input[type="tel"]:focus,
     font-weight: 500;
 }
 
-.content-menu-apostila:hover {
+.content-menu-apostila:hover,
+.content-menu-provas:hover {
     background-color: #eee;
 }
 
-.menu-apostila svg {
+.menu-apostila svg, .menu-provas svg {
     fill: #676767;
     position: absolute; 
     right: 0;
@@ -2459,7 +2488,8 @@ input[type="tel"]:focus,
     transition: .3s ease;
 }
 
-.menu-apostila svg:hover {
+.menu-apostila svg:hover, 
+.menu-provas svg:hover {
     transform: scale(1.1);
 }
 

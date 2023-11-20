@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="shortcut icon" href="./Imagens/logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <title>Home - Guia360</title>
@@ -31,7 +31,7 @@
             <span class="material-symbols-outlined">menu</span>
         </button>
 
-            <h1 class="navbar-title">Inter Ivan</h1>
+            <a class="navbar-title" href="./index.html">Guia360</a>
         
         <nav class="navbar-links"> 
             <li class="nav-list"><a href="#" class="nav-link">Fale Conosco  |</a></li>
@@ -60,8 +60,8 @@
             <li class="nav-list"><a href="./cronograma.html" class="nav-link-menu">Cronograma</a></li>
             <li class="nav-list"><a href="./aulao.html" class="nav-link-menu">Aulão</a></li>
             <li class="nav-list"><a href="./materiais-de-revisao.html" class="nav-link-menu">Materiais de Revisão</a></li>
-            <li class="nav-list"><a href="#" class="nav-link-menu">Provas</a></li>
-            <li class="nav-list"><a href="./notas-de-corte.html" class="nav-link-menu">Notas de Corte</a></li>
+            <li class="nav-list"><a href="./provas.html" class="nav-link-menu">Provas</a></li>
+        <li class="nav-list"><a href="./notas-de-corte.html" class="nav-link-menu">Notas de Corte</a></li>
             
            <img style="margin-top: 20px;" src="https://cutekawaiiresources.files.wordpress.com/2015/10/1082506597_l.gif?w=1200&h=" alt="">
             
@@ -85,7 +85,7 @@
         <!-- Slider main container -->
 <!-- Swiper -->
 
-<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #2ca0da" class="swiper mySwiper">
+<!-- <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #2ca0da" class="swiper mySwiper">
   <div class="swiper-wrapper">
 
     <div class="swiper-slide">
@@ -134,6 +134,49 @@
   <div class="swiper-button-next"></div>
   <div class="swiper-button-prev"></div>
   <div class="swiper-pagination"></div>
+</div> -->
+
+<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #2ca0da" class="swiper-apostila mySwiper">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide" id="swiper-slide-apostila">
+      <div class="container-slide-apostila">
+        <img class="img-slide-apostila" src="https://artpoin.com/wp-content/uploads/2023/08/artpoin-bob-esponja18.png" alt="">
+        
+        <div class="content-slide-apostila">
+          <div class="title-apostila">
+          APOSTILAS ENEM 2023: PDF grátis para download
+          </div>
+
+          <div class="subtitle-apostila">O material mais top pra você se dar bem no ENEM! Tudo organizadinho em apostilas em PDF pra você ler e dar aquela conferida quando quiser!</div>
+
+          <a class="link-apostila" href="#">BAIXAR AGORA</a>
+        </div>
+    </div>
+   </div>
+    <div class="swiper-slide" id="swiper-slide-apostila">
+      <div class="container-slide-apostila">
+        <img class="img-slide-apostila" src="https://pngimg.com/uploads/spongebob/spongebob_PNG38.png" alt="">
+        
+        <div class="content-slide-apostila">
+          <div class="title-apostila">
+          PROVAS ENEM 2012-2021: PDF grátis para download
+          </div>
+
+          <div class="subtitle-apostila">O site ainda manda ver disponibilizando não só as apostilas maneiras, mas também os PDFs das provas do ENEM. Ou seja, tem tudo lá pra você estudar e arrasar!</div>
+
+          <a class="link-apostila" href="./provas.html">BAIXAR AGORA</a>
+        </div>
+    </div>
+   </div>
+   
+    </div>
+    <!-- <div class="swiper-button-next" style="color: #000;"></div>
+    <div class="swiper-button-prev" style="color: #000;"></div> -->
+
+    <div class="swiper-pagination" id="swiper-pagination-apostila"></div>
+  </div>
+
 </div>
     <section class="section-pesquisa">
           <div class="div-nav-pesquisa">
@@ -443,7 +486,7 @@
   </footer>
 </main> 
     
-    <script src="./script.js"></script>
+    <script src="./Js/script.js"></script>
     <script type="module">
       import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.js'
 
