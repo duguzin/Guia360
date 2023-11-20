@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <title>Notas - Guia360</title>
+  <style>
+    body {
+        background-image: url(https://fontawesome.com/images/icons-gray-bg.svg);
+    }
+  </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+        <div class="navbar-overlay-pesquisa" onclick="togglePesquisaOpen()"></div>
+
+    <button type="button" class="button-pesquisa" id="navbar-lupa" onclick="togglePesquisaOpen()">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><style>svg{fill:#fff}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+    </button>
+
+    <button type="button" class="button-menu" id="navbar-burguer" onclick="toggleMenuOpen()">
+        <span class="material-symbols-outlined">menu</span>
+    </button>
+
+    <a class="navbar-title" href="./index.html">Guia360</a>
+    
+    <nav class="navbar-links"> 
+        <li class="nav-list"><a href="#" class="nav-link">Fale Conosco  |</a></li>
+        <li class="nav-list"><a href="#" class="nav-link">Saiba Mais  |</a></li>
+        <li class="nav-list"><a href="#" class="nav-link">Novidades</a></li>
+    </nav>
+
+
+    <nav class="navbar-pesquisa">
+      <input type="text" id="nav-input" onkeyup="filtrar()" placeholder="procure aqui...">
+      <svg class="svg-div" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><style>.svg-div{fill:#676767}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+      <ul id="lista-titulos"></ul>
+    </nav>
+
+    <nav class="navbar-menu">
+
+      <div class="div-login">
+        <li class="nav-list"><a href="./login.html" class="nav-link-menu" id="link-entrar">Entrar</a></li>
+        <!-- <li class="nav-list"><a href="./cadastro.html" class="nav-link-menu" id="link-cadastrar">Cadastrar</a></li>  -->
+        <a class="link-perfil" href="./perfil.html">
+          <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+        </a>
+      </div>
+        <li class="nav-list"><a href="./index.html" class="nav-link-menu">Home</a></li>
+        <li class="nav-list"><a href="./menu-simulados.html" class="nav-link-menu">Simulados</a></li>
+        <li class="nav-list"><a href="./cronograma.html" class="nav-link-menu">Cronograma</a></li>
+        <li class="nav-list"><a href="./aulao.html" class="nav-link-menu">Aulão</a></li>
+        <li class="nav-list"><a href="./materiais-de-revisao.html" class="nav-link-menu">Materiais de Revisão</a></li>
+        <li class="nav-list"><a href="#" class="nav-link-menu">Provas</a></li>
+        <li class="nav-list"><a href="./notas-de-corte.html" class="nav-link-menu"  id="active">Notas de Corte</a></li>
+        
+        <img style="margin-top: 20px;" src="https://cutekawaiiresources.files.wordpress.com/2015/10/1082506597_l.gif?w=1200&h=" alt="">
+        
+    </nav>
+    </nav>
+
+    <main>
+          <div class="button-menu-pc">
+            <button type="button" class="button-menu" id="navbar-burguer-pc" onmouseover="toggleMenuOpen()">
+              Menu<span class="material-symbols-outlined">menu</span>
+            </button>  
+          </div>
+
+          <section class="section-pesquisa">
+            <div class="div-nav-pesquisa">
+              <a href="./index.html"><img src="./Imagens/logo.png" alt=""></a>
+              <input id="inputBusca" onkeyup="filtrarPc()" type="text" placeholder="pesquise aqui...">
+        
+                <svg class="svg-div" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><style>.svg-div{fill:#003366}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                <!-- <a href="#"><img src="https://th.bing.com/th/id/R.d2e2beeae6433d170dc022df12b93fdc?rik=GLAGC22r%2bOnyFw&riu=http%3a%2f%2f4.bp.blogspot.com%2f-2VLannZ9rFs%2fT0P9WweKevI%2fAAAAAAAAAQU%2fjLYY3Io5g3c%2fs1600%2fbob-esponja2.gif&ehk=GobocRVQ%2bP29nGKxbVvqqW8Z5D1teGvhKUpgD85ju54%3d&risl=&pid=ImgRaw&r=0" alt=""></a> -->
+              <ul id="lista-titulos-pc"></ul>
+            </div>
+            
+         </section>
+
+          <section class="section-home" id="section-padding">
+            <h1 class="h1-home" style="text-align: center;">Notas de Corte</h1>
+        <!-- <h2>Sua Jornada Rumo ao Sucesso Acadêmico Começa Aqui</h2> -->
+
+        <div class="container3">
+          <div class="content5">
+              <img src="https://c1.staticflickr.com/3/2372/2380183266_bd37c42cdb.jpg" alt="">
+            </div> 
+            <div class="content7">
+              <h3>Notas de Corte das Principais Universidades Brasileiras</h3>
+              <p>
+                Bem-vindo à seção de "Notas de Corte" do Guia 360. Aqui você encontrará informações valiosas sobre as notas de corte de diversas universidades brasileiras, uma referência essencial para quem está se preparando para os processos seletivos. As notas de corte representam a pontuação mínima necessária para admissão em determinado curso e universidade, sendo um guia importante para os candidatos durante sua jornada acadêmica.
+              </p>
+
+              <p>
+                Lembramos que as notas de corte podem variar de ano para ano, dependendo de diversos fatores, e é fundamental consultar os sites oficiais das universidades e do Ministério da Educação (MEC) para obter dados atualizados. Esteja preparado e informado para alcançar seus objetivos acadêmicos. Boa sorte em sua trajetória educacional!
+              </p>
+          </div>
+        </div>
+          </section>
+
+          <section class="section-2">
+
+            <div class="swiper-card cardSwiper">
+      
+              <h3 class="title-depoimentos">Notas de Corte - Principais Universidades Federais do Brasil</h3>
+              <div class="content7" style="margin: 30px 0;">
+                
+                <p>
+                    A seguir, apresentamos as notas de corte de algumas das principais universidades federais no Brasil. Estas são referentes aos processos seletivos anteriores e podem variar de ano para ano, dependendo da concorrência e do desempenho dos candidatos. É fundamental consultar os dados mais recentes nos sites oficiais das instituições e do Ministério da Educação (MEC).
+                </p>
+            </div>
+      
+              <div class="swiper-wrapper">
+      
+                <div class="swiper-slide" id="swiper-card-notas">
+                  <img src="https://th.bing.com/th/id/R.ad6c7d5954fda3ba5a558e16607a7d97?rik=Gqy7NsI32gW%2fNw&pid=ImgRaw&r=0" alt="">
+                  <div class="container-content-card-notas">
+                    <h1>1 - Universidade Federal do Rio de Janeiro (UFRJ)</h1>
+                    <li>Curso de Medicina: 820 pontos</li>
+                    <li>Engenharia Civil: 780 pontos</li>
+                    <li>Direito: 750 pontos</li>
+                  </div>
+                </div>
+
+                <div class="swiper-slide" id="swiper-card-notas">
+                  <img src="https://ufmg.br/thumbor/jOFv5IkfOQMGiU35UaFKmJuG6Aw=/0x0:2058x1302/952x600/https://ufmg.br/storage/8/9/8/8/898854d0c8ce4112bad86b7dd849fb76_15035091971301_1505489415.jpg" alt="">
+                  <div class="container-content-card-notas">
+                    <h1>2 - Universidade Federal de Minas Gerais (UFMG)</h1>
+                    <li>Psicologia: 760 pontos</li>
+                    <li>Engenharia Elétrica: 740 pontos</li>
+                    <li>Ciências Contábeis: 720 pontos</li>
+                  </div>
+                </div>
+                <div class="swiper-slide" id="swiper-card-notas">
+                  <img src="https://smapse.com/storage/2018/10/unifesp.jpg" alt="">
+                  <div class="container-content-card-notas">
+                    <h1>3 - Universidade Federal de São Paulo (UNIFESP)</h1>
+                    <li>Medicina: 830 pontos</li>
+                    <li>Ciências Biológicas: 780 pontos</li>
+                    <li>Administração: 750 pontos</li>
+                  </div>
+                </div>
+                <div class="swiper-slide" id="swiper-card-notas">
+                  <img src="https://www.opovo.com.br/noticiasimages/app/noticia_146418291334/2018/02/08/348684/UFCreitoria.jpg" alt="">
+                  <div class="container-content-card-notas">
+                    <h1>4 - Universidade Federal do Ceará (UFC)</h1>
+                    <li>Odontologia: 790 pontos</li>
+                    <li>Engenharia Mecânica: 740 pontos</li>
+                    <li>Letras: 720 pontos</li>
+                  </div>
+                </div>
+                <div class="swiper-slide" id="swiper-card-notas">
+                  <img src="https://cdn.falauniversidades.com.br/wp-content/uploads/2020/09/16174745/Faculdade-de-Direito-do-Recife.jpg" alt="">
+                  <div class="container-content-card-notas">
+                    <h1>5 - Universidade Federal de Pernambuco (UFPE)</h1>
+                    <li>Direito: 760 pontos</li>
+                    <li>Engenharia Química: 740 pontos</li>
+                    <li>Ciências Sociais: 720 pontos</li>
+                  </div>
+                </div>
+                <div class="swiper-slide" id="swiper-card-notas">
+                  <img src="https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2019/08/ufrgs.jpg?resize=768" alt="">
+                  <div class="container-content-card-notas">
+                    <h1>6 - Universidade Federal do Rio Grande do Sul (UFRGS)</h1>
+                    <li>Arquitetura e Urbanismo: 780 pontos</li>
+                    <li>Agronomia: 750 pontos</li>
+                    <li>Ciência da Computação: 720 pontos</li>
+                  </div>
+                </div>
+                <div class="swiper-slide" id="swiper-card-notas">
+                  <img src="https://th.bing.com/th/id/OIP.lcW3F-DwaU-RJnxJKGRTywHaEH?rs=1&pid=ImgDetMain" alt="">
+                  <div class="container-content-card-notas">
+                    <h1>7 - Universidade Federal de Santa Catarina (UFSC)</h1>
+                    <li>Enfermagem: 760 pontos</li>
+                    <li>Engenharia de Produção: 740 pontos</li>
+                    <li>Jornalismo: 720 pontos</li>
+                  </div>
+                </div>
+                <div class="swiper-slide" id="swiper-card-notas">
+                  <img src="https://th.bing.com/th/id/OIP.hhqwlaADYl8MWyaPLDsOSAHaFj?rs=1&pid=ImgDetMain" alt="">
+                  <div class="container-content-card-notas">
+                    <h1>8 - Universidade Federal da Bahia (UFBA)</h1>
+                    <li>Medicina: 820 pontos</li>
+                    <li>Ciências Econômicas: 780 pontos</li>
+                    <li>Geografia: 750 pontos</li>
+                  </div>
+                </div>
+                <div class="swiper-slide" id="swiper-card-notas">
+                  <img src="https://th.bing.com/th/id/R.9ac18c6e3993dbc6b3610e579f6ec5ba?rik=a0TxdOZLKs62Bg&pid=ImgRaw&r=0" alt="">
+                  <div class="container-content-card-notas">
+                    <h1>9 - Universidade Federal de Viçosa (UFV)</h1>
+                    <li>Zootecnia: 760 pontos</li>
+                    <li>Engenharia Florestal: 740 pontos</li>
+                    <li>Letras: 720 pontos</li>
+                  </div>
+                </div>
+                <div class="swiper-slide" id="swiper-card-notas">
+                  <img src="https://smapse.com/storage/2019/05/v5.jpg" alt="">
+                  <div class="container-content-card-notas">
+                    <h1>10 - Universidade Federal de Lavras (UFLA)</h1>
+                    <li>Medicina Veterinária: 780 pontos</li>
+                    <li>Engenharia de Alimentos: 750 pontos</li>
+                    <li>Química: 720 pontos</li>
+                  </div>
+                </div>
+                <div class="swiper-slide" id="swiper-card-notas">
+                  <img src="https://i1.wp.com/www.dci.com.br/wp-content/uploads/2020/10/Uberlandia.jpg?fit=2048%2C1365&ssl=1" alt="">
+                  <div class="container-content-card-notas">
+                    <h1>11 - Universidade Federal de Uberlândia (UFU)</h1>
+                    <li>Engenharia Civil: 760 pontos</li>
+                    <li>Ciências Econômicas: 740 pontos</li>
+                    <li>Letras: 720 pontos</li>
+                  </div>
+                </div>
+                <div class="swiper-slide" id="swiper-card-notas">
+                  <img src="https://th.bing.com/th/id/OIP.hkxdMLD4nH63lhlBGxFdogHaE6?rs=1&pid=ImgDetMain" alt="">
+                  <div class="container-content-card-notas">
+                    <h1>12 - Universidade Federal de Ouro Preto (UFOP)</h1>
+                    <li>Direito: 780 pontos</li>
+                    <li>Engenharia de Minas: 750 pontos</li>
+                    <li>Ciências Biológicas: 720 pontos</li>
+                  </div>
+                </div>
+                <div class="swiper-slide" id="swiper-card-notas">
+                  <img src="https://th.bing.com/th/id/R.f1fbb99c104eceef9738d7b25c97531d?rik=8QGyaGCHtfO%2fIA&pid=ImgRaw&r=0" alt="">
+                  <div class="container-content-card-notas">
+                    <h1>13 - Universidade Federal do Paraná (UFPR)</h1>
+                    <li>Medicina: 810 pontos</li>
+                    <li>Arquitetura e Urbanismo: 780 pontos</li>
+                    <li>Letras: 750 pontos</li>
+                  </div>
+                </div>
+                <div class="swiper-slide" id="swiper-card-notas">
+                  <img src="https://diariodamanhapelotas.com.br/site/wp-content/uploads/2016/01/Direito-UFPel.jpg" alt="">
+                  <div class="container-content-card-notas">
+                    <h1>14 - Universidade Federal de Pelotas (UFPel)</h1>
+                    <li>Odontologia: 770 pontos</li>
+                    <li>Engenharia Agrícola e Ambiental: 740 pontos</li>
+                    <li>Ciências Sociais: 720 pontos</li>
+                  </div>
+                </div>
+                <div class="swiper-slide" id="swiper-card-notas">
+                  <img src="https://uploads.metropoles.com/wp-content/uploads/2019/05/29171747/ufam-capa.jpg" alt="">
+                  <div class="container-content-card-notas">
+                    <h1>15 - Universidade Federal do Amazonas (UFAM)</h1>
+                    <li>Medicina: 800 pontos</li>
+                    <li>Engenharia de Produção: 750 pontos</li>
+                    <li>Filosofia: 720 pontos</li>
+                  </div>
+                </div>
+                <div class="swiper-slide" id="swiper-card-notas">
+                  <img src="https://s1.static.brasilescola.uol.com.br/be/vestibular/17a320187562175f8361fb029e6cf183.jpg" alt="">
+                  <div class="container-content-card-notas">
+                    <h1>16 - Universidade Federal de São Carlos (UFSCar)</h1>
+                    <li>Ciência da Computação: 780 pontos</li>
+                    <li>Física: 750 pontos</li>
+                    <li>Ciências Sociais: 720 pontos</li>
+                  </div>
+                </div>
+                <div class="swiper-slide" id="swiper-card-notas">
+                  <img src="https://th.bing.com/th/id/OIF.ifwmqJFAOiVdhRVTATWZXQ?rs=1&pid=ImgDetMain" alt="">
+                  <div class="container-content-card-notas">
+                    <h1>17 - Universidade Federal do Espírito Santo (UFES)</h1>
+                    <li>Engenharia Elétrica: 760 pontos</li>
+                    <li>Medicina Veterinária: 740 pontos</li>
+                    <li>Direito: 720 pontos</li>
+                  </div>
+                </div>
+                <div class="swiper-slide" id="swiper-card-notas">
+                  <img src="https://th.bing.com/th/id/OIP.yMJiSZpvDEBtb0LN7xt9DwHaE6?rs=1&pid=ImgDetMain" alt="">
+                  <div class="container-content-card-notas">
+                    <h1>18 - Universidade Federal de Alagoas (UFAL)</h1>
+                    <li>Medicina: 790 pontos</li>
+                    <li>Engenharia Química: 750 pontos</li>
+                    <li>Ciências Sociais: 720 pontos</li>
+                  </div>
+                </div>
+                <div class="swiper-slide" id="swiper-card-notas">
+                  <img src="https://th.bing.com/th/id/OIP.-LN_D0bn68Lje4iWW-CtWwHaE8?rs=1&pid=ImgDetMain" alt="">
+                  <div class="container-content-card-notas">
+                    <h1>19 - Universidade Federal de Juiz de Fora (UFJF)</h1>
+                    <li>Direito: 770 pontos</li>
+                    <li>Engenharia de Produção: 740 pontos</li>
+                    <li>Letras: 720 pontos</li>
+                  </div>
+                </div>
+                <div class="swiper-slide" id="swiper-card-notas">
+                  <img src="https://th.bing.com/th/id/R.9705e28048666348f463882ff78ab554?rik=OI%2bmYFGbl4KxJQ&riu=http%3a%2f%2fradioviva.fm.br%2fwp-content%2fuploads%2f2018%2f03%2fufla.jpg&ehk=%2bgNtkucsjZztOagz8D7WKcuFELPOF121LywBmTHQKUs%3d&risl=&pid=ImgRaw&r=0" alt="">
+                  <div class="container-content-card-notas">
+                    <h1>20 - Universidade Federal de Lavras (UFLA)</h1>
+                    <li>Agronomia: 760 pontos</li>
+                    <li>Engenharia Ambiental: 730 pontos</li>
+                    <li>Ciências Contábeis: 720 pontos</li>
+                  </div>
+                </div>
+          
+                
+                
+              </div>
+              <div class="swiper-pagination-card"></div>
+            </div>
+      
+    
+          </section>
+    
+          <footer>
+            <div class="footer-column">
+                <h3>Links Úteis</h3>
+                <ul class="links-footer">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./menu-simulados.html">Simulados</a></li>
+                    <li><a href="./cronograma.html">Cronograma</a></li>
+                    <li><a href="./aulao.html" id="active">Aulão</a></li>
+                    <li><a href="./materiais-de-revisao.html">Materiais de Revisão</a></li>
+                    <li><a href="#">Provas</a></li>
+                    <li><a href="#">Notas de Corte</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Redes Sociais</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <p>Email: guia360@gmail.com</p>
+                <p>Telefone: (123) 456-7890</p>
+  
+                <img style="margin-top: 20px;" src="https://cutekawaiiresources.files.wordpress.com/2015/10/33.gif?w=1200&h=" alt="">
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+    <script type="module">
+      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.js'
+
+      var swiper = new Swiper(".cardSwiper", {
+    //     autoplay: {
+    //     delay: 30000,
+    //     disableOnInteraction: false,
+    //   },
+  slidesPerView: 1,
+  spaceBetween: 30,
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination-card",
+    clickable: true,
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    }
+  }
+});
+
+window.addEventListener('resize', function () {
+  swiper.update(); // Atualiza o swiper quando a janela for redimensionada
+});
+
+
+</script>
+
+
+
+  <button onclick="voltarAoTopo()" id="btnVoltarTopo" class="escondido">
+    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#fff}</style><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
+  </button>
+</body>
+</html>
