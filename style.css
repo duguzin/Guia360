@@ -524,6 +524,7 @@ body.open-apostila .menu-apostila {
 #swiper-pagination-apostila {
     position: absolute;
     top: 450px;
+    z-index: 2;
 }
 .overlay-slide {
     z-index: 1;
