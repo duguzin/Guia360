@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="shortcut icon" href="./Imagens/logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <title>Home - Guia360</title>
@@ -32,18 +32,31 @@
         </button>
 
             <a class="navbar-title" href="./index.html">Guia360</a>
+           
         
-        <nav class="navbar-links"> 
+        <!-- <nav class="navbar-links"> 
             <li class="nav-list"><a href="#" class="nav-link">Fale Conosco  |</a></li>
             <li class="nav-list"><a href="#" class="nav-link">Saiba Mais  |</a></li>
             <li class="nav-list"><a href="#" class="nav-link">Novidades</a></li>
-        </nav>
+        </nav> -->
+
+
+        <div class="div-input-pc">
+          <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 512 512"><style>svg{fill:#fff}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+          <input id="inputBusca" onkeyup="filtrarPc(event)" type="text" placeholder="Pesquisar">
+        </div>
+
+        <button type="button" class="button-menu" id="navbar-burguer-pc" onmouseover="toggleMenuOpen()">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+
+        
+        
 
 
         <nav class="navbar-pesquisa">
-          <input type="text" id="nav-input" onkeyup="filtrar()" placeholder="procure aqui...">
+          <input type="text" id="nav-input" onkeyup="filtrar(event)" placeholder="procure aqui...">
           <svg class="svg-div" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><style>.svg-div{fill:#676767}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-          <ul id="lista-titulos"></ul>
         </nav>
 
         <nav class="navbar-menu">
@@ -61,9 +74,9 @@
             <li class="nav-list"><a href="./aulao.html" class="nav-link-menu">Aulão</a></li>
             <li class="nav-list"><a href="./materiais-de-revisao.html" class="nav-link-menu">Materiais de Revisão</a></li>
             <li class="nav-list"><a href="./provas.html" class="nav-link-menu">Provas</a></li>
-        <li class="nav-list"><a href="./notas-de-corte.html" class="nav-link-menu">Notas de Corte</a></li>
+            <li class="nav-list"><a href="./notas-de-corte.html" class="nav-link-menu">Notas de Corte</a></li>
             
-           <img style="margin-top: 20px;" src="https://cutekawaiiresources.files.wordpress.com/2015/10/1082506597_l.gif?w=1200&h=" alt="">
+           <img style="margin-top: 20px;" src="./Imagens/Gifs Bob Esponja/bob-esponja-menu.webp" alt="">
             
         </nav>
         </nav>
@@ -71,77 +84,13 @@
 
       <main>
 
-        <div class="button-menu-pc">
-          <button type="button" class="button-menu" id="navbar-burguer-pc" onmouseover="toggleMenuOpen()">
-            Menu<span class="material-symbols-outlined">menu</span>
-          </button>  
-        </div>
-        
-
-        <!-- <div class="logo">
-            <a href="#">Guia<span>360</span></a>
-        </div> -->
-        
-        <!-- Slider main container -->
-<!-- Swiper -->
-
-<!-- <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #2ca0da" class="swiper mySwiper">
-  <div class="swiper-wrapper">
-
-    <div class="swiper-slide">
-      <img class="image-slide" src="https://yesofcorsa.com/wp-content/uploads/2019/05/4K-Landscape-Scenery-Wallpaper-HQ.jpg" alt="Banner 1">
-      <div class="overlay-slide"></div>
-      <div class="container-slide">
-        <div class="title" data-swiper-parallax="-300">Navegue seu Caminho para o Sucesso!</div>
-      <div class="subtitle" data-swiper-parallax="-200">O Guia360 é sua bússola para os desafios acadêmicos</div>
-      <div class="text" data-swiper-parallax="-100">
-        <p>
-          Encontre o caminho mais eficaz para seus estudos e alcance o sucesso nos vestibulares e concursos. Deixe o Guia360 guiar você nessa jornada.
-        </p>
-      </div>
-    </div>
-    
-      </div>
-    <div class="swiper-slide">
-      <div class="overlay-slide"></div>
-      <img class="image-slide" src="https://th.bing.com/th/id/R.02549b58df319c593ef1e692838a4514?rik=GQAB%2bBF6oaSGog&pid=ImgRaw&r=0" alt="Banner 2">
-      <div class="container-slide">
-        <div class="title" data-swiper-parallax="-300">Descubra Seu Próprio Caminho!</div>
-      <div class="subtitle" data-swiper-parallax="-200">O Guia360: Sua bússola personalizada para o aprendizado.</div>
-      <div class="text" data-swiper-parallax="-100">
-        <p>
-          Aprender é encontrar o caminho certo. Com o Guia360, você tem as ferramentas para navegar seu próprio percurso educacional, alcançando seus objetivos.
-        </p>
-      </div>
-    </div>
-    </div> 
-      
-    <div class="swiper-slide">
-      <img class="image-slide" src="https://www.itl.cat/pngfile/big/206-2066198_new-zealand-4k-free-hd-wallpaper-free-download.jpg" alt="Banner 3">
-      <div class="overlay-slide"></div>
-      <div class="container-slide">
-        <div class="title" data-swiper-parallax="-300">Explore, Aprenda e Conquiste!</div>
-      <div class="subtitle" data-swiper-parallax="-200">Guia360: Sua bússola digital para o sucesso acadêmico.</div>
-      <div class="text" data-swiper-parallax="-100">
-        <p>
-          O conhecimento está lá fora. Explore com confiança, aprenda com dedicação e conquiste seus objetivos acadêmicos. O Guia360 está aqui para te guiar nessa jornada.
-        </p>
-      </div>
-      </div>
-      
-    </div>
-  </div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-pagination"></div>
-</div> -->
 
 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #2ca0da" class="swiper-apostila mySwiper">
   <div class="swiper-wrapper">
 
     <div class="swiper-slide" id="swiper-slide-apostila">
       <div class="container-slide-apostila">
-        <img class="img-slide-apostila" src="https://artpoin.com/wp-content/uploads/2023/08/artpoin-bob-esponja18.png" alt="">
+        <img class="img-slide-apostila" src="Imagens/Slides/bob-esponja-slide-1.png" alt="">
         
         <div class="content-slide-apostila">
           <div class="title-apostila">
@@ -150,13 +99,13 @@
 
           <div class="subtitle-apostila">O material mais top pra você se dar bem no ENEM! Tudo organizadinho em apostilas em PDF pra você ler e dar aquela conferida quando quiser!</div>
 
-          <a class="link-apostila" href="#">BAIXAR AGORA</a>
+          <a class="link-apostila" href="./materiais-de-revisao.html#section-apostilas">BAIXAR AGORA</a>
         </div>
     </div>
    </div>
     <div class="swiper-slide" id="swiper-slide-apostila">
       <div class="container-slide-apostila">
-        <img class="img-slide-apostila" src="https://pngimg.com/uploads/spongebob/spongebob_PNG38.png" alt="">
+        <img class="img-slide-apostila" src="./Imagens/Slides/bob-esponja-slide-2.png" alt="">
         
         <div class="content-slide-apostila">
           <div class="title-apostila">
@@ -165,7 +114,7 @@
 
           <div class="subtitle-apostila">O site ainda manda ver disponibilizando não só as apostilas maneiras, mas também os PDFs das provas do ENEM. Ou seja, tem tudo lá pra você estudar e arrasar!</div>
 
-          <a class="link-apostila" href="./provas.html">BAIXAR AGORA</a>
+          <a class="link-apostila" href="./provas.html#section-apostilas">BAIXAR AGORA</a>
         </div>
     </div>
    </div>
@@ -179,23 +128,15 @@
 
 </div>
     <section class="section-pesquisa">
-          <div class="div-nav-pesquisa">
-            <a href="./index.html"><img src="./logo.png" alt=""></a>
-            <input id="inputBusca" onkeyup="filtrarPc()" type="text" placeholder="pesquise aqui...">
-      
-              <svg class="svg-div" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><style>.svg-div{fill:#003366}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-              <!-- <a href="#"><img src="https://th.bing.com/th/id/R.d2e2beeae6433d170dc022df12b93fdc?rik=GLAGC22r%2bOnyFw&riu=http%3a%2f%2f4.bp.blogspot.com%2f-2VLannZ9rFs%2fT0P9WweKevI%2fAAAAAAAAAQU%2fjLYY3Io5g3c%2fs1600%2fbob-esponja2.gif&ehk=GobocRVQ%2bP29nGKxbVvqqW8Z5D1teGvhKUpgD85ju54%3d&risl=&pid=ImgRaw&r=0" alt=""></a> -->
-            <ul id="lista-titulos-pc"></ul>
-          </div>
-          
+  
     </section>
    <section class="section-home" id="section-padding">
-        <h1 class="h1-home">SEJA BEM-VINDO(A) AO GUIA360: SUA BÚSSOLA 🧭 NA JORNADA ACADÊMICA!</h1>
+        <h1 class="h1-home" style="text-align: center;">SEJA BEM-VINDO(A) AO GUIA360! 🧭 </h1>
         <!-- <h2>Sua Jornada Rumo ao Sucesso Acadêmico Começa Aqui</h2> -->
 
         <div class="container3">
           <div class="content5">
-              <img src="https://c1.staticflickr.com/3/2372/2380183266_bd37c42cdb.jpg" alt="">
+              <img src="./Imagens/bob-esponja-formatura.png" alt="">
             </div> 
             <div class="content7">
               <h3>Facilitando Sua Preparação para Conquistas Acadêmicas</h3>
@@ -344,7 +285,7 @@
         <div class="swiper-wrapper">
 
           <div class="swiper-slide" id="swiper-card">
-            <img src="https://c1.staticflickr.com/3/2372/2380183266_bd37c42cdb.jpg" alt="">
+            <img src="Imagens/bob-esponja-formatura-2.jpg" alt="">
             <a class="link-depoimento" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
             </a>
@@ -355,7 +296,7 @@
           </div>
     
           <div class="swiper-slide" id="swiper-card">
-            <img src="https://c1.staticflickr.com/3/2372/2380183266_bd37c42cdb.jpg" alt="">
+            <img src="Imagens/bob-esponja-formatura-2.jpg" alt="">
             <a class="link-depoimento" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
             </a>
@@ -366,7 +307,7 @@
           </div>
 
           <div class="swiper-slide" id="swiper-card">
-            <img src="https://c1.staticflickr.com/3/2372/2380183266_bd37c42cdb.jpg" alt="">
+            <img src="Imagens/bob-esponja-formatura-2.jpg" alt="">
             <a class="link-depoimento" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
             </a>
@@ -377,7 +318,7 @@
           </div>
 
           <div class="swiper-slide" id="swiper-card">
-            <img src="https://c1.staticflickr.com/3/2372/2380183266_bd37c42cdb.jpg" alt="">
+            <img src="Imagens/bob-esponja-formatura-2.jpg" alt="">
             <a class="link-depoimento" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
             </a>
@@ -388,7 +329,7 @@
           </div>
     
           <div class="swiper-slide" id="swiper-card">
-            <img src="https://c1.staticflickr.com/3/2372/2380183266_bd37c42cdb.jpg" alt="">
+            <img src="Imagens/bob-esponja-formatura-2.jpg" alt="">
             <a class="link-depoimento" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
             </a>
@@ -481,12 +422,12 @@
           <p>Email: guia360@gmail.com</p>
           <p>Telefone: (123) 456-7890</p>
           
-          <img style="margin-top: 20px;" src="https://cutekawaiiresources.files.wordpress.com/2015/10/37.gif?w=1200&h=" alt="">
+          <img style="margin-top: 20px;" src="./Imagens/Gifs Bob Esponja/bob-esponja-home.webp" alt="">
       </div>
   </footer>
 </main> 
     
-    <script src="./script.js"></script>
+    <script src="./Js/script.js"></script>
     <script type="module">
       import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.js'
 

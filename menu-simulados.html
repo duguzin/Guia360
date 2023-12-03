@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./Imagens/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="./Css/style.css">
     <title>Menu Simulados</title>
     <style>
         body {
@@ -13,19 +14,109 @@
             background-color: #003366;
             background-image: url(https://fontawesome.com/images/icons-gray-bg.svg);
         }
+        .navbar {
+        background-color: #fff;
+    }
+    .div-input-pc {
+        background-color: #fff;
+        border: #003366 solid 1px;
+    }
+    .div-input-pc svg {
+        fill: #003366;
+    }
+    #inputBusca {
+        color: #003366;
+    }
+    #inputBusca::placeholder {
+        color: #003366;
+    }
+    .button-menu {
+        color: #003366;
+    }
+   .voltar-svg a {
+    position: relative;
+    }
+    .section-menu-simulados {
+      padding: 6rem 4rem;
+    }
     </style>
 </head>
 <body>
 <!--   <div class="fundo-body"></div> -->
     <header>
-        <nav class="navbar-voltar">
-            <div class="voltar-svg">
-              <a href="index.html">
-                <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 0 448 512"><style>svg{fill:#003366}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
-                Voltar
-              </a>
-            </div>
-        </nav>
+      <nav class="navbar">
+
+        <div class="voltar-svg">
+          <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 0 448 512" style="fill: #003366;"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+            Voltar
+          </a>
+        </div>
+  
+        
+    <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+    <div class="navbar-overlay-pesquisa" onclick="togglePesquisaOpen()"></div>
+
+<button type="button" class="button-pesquisa" id="navbar-lupa" onclick="togglePesquisaOpen()">
+  <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512" style="fill: #003366;"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+</button>
+
+<button type="button" class="button-menu" id="navbar-burguer" onclick="toggleMenuOpen()">
+    <span class="material-symbols-outlined">menu</span>
+</button>
+
+   
+
+<!-- <nav class="navbar-links"> 
+    <li class="nav-list"><a href="#" class="nav-link">Fale Conosco  |</a></li>
+    <li class="nav-list"><a href="#" class="nav-link">Saiba Mais  |</a></li>
+    <li class="nav-list"><a href="#" class="nav-link">Novidades</a></li>
+</nav> -->
+
+
+<div class="div-input-pc">
+  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#fff}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+  <input id="inputBusca" onkeyup="filtrarPc(event)" oninput="mostrarBotao()" type="text" placeholder="Pesquisar">
+  <button id="limpar" onclick="limparInput()">
+    <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 384 512" style="fill: #003366;"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+  </button>
+</div>
+
+<button type="button" class="button-menu" id="navbar-burguer-pc" onmouseover="toggleMenuOpen()">
+  <span class="material-symbols-outlined">menu</span>
+</button>
+
+
+
+
+
+<nav class="navbar-pesquisa">
+  <input type="text" id="nav-input" onkeyup="filtrar(event)" placeholder="procure aqui...">
+  <svg class="svg-div" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><style>.svg-div{fill:#676767}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+  <ul id="lista-titulos"></ul>
+</nav>
+
+<nav class="navbar-menu">
+
+  <div class="div-login">
+    <li class="nav-list"><a href="./login.html" class="nav-link-menu" id="link-entrar">Entrar</a></li>
+    <!-- <li class="nav-list"><a href="./cadastro.html" class="nav-link-menu" id="link-cadastrar">Cadastrar</a></li>  -->
+    <a class="link-perfil" href="./perfil.html">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+    </a>
+  </div>
+    <li class="nav-list"><a href="./index.html" class="nav-link-menu">Home</a></li>
+    <li class="nav-list"><a href="./menu-simulados.html" class="nav-link-menu" id="active">Simulados</a></li>
+    <li class="nav-list"><a href="./cronograma.html" class="nav-link-menu">Cronograma</a></li>
+    <li class="nav-list"><a href="./aulao.html" class="nav-link-menu">Aulão</a></li>
+    <li class="nav-list"><a href="./materiais-de-revisao.html" class="nav-link-menu">Materiais de Revisão</a></li>
+    <li class="nav-list"><a href="./provas.html" class="nav-link-menu">Provas</a></li>
+    <li class="nav-list"><a href="./notas-de-corte.html" class="nav-link-menu">Notas de Corte</a></li>
+    
+   <img style="margin-top: 20px;" src="./Imagens/Gifs Bob Esponja/bob-esponja-menu.webp" alt="">
+    
+</nav>
+</nav>
     </header>
 
     <section class="section-menu-simulados">
@@ -44,5 +135,7 @@
               </div>
         </div>
     </section>
+
+    <script src="./Js/script.js"></script>
 </body>
 </html>

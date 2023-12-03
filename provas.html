@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="shortcut icon" href="./Imagens/logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <title>Home - Guia360</title>
@@ -19,54 +19,67 @@
 <body>
     <!-- <div class="fundo-body"></div> -->
       <header>
-          <nav class="navbar">
-              <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
-              <div class="navbar-overlay-pesquisa" onclick="togglePesquisaOpen()"></div>
-  
-          <button type="button" class="button-pesquisa" id="navbar-lupa" onclick="togglePesquisaOpen()">
-            <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><style>svg{fill:#fff}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-          </button>
-  
-          <button type="button" class="button-menu" id="navbar-burguer" onclick="toggleMenuOpen()">
-              <span class="material-symbols-outlined">menu</span>
-          </button>
-  
-          <a class="navbar-title" href="./index.html">Guia360</a>
-          
-          <nav class="navbar-links"> 
-              <li class="nav-list"><a href="#" class="nav-link">Fale Conosco  |</a></li>
-              <li class="nav-list"><a href="#" class="nav-link">Saiba Mais  |</a></li>
-              <li class="nav-list"><a href="#" class="nav-link">Novidades</a></li>
-          </nav>
-  
-  
-          <nav class="navbar-pesquisa">
-            <input type="text" id="nav-input" onkeyup="filtrar()" placeholder="procure aqui...">
-            <svg class="svg-div" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><style>.svg-div{fill:#676767}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-            <ul id="lista-titulos"></ul>
-          </nav>
-  
-          <nav class="navbar-menu">
-  
-            <div class="div-login">
-              <li class="nav-list"><a href="./login.html" class="nav-link-menu" id="link-entrar">Entrar</a></li>
-              <!-- <li class="nav-list"><a href="./cadastro.html" class="nav-link-menu" id="link-cadastrar">Cadastrar</a></li>  -->
-              <a class="link-perfil" href="./perfil.html">
-                <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
-              </a>
-            </div>
-              <li class="nav-list"><a href="./index.html" class="nav-link-menu">Home</a></li>
-              <li class="nav-list"><a href="./menu-simulados.html" class="nav-link-menu">Simulados</a></li>
-              <li class="nav-list"><a href="./cronograma.html" class="nav-link-menu">Cronograma</a></li>
-              <li class="nav-list"><a href="./aulao.html" class="nav-link-menu">Aulão</a></li>
-              <li class="nav-list"><a href="./materiais-de-revisao.html" class="nav-link-menu">Materiais de Revisão</a></li>
-              <li class="nav-list"><a href="./provas.html" class="nav-link-menu" id="active">Provas</a></li>
-              <li class="nav-list"><a href="./notas-de-corte.html" class="nav-link-menu">Notas de Corte</a></li>
-                
+        <nav class="navbar">
+          <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+          <div class="navbar-overlay-pesquisa" onclick="togglePesquisaOpen()"></div>
 
-              <img style="margin-top: 20px;" src="https://cutekawaiiresources.files.wordpress.com/2015/10/1082506597_l.gif?w=1200&h=" alt="">
-          </nav>
-          </nav>
+      <button type="button" class="button-pesquisa" id="navbar-lupa" onclick="togglePesquisaOpen()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><style>svg{fill:#fff}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+      </button>
+
+      <button type="button" class="button-menu" id="navbar-burguer" onclick="toggleMenuOpen()">
+          <span class="material-symbols-outlined">menu</span>
+      </button>
+
+          <a class="navbar-title" href="./index.html">Guia360</a>
+         
+      
+      <!-- <nav class="navbar-links"> 
+          <li class="nav-list"><a href="#" class="nav-link">Fale Conosco  |</a></li>
+          <li class="nav-list"><a href="#" class="nav-link">Saiba Mais  |</a></li>
+          <li class="nav-list"><a href="#" class="nav-link">Novidades</a></li>
+      </nav> -->
+
+
+      <div class="div-input-pc">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 512 512"><style>svg{fill:#fff}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+        <input id="inputBusca" onkeyup="filtrarPc(event)" type="text" placeholder="Pesquisar">
+      </div>
+
+      <button type="button" class="button-menu" id="navbar-burguer-pc" onmouseover="toggleMenuOpen()">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+
+      
+      
+
+
+      <nav class="navbar-pesquisa">
+        <input type="text" id="nav-input" onkeyup="filtrar(event)" placeholder="procure aqui...">
+        <svg class="svg-div" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><style>.svg-div{fill:#676767}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+      </nav>
+
+      <nav class="navbar-menu">
+
+        <div class="div-login">
+          <li class="nav-list"><a href="./login.html" class="nav-link-menu" id="link-entrar">Entrar</a></li>
+          <!-- <li class="nav-list"><a href="./cadastro.html" class="nav-link-menu" id="link-cadastrar">Cadastrar</a></li>  -->
+          <a class="link-perfil" href="./perfil.html">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+          </a>
+        </div>
+          <li class="nav-list"><a href="./index.html" class="nav-link-menu">Home</a></li>
+          <li class="nav-list"><a href="./menu-simulados.html" class="nav-link-menu">Simulados</a></li>
+          <li class="nav-list"><a href="./cronograma.html" class="nav-link-menu">Cronograma</a></li>
+          <li class="nav-list"><a href="./aulao.html" class="nav-link-menu">Aulão</a></li>
+          <li class="nav-list"><a href="./materiais-de-revisao.html" class="nav-link-menu">Materiais de Revisão</a></li>
+          <li class="nav-list"><a href="./provas.html" class="nav-link-menu" id="active">Provas</a></li>
+          <li class="nav-list"><a href="./notas-de-corte.html" class="nav-link-menu">Notas de Corte</a></li>
+          
+         <img style="margin-top: 20px;" src="./Imagens/Gifs Bob Esponja/bob-esponja-menu.webp" alt="">
+          
+      </nav>
+      </nav>
       </header>
       <main>
         <div class="button-menu-pc">
@@ -89,7 +102,7 @@
   
                     <div class="subtitle-apostila">O material mais top pra você se dar bem no ENEM! Tudo organizadinho em apostilas em PDF pra você ler e dar aquela conferida quando quiser!</div>
       
-                    <a class="link-apostila" href="#">BAIXAR AGORA</a>
+                    <a class="link-apostila" href="materiais-de-revisao.html#section-apostilas">BAIXAR AGORA</a>
                   </div>
               </div>
              </div>
@@ -104,7 +117,7 @@
   
                     <div class="subtitle-apostila">O site ainda manda ver disponibilizando não só as apostilas maneiras, mas também os PDFs das provas do ENEM. Ou seja, tem tudo lá pra você estudar e arrasar!</div>
       
-                    <a class="link-apostila" href="./provas.html">BAIXAR AGORA</a>
+                    <a class="link-apostila" href="./provas.html#section-apostilas">BAIXAR AGORA</a>
                   </div>
               </div>
              </div>
@@ -118,23 +131,13 @@
       
           </div>
 
-          <section class="section-pesquisa">
-            <div class="div-nav-pesquisa">
-              <a href="./index.html"><img src="./logo.png" alt=""></a>
-              <input id="inputBusca" onkeyup="filtrarPc()" type="text" placeholder="pesquise aqui...">
-        
-                <svg class="svg-div" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><style>.svg-div{fill:#003366}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-                <!-- <a href="#"><img src="https://th.bing.com/th/id/R.d2e2beeae6433d170dc022df12b93fdc?rik=GLAGC22r%2bOnyFw&riu=http%3a%2f%2f4.bp.blogspot.com%2f-2VLannZ9rFs%2fT0P9WweKevI%2fAAAAAAAAAQU%2fjLYY3Io5g3c%2fs1600%2fbob-esponja2.gif&ehk=GobocRVQ%2bP29nGKxbVvqqW8Z5D1teGvhKUpgD85ju54%3d&risl=&pid=ImgRaw&r=0" alt=""></a> -->
-              <ul id="lista-titulos-pc"></ul>
-            </div>
-            
-         </section>
+          <section class="section-pesquisa"></section>
 
           <section class="section-home" id="section-padding">
            
           </section>
 
-          <section class="section-provas">
+          <section class="section-provas" id="section-apostilas">
             <div class="div-menu-provas">
                 <svg class="svg-materias" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 480h48c11.4 0 21.9-6 27.6-15.9l112-192c5.8-9.9 5.8-22.1 .1-32.1S555.5 224 544 224H144c-11.4 0-21.9 6-27.6 15.9L48 357.1V96c0-8.8 7.2-16 16-16H181.5c4.2 0 8.3 1.7 11.3 4.7l26.5 26.5c21 21 49.5 32.8 79.2 32.8H416c8.8 0 16 7.2 16 16v32h48V160c0-35.3-28.7-64-64-64H298.5c-17 0-33.3-6.7-45.3-18.7L226.7 50.7c-12-12-28.3-18.7-45.3-18.7H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H87.7 384z"/></svg>
                 <h3 class="h3-provas">Enem 2012</h3>
@@ -146,14 +149,14 @@
                         <h3>Enem 2012 1º dia de aplicação regular</h3>
                     </div>
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2012 1º dia de aplicação regular/Gabarito/Gabarito_2012_Azul.pdf" download="Gabarito_2012_Azul.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Gabarito</h2>  
                     </div>
 
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2012 1º dia de aplicação regular/Prova_2012_Azul.pdf" download="Prova_2012_Azul.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Prova</h2>  
@@ -172,14 +175,14 @@
                         <h3>Enem 2012 2º dia de aplicação regular</h3>
                     </div>
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2012 2º dia de aplicação regular/Gabarito/Gabarito_2012_azul2.pdf" download="Gabarito_2012_azul2.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Gabarito</h2>  
                     </div>
 
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2012 2º dia de aplicação regular/Prova_2012_azul2.pdf" download="Prova_2012_azul2.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Prova</h2>  
@@ -198,14 +201,14 @@
                         <h3>Enem 2013 1º dia de aplicação regular</h3>
                     </div>
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2013 1º dia de aplicação regular/Gabarito/Gabarito_2013.pdf" download="Gabarito_2013.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Gabarito</h2>  
                     </div>
 
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2013 1º dia de aplicação regular/Prova_2013_Azul.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Prova</h2>  
@@ -224,14 +227,14 @@
                         <h3>Enem 2013 2º dia de aplicação regular</h3>
                     </div>
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2013 2º dia de aplicação regular/Gabarito/Gabarito_2013_azul2.pdf" download="Gabarito_2013_azul2.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Gabarito</h2>  
                     </div>
 
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2013 2º dia de aplicação regular/Prova_2013_azul2.pdf" download="Prova_2013_azul2.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Prova</h2>  
@@ -250,14 +253,14 @@
                         <h3>Enem 2014 1º dia de aplicação regular</h3>
                     </div>
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2014 1º dia de aplicação regular/Gabarito/Gabarito_2014_Branca.pdf" download="Gabarito_2014_Branca.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Gabarito</h2>  
                     </div>
 
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2014 1º dia de aplicação regular/Prova_2014_Branca.pdf" download="Prova_2014_Branca.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Prova</h2>  
@@ -276,14 +279,14 @@
                         <h3>Enem 2014 2º dia de aplicação regular</h3>
                     </div>
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2014 2º dia de aplicação regular/Gabarito/Gabarito_2014_Cinza.pdf" download="Gabarito_2014_Cinza.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Gabarito</h2>  
                     </div>
 
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2014 2º dia de aplicação regular/Prova_2014_Cinza.pdf" download="Prova_2014_Cinza.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Prova</h2>  
@@ -302,14 +305,14 @@
                         <h3>Enem 2015 1º dia de aplicação regular</h3>
                     </div>
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2015 1º dia de aplicação regular/Gabarito/Gabarito_2015_Azul.pdf" download="Gabarito_2015_Azul.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Gabarito</h2>  
                     </div>
 
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2015 1º dia de aplicação regular/Prova_2015_Azul.pdf" download="Prova_2015_Azul.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Prova</h2>  
@@ -328,14 +331,14 @@
                         <h3>Enem 2015 2º dia de aplicação regular</h3>
                     </div>
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2015 2º dia de aplicação regular/Gabarito/Gabarito_2015_azul2.pdf" download="Gabarito_2015_azul2.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Gabarito</h2>  
                     </div>
 
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2015 2º dia de aplicação regular/Prova_2015_azul2.pdf" download="Prova_2015_azul2.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Prova</h2>  
@@ -354,14 +357,14 @@
                         <h3>Enem 2016 1º dia de aplicação regular</h3>
                     </div>
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2016 1º dia de aplicação regular/Gabarito/Gabarito_2016_Azul.pdf" download="Gabarito_2016_Azul.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Gabarito</h2>  
                     </div>
 
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2016 1º dia de aplicação regular/Prova_2016_Azul.pdf" download="Prova_2016_Azul.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Prova</h2>  
@@ -380,14 +383,14 @@
                         <h3>Enem 2016 2º dia de aplicação regular</h3>
                     </div>
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2016 2º dia de aplicação regular/Gabarito/Gabarito_2016_azul2.pdf" download="Gabarito_2016_azul2.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Gabarito</h2>  
                     </div>
 
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2016 2º dia de aplicação regular/Prova_2016_azul2.pdf" download="Prova_2016_azul2.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Prova</h2>  
@@ -406,14 +409,14 @@
                         <h3>Enem 2017 1º dia de aplicação regular</h3>
                     </div>
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2017 1º dia de aplicação regular/Gabarito/Gabarito_2017_azul.pdf" download="Gabarito_2017_azul.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Gabarito</h2>  
                     </div>
 
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2017 1º dia de aplicação regular/Prova_2017_Azul.pdf" download="Prova_2017_Azul.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Prova</h2>  
@@ -432,14 +435,14 @@
                         <h3>Enem 2017 2º dia de aplicação regular</h3>
                     </div>
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2017 2º dia de aplicação regular/Gabarito/Gabarito_2017_azul2.pdf" download="Gabarito_2017_azul2.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Gabarito</h2>  
                     </div>
 
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2017 2º dia de aplicação regular/Prova_2017_azul2.pdf" download="Prova_2017_azul2.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Prova</h2>  
@@ -458,14 +461,14 @@
                         <h3>Enem 2018 1º dia de aplicação regular</h3>
                     </div>
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2018 1º dia de aplicação regular/Gabarito/Gabarito_2018_Azul_dia1.pdf" download="Gabarito_2018_Azul_dia1.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Gabarito</h2>  
                     </div>
 
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2018 1º dia de aplicação regular/Prova_2018_Azul.pdf" download="Prova_2018_Azul.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Prova</h2>  
@@ -484,14 +487,14 @@
                         <h3>Enem 2018 2º dia de aplicação regular</h3>
                     </div>
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2018 2º dia de aplicação regular/Gabarito/Gabarito_2018_azul.pdf" download="Gabarito_2018_azul.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Gabarito</h2>  
                     </div>
 
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2018 2º dia de aplicação regular/Prova 2018_azul2.pdf" download="Prova 2018_azul2.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Prova</h2>  
@@ -510,14 +513,14 @@
                         <h3>Enem 2019 1º dia de aplicação regular</h3>
                     </div>
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2019 1º dia de aplicação regular/Gabarito/Gabarito_2019_Azul.pdf" download="Gabarito_2019_Azul.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Gabarito</h2>  
                     </div>
 
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2019 1º dia de aplicação regular/Prova_2019_Azul.pdf" download="Prova_2019_Azul.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Prova</h2>  
@@ -536,14 +539,14 @@
                         <h3>Enem 2019 2º dia de aplicação regular</h3>
                     </div>
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2019 2º dia de aplicação regular/Gabarito/Gabarito_2019_Azul_dia2.pdf" download="Gabarito_2019_Azul_dia2.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Gabarito</h2>  
                     </div>
 
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2019 2º dia de aplicação regular/Prova_2019_Azul_dia2.pdf" download="Prova_2019_Azul_dia2.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Prova</h2>  
@@ -562,14 +565,14 @@
                         <h3>Enem 2020 1º dia de aplicação regular</h3>
                     </div>
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2020 1º dia da aplicação regular/Gabaritos 2020/Gabarito_2020_Amarela.pdf" download="Gabarito_2020_Amarela.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Gabarito</h2>  
                     </div>
 
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2020 1º dia da aplicação regular/Prova_2020_Amarela.pdf" download="Prova_2020_Amarela.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Prova</h2>  
@@ -588,14 +591,14 @@
                         <h3>Enem 2020 2º dia de aplicação regular</h3>
                     </div>
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2020 2º dia da aplicação regular/Gabarito 2020/Gabarito_2020_Amarelo.pdf" download="Gabarito_2020_Amarelo.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Gabarito</h2>  
                     </div>
 
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2020 2º dia da aplicação regular/Prova_2020_Amarelo.pdf" download="Prova_2020_Amarelo.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Prova</h2>  
@@ -614,14 +617,14 @@
                         <h3>Enem 2021 1º dia de aplicação regular</h3>
                     </div>
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2021 1º dia da aplicação regular/Gabaritos 2021/Gabarito_2021_Amarela.pdf" download="Gabarito_2021_Amarela.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Gabarito</h2>  
                     </div>
 
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2021 1º dia da aplicação regular/Prova_2021_Amarela.pdf" download="Prova_2021_Amarela.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Prova</h2>  
@@ -640,14 +643,14 @@
                         <h3>Enem 2021 2º dia de aplicação regular</h3>
                     </div>
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2021 2º dia da aplicação regular/Gabaritos 2021_2ºdia/Gabarito_2021_Amarelo.pdf" download="Gabarito_2021_Amarelo.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Gabarito</h2>  
                     </div>
 
                     <div class="content-menu-provas">
-                      <a href="#">
+                      <a href="./Provas Enem/Enem 2021 2º dia da aplicação regular/Prova_2021_Amarela.pdf" download="Prova_2021_Amarela.pdf">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
                       </a>
                         <h2>Prova</h2>  
@@ -668,8 +671,8 @@
                     <li><a href="./cronograma.html">Cronograma</a></li>
                     <li><a href="./aulao.html">Aulão</a></li>
                     <li><a href="./materiais-de-revisao.html">Materiais de Revisão</a></li>
-                    <li><a href="./provas.html" id="active">Provas</a></li>
-                    <li><a href="./notas-de-corte.html">Notas de Corte</a></li>
+                    <li><a href="./provas.html">Provas</a></li>
+                    <li><a href="./notas-de-corte.html" id="active">Notas de Corte</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -685,11 +688,11 @@
                 <p>Email: guia360@gmail.com</p>
                 <p>Telefone: (123) 456-7890</p>
 
-                <img style="margin-top: 20px;" src="https://cutekawaiiresources.files.wordpress.com/2015/10/34.gif?w=1200&h=" alt="">
+                <img style="margin-top: 20px;" src="./Imagens/Gifs Bob Esponja/bob-esponja-provas.webp" alt="">
             </div>
         </footer>
       </main>
-      <script src="./script.js"></script>
+      <script src="./Js/script.js"></script>
       <script type="module">
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.js'
   

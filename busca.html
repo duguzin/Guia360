@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="shortcut icon" href="./Imagens/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <title>Notas - Guia360</title>
+  <style>
+    body {
+        background-image: url(https://fontawesome.com/images/icons-gray-bg.svg);
+        background-color: #003366;
+    }
+    .navbar {
+        background-color: #fff;
+    }
+    .div-input-pc {
+        background-color: #fff;
+        border: #003366 solid 1px;
+    }
+    .div-input-pc svg {
+        fill: #003366;
+    }
+    #inputBusca {
+        color: #003366;
+    }
+    #inputBusca::placeholder {
+        color: #003366;
+    }
+    .button-menu {
+        color: #003366;
+    }
+    footer {
+       margin-top: 10rem;
+       box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.4);
+    }
+    .voltar-svg a {
+      position: relative;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+
+        <div class="voltar-svg">
+          <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem" viewBox="0 0 448 512" style="fill: #003366;"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+            Voltar
+          </a>
+        </div>
+  
+        
+    <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+    <div class="navbar-overlay-pesquisa" onclick="togglePesquisaOpen()"></div>
+
+<button type="button" class="button-pesquisa" id="navbar-lupa" onclick="togglePesquisaOpen()">
+  <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512" style="fill: #003366;"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+</button>
+
+<button type="button" class="button-menu" id="navbar-burguer" onclick="toggleMenuOpen()">
+    <span class="material-symbols-outlined">menu</span>
+</button>
+
+   
+
+<!-- <nav class="navbar-links"> 
+    <li class="nav-list"><a href="#" class="nav-link">Fale Conosco  |</a></li>
+    <li class="nav-list"><a href="#" class="nav-link">Saiba Mais  |</a></li>
+    <li class="nav-list"><a href="#" class="nav-link">Novidades</a></li>
+</nav> -->
+
+
+<div class="div-input-pc">
+  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#fff}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+  <input id="inputBusca" onkeyup="filtrarPc(event)" oninput="mostrarBotao()" type="text" placeholder="Pesquisar">
+  <button id="limpar" onclick="limparInput()">
+    <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 384 512" style="fill: #003366;"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+  </button>
+</div>
+
+<button type="button" class="button-menu" id="navbar-burguer-pc" onmouseover="toggleMenuOpen()">
+  <span class="material-symbols-outlined">menu</span>
+</button>
+
+
+
+
+
+<nav class="navbar-pesquisa">
+  <input type="text" id="nav-input" onkeyup="filtrar(event)" placeholder="procure aqui...">
+  <svg class="svg-div" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><style>.svg-div{fill:#676767}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+</nav>
+
+<nav class="navbar-menu">
+
+  <div class="div-login">
+    <li class="nav-list"><a href="./login.html" class="nav-link-menu" id="link-entrar">Entrar</a></li>
+    <!-- <li class="nav-list"><a href="./cadastro.html" class="nav-link-menu" id="link-cadastrar">Cadastrar</a></li>  -->
+    <a class="link-perfil" href="./perfil.html">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+    </a>
+  </div>
+    <li class="nav-list"><a href="./index.html" class="nav-link-menu">Home</a></li>
+    <li class="nav-list"><a href="./menu-simulados.html" class="nav-link-menu">Simulados</a></li>
+    <li class="nav-list"><a href="./cronograma.html" class="nav-link-menu">Cronograma</a></li>
+    <li class="nav-list"><a href="./aulao.html" class="nav-link-menu">Aulão</a></li>
+    <li class="nav-list"><a href="./materiais-de-revisao.html" class="nav-link-menu">Materiais de Revisão</a></li>
+    <li class="nav-list"><a href="./provas.html" class="nav-link-menu">Provas</a></li>
+    <li class="nav-list"><a href="./notas-de-corte.html" class="nav-link-menu">Notas de Corte</a></li>
+    
+   <img style="margin-top: 20px;" src="./Imagens/Gifs Bob Esponja/bob-esponja-menu.webp" alt="">
+    
+</nav>
+</nav>
+    <main>
+         <section class="section-pesquisa"></section>
+
+         <section class="section-busca" id="section-padding">
+            <div class="container-header-busca">
+                <h3>Resultados da Pesquisa</h3>
+                <h1>Guia360</h1>
+
+                <div class="div-input-resultados">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.3em" viewBox="0 0 512 512" style="fill: #003366;"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                    <input id="input-resultados" onkeyup="filtrarResul(event)" oninput="mostrarBotao()"  type="text" placeholder="Pesquisar">
+                    <button id="limpar-resultados" onclick="limparInput()">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 384 512" style="fill: #fff;"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                    </button>
+                    
+                </div>
+            </div>
+
+              <ul id="lista-titulos-resultados"></ul>  
+         
+            
+         </section>
+
+          <footer>
+            <div class="footer-column">
+                <h3>Links Úteis</h3>
+                <ul class="links-footer">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./menu-simulados.html">Simulados</a></li>
+                    <li><a href="./cronograma.html">Cronograma</a></li>
+                    <li><a href="./aulao.html">Aulão</a></li>
+                    <li><a href="./materiais-de-revisao.html">Materiais de Revisão</a></li>
+                    <li><a href="./provas.html">Provas</a></li>
+                    <li><a href="./notas-de-corte.html">Notas de Corte</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Redes Sociais</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <p>Email: guia360@gmail.com</p>
+                <p>Telefone: (123) 456-7890</p>
+  
+                <img style="margin-top: 20px;" src="./Imagens/Gifs Bob Esponja/bob-esponja-notas-de-corte.webp" alt="">
+            </div>
+        </footer>
+    </main>
+
+    <script src="./Js/script.js"></script>
+    <script>
+
+document.addEventListener('DOMContentLoaded', function () {
+  var searchTerm = getUrlParameter('search');
+  var inputResultados = document.getElementById('input-resultados');
+  var ulResultados = document.getElementById('lista-titulos-resultados');
+
+  if (searchTerm) {
+    // Atualiza o campo de input com o termo de pesquisa
+    inputResultados.value = searchTerm;
+
+    // Fetch do JSON para obter os resultados reais
+    fetch('./Json/api.json')
+      .then(res => res.json())
+      .then(json => {
+        // Limpa a lista antes de adicionar os novos resultados
+        ulResultados.innerHTML = '';
+
+        // Filtra os resultados com base no termo de pesquisa
+        var resultadosFiltrados = json.filter(titulo =>
+          titulo.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          (titulo.description && titulo.description.toLowerCase().includes(searchTerm.toLowerCase()))
+        );
+
+        // Atualiza a lista com os resultados reais do JSON
+        resultadosFiltrados.forEach(titulo => {
+          var li = document.createElement('li');
+          var link = document.createElement('a');
+          link.href = titulo.link;
+          link.textContent = titulo.title + (titulo.description ? ' - ' + titulo.description : '');
+          li.appendChild(link);
+          ulResultados.appendChild(li);
+        });
+
+        // Se não houver resultados, exibe uma mensagem indicando a ausência de correspondências
+        if (resultadosFiltrados.length === 0) {
+          var li = document.createElement('li');
+          li.innerHTML = `<strong>Nenhum resultado encontrado para:</strong> ` + `<span style="font-style: italic;">${searchTerm}</span><img src="https://cutekawaiiresources.files.wordpress.com/2015/10/30.gif?w=1200&h=" style="width: 100px; position: absolute; right: 0; margin-top: 40px;">`;
+          ulResultados.appendChild(li);
+        }
+      })
+      .catch(error => console.error('Erro ao carregar JSON:', error));
+  }
+});
+
+// Função para obter parâmetros da URL
+function getUrlParameter(name) {
+  name = name.replace(/[\[\]]/g, '\\$&');
+  var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+      results = regex.exec(window.location.href);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+</script>
+    
+  <button onclick="voltarAoTopo()" id="btnVoltarTopo" class="escondido">
+    <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#fff}</style><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
+  </button>
+</body>
+</html>

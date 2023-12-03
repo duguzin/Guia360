@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="shortcut icon" href="./Imagens/logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <title>Aulão - Guia360</title>
@@ -18,55 +18,67 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
-        <div class="navbar-overlay-pesquisa" onclick="togglePesquisaOpen()"></div>
+  <nav class="navbar">
+    <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+    <div class="navbar-overlay-pesquisa" onclick="togglePesquisaOpen()"></div>
 
-    <button type="button" class="button-pesquisa" id="navbar-lupa" onclick="togglePesquisaOpen()">
-      <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><style>svg{fill:#fff}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-    </button>
+<button type="button" class="button-pesquisa" id="navbar-lupa" onclick="togglePesquisaOpen()">
+  <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><style>svg{fill:#fff}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+</button>
 
-    <button type="button" class="button-menu" id="navbar-burguer" onclick="toggleMenuOpen()">
-        <span class="material-symbols-outlined">menu</span>
-    </button>
+<button type="button" class="button-menu" id="navbar-burguer" onclick="toggleMenuOpen()">
+    <span class="material-symbols-outlined">menu</span>
+</button>
 
     <a class="navbar-title" href="./index.html">Guia360</a>
+   
+
+<!-- <nav class="navbar-links"> 
+    <li class="nav-list"><a href="#" class="nav-link">Fale Conosco  |</a></li>
+    <li class="nav-list"><a href="#" class="nav-link">Saiba Mais  |</a></li>
+    <li class="nav-list"><a href="#" class="nav-link">Novidades</a></li>
+</nav> -->
+
+
+<div class="div-input-pc">
+  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" style="fill: #fff;"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+  <input id="inputBusca" onkeyup="filtrarPc(event)" oninput="mostrarBotao()" type="text" placeholder="Pesquisar">
+  <button id="limpar" onclick="limparInput()">
+    <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 384 512" style="fill: #fff;"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+  </button>
+</div>
+
+<button type="button" class="button-menu" id="navbar-burguer-pc" onmouseover="toggleMenuOpen()">
+  <span class="material-symbols-outlined">menu</span>
+</button>
+
+
+<nav class="navbar-pesquisa">
+  <input type="text" id="nav-input" onkeyup="filtrar(event)" placeholder="procure aqui...">
+  <svg class="svg-div" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><style>.svg-div{fill:#676767}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+</nav>
+
+<nav class="navbar-menu">
+
+  <div class="div-login">
+    <li class="nav-list"><a href="./login.html" class="nav-link-menu" id="link-entrar">Entrar</a></li>
+    <!-- <li class="nav-list"><a href="./cadastro.html" class="nav-link-menu" id="link-cadastrar">Cadastrar</a></li>  -->
+    <a class="link-perfil" href="./perfil.html">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+    </a>
+  </div>
+    <li class="nav-list"><a href="./index.html" class="nav-link-menu">Home</a></li>
+    <li class="nav-list"><a href="./menu-simulados.html" class="nav-link-menu">Simulados</a></li>
+    <li class="nav-list"><a href="./cronograma.html" class="nav-link-menu">Cronograma</a></li>
+    <li class="nav-list"><a href="./aulao.html" class="nav-link-menu" id="active">Aulão</a></li>
+    <li class="nav-list"><a href="./materiais-de-revisao.html" class="nav-link-menu">Materiais de Revisão</a></li>
+    <li class="nav-list"><a href="./provas.html" class="nav-link-menu">Provas</a></li>
+    <li class="nav-list"><a href="./notas-de-corte.html" class="nav-link-menu">Notas de Corte</a></li>
     
-    <nav class="navbar-links"> 
-        <li class="nav-list"><a href="#" class="nav-link">Fale Conosco  |</a></li>
-        <li class="nav-list"><a href="#" class="nav-link">Saiba Mais  |</a></li>
-        <li class="nav-list"><a href="#" class="nav-link">Novidades</a></li>
-    </nav>
-
-
-    <nav class="navbar-pesquisa">
-      <input type="text" id="nav-input" onkeyup="filtrar()" placeholder="procure aqui...">
-      <svg class="svg-div" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><style>.svg-div{fill:#676767}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-      <ul id="lista-titulos"></ul>
-    </nav>
-
-    <nav class="navbar-menu">
-
-      <div class="div-login">
-        <li class="nav-list"><a href="./login.html" class="nav-link-menu" id="link-entrar">Entrar</a></li>
-        <!-- <li class="nav-list"><a href="./cadastro.html" class="nav-link-menu" id="link-cadastrar">Cadastrar</a></li>  -->
-        <a class="link-perfil" href="./perfil.html">
-          <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
-        </a>
-      </div>
-        <li class="nav-list"><a href="./index.html" class="nav-link-menu">Home</a></li>
-        <li class="nav-list"><a href="./menu-simulados.html" class="nav-link-menu">Simulados</a></li>
-        <li class="nav-list"><a href="./cronograma.html" class="nav-link-menu">Cronograma</a></li>
-        <li class="nav-list"><a href="./aulao.html" class="nav-link-menu" id="active">Aulão</a></li>
-        <li class="nav-list"><a href="./materiais-de-revisao.html" class="nav-link-menu">Materiais de Revisão</a></li>
-        <li class="nav-list"><a href="./provas.html" class="nav-link-menu">Provas</a></li>
-        <li class="nav-list"><a href="./notas-de-corte.html" class="nav-link-menu">Notas de Corte</a></li>
-        
-        <img style="margin-top: 20px;" src="https://cutekawaiiresources.files.wordpress.com/2015/10/1082506597_l.gif?w=1200&h=" alt="">
-        
-    </nav>
-    </nav>
-
+   <img style="margin-top: 20px;" src="./Imagens/Gifs Bob Esponja/bob-esponja-menu.webp" alt="">
+    
+</nav>
+</nav>
     <main>
           <div class="button-menu-pc">
             <button type="button" class="button-menu" id="navbar-burguer-pc" onmouseover="toggleMenuOpen()">
@@ -79,7 +91,7 @@
           
               <div class="swiper-slide" id="swiper-slide-apostila">
                 <div class="container-slide-apostila">
-                  <img class="img-slide-apostila" src="https://artpoin.com/wp-content/uploads/2023/08/artpoin-bob-esponja18.png" alt="">
+                  <img class="img-slide-apostila" src="./Imagens/Slides/bob-esponja-slide-1.png" alt="">
                   
                   <div class="content-slide-apostila">
                     <div class="title-apostila">
@@ -88,13 +100,13 @@
   
                     <div class="subtitle-apostila">O material mais top pra você se dar bem no ENEM! Tudo organizadinho em apostilas em PDF pra você ler e dar aquela conferida quando quiser!</div>
       
-                    <a class="link-apostila" href="#">BAIXAR AGORA</a>
+                    <a class="link-apostila" href="./materiais-de-revisao.html#section-apostilas">BAIXAR AGORA</a>
                   </div>
               </div>
              </div>
               <div class="swiper-slide" id="swiper-slide-apostila">
                 <div class="container-slide-apostila">
-                  <img class="img-slide-apostila" src="https://pngimg.com/uploads/spongebob/spongebob_PNG38.png" alt="">
+                  <img class="img-slide-apostila" src="./Imagens/Slides/bob-esponja-slide-2.png" alt="">
                   
                   <div class="content-slide-apostila">
                     <div class="title-apostila">
@@ -103,7 +115,7 @@
   
                     <div class="subtitle-apostila">O site ainda manda ver disponibilizando não só as apostilas maneiras, mas também os PDFs das provas do ENEM. Ou seja, tem tudo lá pra você estudar e arrasar!</div>
       
-                    <a class="link-apostila" href="./provas.html">BAIXAR AGORA</a>
+                    <a class="link-apostila" href="./provas.html#section-apostilas">BAIXAR AGORA</a>
                   </div>
               </div>
              </div>
@@ -117,26 +129,16 @@
       
           </div>
 
-          <section class="section-pesquisa">
-            <div class="div-nav-pesquisa">
-              <a href="./index.html"><img src="./logo.png" alt=""></a>
-              <input id="inputBusca" onkeyup="filtrarPc()" type="text" placeholder="pesquise aqui...">
-        
-                <svg class="svg-div" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><style>.svg-div{fill:#003366}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-                <!-- <a href="#"><img src="https://th.bing.com/th/id/R.d2e2beeae6433d170dc022df12b93fdc?rik=GLAGC22r%2bOnyFw&riu=http%3a%2f%2f4.bp.blogspot.com%2f-2VLannZ9rFs%2fT0P9WweKevI%2fAAAAAAAAAQU%2fjLYY3Io5g3c%2fs1600%2fbob-esponja2.gif&ehk=GobocRVQ%2bP29nGKxbVvqqW8Z5D1teGvhKUpgD85ju54%3d&risl=&pid=ImgRaw&r=0" alt=""></a> -->
-              <ul id="lista-titulos-pc"></ul>
-            </div>
-            
-         </section>
+          <section class="section-pesquisa"></section>
 
           <section class="section-home" id="section-padding">
-            <h1 class="h1-home">Guia360: Seu Portal de Estudos para Vestibulares e Concursos!</h1>
+            <h1 class="h1-home" style="text-align: center;">Aulão</h1>
         <!-- <h2>Sua Jornada Rumo ao Sucesso Acadêmico Começa Aqui</h2> -->
 
         <div class="container3">
-          <div class="content5">
-              <img src="https://c1.staticflickr.com/3/2372/2380183266_bd37c42cdb.jpg" alt="">
-            </div> 
+          <!-- <div class="content5">
+              <img src="./Imagens/bob-esponja-formatura.png" alt="">
+            </div>  -->
             <div class="content7">
               <h3>Vídeos de Aulões do Enem</h3>
               <p>
@@ -162,7 +164,7 @@
               <div class="swiper-wrapper">
       
                 <div class="swiper-slide" id="swiper-aulao">
-                  <a href="https://youtu.be/eHwWL2EsuRg"><img src="./historia-1.jpg" alt=""></a>
+                  <a href="https://youtu.be/eHwWL2EsuRg"><img src="./Imagens/Imagens Aulão/historia-1.jpg" alt=""></a>
                   <div class="container-content-card">
                     <h3>Prof. felipe de Oliveira</h3>
                     <h1>AULÃO ENEM DE HISTÓRIA (GERAL)</h1>
@@ -173,7 +175,7 @@
                 </div>
 
                 <div class="swiper-slide" id="swiper-aulao">
-                  <a href="https://youtu.be/q9-PL5iFJPk"><img src="./historia-2.jpg" alt=""></a>
+                  <a href="https://youtu.be/q9-PL5iFJPk"><img src="./Imagens/Imagens Aulão/historia-2.jpg" alt=""></a>
                   <div class="container-content-card">
                     <h3>Prof. Rodrigo</h3>
                     <h1>AULÃO DE HISTÓRIA GERAL PARA O ENEM</h1>
@@ -184,7 +186,7 @@
                 </div>
 
                 <div class="swiper-slide" id="swiper-aulao">
-                  <a href="https://www.youtube.com/watch?v=HjzaeHdw5LE"><img src="./historia-3.jpg" alt=""></a>
+                  <a href="https://www.youtube.com/watch?v=HjzaeHdw5LE"><img src="./Imagens/Imagens Aulão/historia-3.jpg" alt=""></a>
                   <div class="container-content-card">
                     <h3>Prof. Rafael Duarte</h3>
                     <h1>TUDO DE HISTÓRIA DO BRASIL QUE CAI NO ENEM!</h1>
@@ -195,7 +197,7 @@
                 </div>
 
                 <div class="swiper-slide" id="swiper-aulao">
-                  <a href="https://www.youtube.com/watch?v=HjzaeHdw5LE"><img src="./historia-4.jpg" alt=""></a>
+                  <a href="https://www.youtube.com/watch?v=HjzaeHdw5LE"><img src="./Imagens/Imagens Aulão/historia-4.jpg"alt=""></a>
                   <div class="container-content-card">
                     <h3>Prof. Rafael Duarte</h3>
                     <h1>TUDO DE HISTÓRIA GERAL [AULÃO COMPLETO!]</h1>
@@ -223,7 +225,7 @@
               <div class="swiper-wrapper">
       
                 <div class="swiper-slide" id="swiper-aulao">
-                  <a href="https://www.youtube.com/watch?v=f7Mx_tRu-F4"><img src="./biologia-1.jpg" alt=""></a>
+                  <a href="https://www.youtube.com/watch?v=f7Mx_tRu-F4"><img src="./Imagens/Imagens Aulão/biologia-1.jpg" alt=""></a>
                   <div class="container-content-card">
                     <h3>Profes. Juliana Evelyn e Claudia Aguiar</h3>
                     <h1>AULÃO DE BIOLOGIA PARA O ENEM</h1>
@@ -234,7 +236,7 @@
                 </div>
 
                 <div class="swiper-slide" id="swiper-aulao">
-                  <a href="https://youtu.be/q9-PL5iFJPk"><img src="./biologia-2.jpg" alt=""></a>
+                  <a href="https://youtu.be/q9-PL5iFJPk"><img src="./Imagens/Imagens Aulão/biologia-2.jpg" alt=""></a>
                   <div class="container-content-card">
                     <h3>Prof. Samuel Cunha</h3>
                     <h1>AULÃO ENEM 2022 - Revisão de Biologia</h1>
@@ -245,7 +247,7 @@
                 </div>
 
                 <div class="swiper-slide" id="swiper-aulao">
-                  <a href="https://www.youtube.com/watch?v=6Ug32AjUnzc"><img src="./biologia-3.jpg" alt=""></a>
+                  <a href="https://www.youtube.com/watch?v=6Ug32AjUnzc"><img src="./Imagens/Imagens Aulão/biologia-3.jpg" alt=""></a>
                   <div class="container-content-card">
                     <h3>Prof. Paulo Jubilut</h3>
                     <h1>Aulão ENEM 2020 | Biologia</h1>
@@ -256,7 +258,7 @@
                 </div>
 
                 <div class="swiper-slide" id="swiper-aulao">
-                  <a href="https://www.youtube.com/watch?v=I-2AK5Jq6Rs"><img src="./biologia-4.jpg" alt=""></a>
+                  <a href="https://www.youtube.com/watch?v=I-2AK5Jq6Rs"><img src="./Imagens/Imagens Aulão/biologia-4.jpg" alt=""></a>
                   <div class="container-content-card">
                     <h3>Prof. Victor Tibúrcio</h3>
                     <h1>REVISÃO DE BIOLOGIA MESTRES DO ENEM 2023</h1>
@@ -283,7 +285,7 @@
               <div class="swiper-wrapper">
       
                 <div class="swiper-slide" id="swiper-aulao">
-                  <a href="https://www.youtube.com/watch?v=jQMuIRbuUvM"><img src="./geografia-1.jpg" alt=""></a>
+                  <a href="https://www.youtube.com/watch?v=jQMuIRbuUvM"><img src="./Imagens/Imagens Aulão/geografia-1.jpg" alt=""></a>
                   <div class="container-content-card">
                     <h3>Prof. Raphael Carrieri</h3>
                     <h1>AULÃO ENEM DE GEOGRAFIA | AULÃO DA SALVAÇÃO ENEM</h1>
@@ -294,7 +296,7 @@
                 </div>
 
                 <div class="swiper-slide" id="swiper-aulao">
-                  <a href="https://www.youtube.com/watch?v=2MIwmh_hBt4"><img src="./geografia-2.jpg" alt=""></a>
+                  <a href="https://www.youtube.com/watch?v=2MIwmh_hBt4"><img src="./Imagens/Imagens Aulão/geografia-2.jpg" alt=""></a>
                   <div class="container-content-card">
                     <h3>Prof. Raphael Carrieri</h3>
                     <h1>AULÃO DE GEOGRAFIA PARA O ENEM</h1>
@@ -305,7 +307,7 @@
                 </div>
 
                 <div class="swiper-slide" id="swiper-aulao">
-                  <a href="https://www.youtube.com/watch?v=sPsPr7WbgLs"><img src="./geografia-3.jpg" alt=""></a>
+                  <a href="https://www.youtube.com/watch?v=sPsPr7WbgLs"><img src="./Imagens/Imagens Aulão/geografia-3.jpg" alt=""></a>
                   <div class="container-content-card">
                     <h3>Prof. Rafael Duarte</h3>
                     <h1>TUDO DE GEOGRAFIA QUE CAI NO ENEM!! [AULÃO COMPLETO!]</h1>
@@ -316,7 +318,7 @@
                 </div>
 
                 <div class="swiper-slide" id="swiper-aulao">
-                  <a href="https://www.youtube.com/live/usv6REqsnvg?feature=share"><img src="./geografia-4.jpg" alt=""></a>
+                  <a href="https://www.youtube.com/live/usv6REqsnvg?feature=share"><img src="./Imagens/Imagens Aulão/geografia-4.jpg" alt=""></a>
                   <div class="container-content-card">
                     <h3>Prof. Ricardo Marcílio</h3>
                     <h1>Aulão - ENEM - 2021 - Geografia</h1>
@@ -360,13 +362,13 @@
               <p>Email: guia360@gmail.com</p>
               <p>Telefone: (123) 456-7890</p>
 
-              <img style="margin-top: 20px;" src="https://cutekawaiiresources.files.wordpress.com/2015/10/60.gif?w=1200&h=" alt="">
+              <img style="margin-top: 20px;" src="./Imagens/Gifs Bob Esponja/bob-esponja-aulao.webp" alt="">
           </div>
       </footer>
     </main>
 
 
-<script src="./script.js"></script>
+<script src="./Js/script.js"></script>
     <script type="module">
       import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.js'
 

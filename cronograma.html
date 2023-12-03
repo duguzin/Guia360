@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="shortcut icon" href="./Imagens/logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <title>Cronograma - Guia360</title>
@@ -13,68 +13,73 @@
       body {
         background-image: url(https://fontawesome.com/images/icons-gray-bg.svg);
         
-      }
-      .navbar {
-        box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
-      }
-      #navbar-burguer-pc {
-        box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
-      }
-      
+      }  
     </style>
 </head>
 <body>
   <!-- <div class="fundo-body"></div> -->
     <header>
-        <nav class="navbar">
-            <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
-            <div class="navbar-overlay-pesquisa" onclick="togglePesquisaOpen()"></div>
+      <nav class="navbar">
+        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+        <div class="navbar-overlay-pesquisa" onclick="togglePesquisaOpen()"></div>
 
-        <button type="button" class="button-pesquisa" id="navbar-lupa" onclick="togglePesquisaOpen()">
-          <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><style>svg{fill:#fff}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-        </button>
+    <button type="button" class="button-pesquisa" id="navbar-lupa" onclick="togglePesquisaOpen()">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><style>svg{fill:#fff}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+    </button>
 
-        <button type="button" class="button-menu" id="navbar-burguer" onclick="toggleMenuOpen()">
-            <span class="material-symbols-outlined">menu</span>
-        </button>
-    
+    <button type="button" class="button-menu" id="navbar-burguer" onclick="toggleMenuOpen()">
+        <span class="material-symbols-outlined">menu</span>
+    </button>
 
         <a class="navbar-title" href="./index.html">Guia360</a>
-        
-        <nav class="navbar-links"> 
-            <li class="nav-list"><a href="#" class="nav-link">Fale Conosco  |</a></li>
-            <li class="nav-list"><a href="#" class="nav-link">Saiba Mais  |</a></li>
-            <li class="nav-list"><a href="#" class="nav-link">Novidades</a></li>
-        </nav>
+       
+    
+    <!-- <nav class="navbar-links"> 
+        <li class="nav-list"><a href="#" class="nav-link">Fale Conosco  |</a></li>
+        <li class="nav-list"><a href="#" class="nav-link">Saiba Mais  |</a></li>
+        <li class="nav-list"><a href="#" class="nav-link">Novidades</a></li>
+    </nav> -->
 
 
-        <nav class="navbar-pesquisa">
-          <input type="text" id="nav-input" onkeyup="filtrar()" placeholder="procure aqui...">
-          <svg class="svg-div" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><style>.svg-div{fill:#676767}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-          <ul id="lista-titulos"></ul>
-        </nav>
+    <div class="div-input-pc">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 512 512"><style>svg{fill:#fff}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+      <input id="inputBusca" onkeyup="filtrarPc(event)" type="text" placeholder="Pesquisar">
+    </div>
 
-        <nav class="navbar-menu">
+    <button type="button" class="button-menu" id="navbar-burguer-pc" onmouseover="toggleMenuOpen()">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
 
-          <div class="div-login">
-            <li class="nav-list"><a href="./login.html" class="nav-link-menu" id="link-entrar">Entrar</a></li>
-            <!-- <li class="nav-list"><a href="./cadastro.html" class="nav-link-menu" id="link-cadastrar">Cadastrar</a></li>  -->
-            <a class="link-perfil" href="./perfil.html">
-              <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
-            </a>
-          </div>
-            <li class="nav-list"><a href="./index.html" class="nav-link-menu">Home</a></li>
-            <li class="nav-list"><a href="./menu-simulados.html" class="nav-link-menu">Simulados</a></li>
-            <li class="nav-list"><a href="./cronograma.html" class="nav-link-menu" id="active">Cronograma</a></li>
-            <li class="nav-list"><a href="./aulao.html" class="nav-link-menu">Aulão</a></li>
-            <li class="nav-list"><a href="./materiais-de-revisao.html" class="nav-link-menu">Materiais de Revisão</a></li>
-            <li class="nav-list"><a href="./provas.html" class="nav-link-menu">Provas</a></li>
+    
+    
+
+
+    <nav class="navbar-pesquisa">
+      <input type="text" id="nav-input" onkeyup="filtrar(event)" placeholder="procure aqui...">
+      <svg class="svg-div" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><style>.svg-div{fill:#676767}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+    </nav>
+
+    <nav class="navbar-menu">
+
+      <div class="div-login">
+        <li class="nav-list"><a href="./login.html" class="nav-link-menu" id="link-entrar">Entrar</a></li>
+        <!-- <li class="nav-list"><a href="./cadastro.html" class="nav-link-menu" id="link-cadastrar">Cadastrar</a></li>  -->
+        <a class="link-perfil" href="./perfil.html">
+          <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+        </a>
+      </div>
+        <li class="nav-list"><a href="./index.html" class="nav-link-menu">Home</a></li>
+        <li class="nav-list"><a href="./menu-simulados.html" class="nav-link-menu">Simulados</a></li>
+        <li class="nav-list"><a href="./cronograma.html" class="nav-link-menu" id="active">Cronograma</a></li>
+        <li class="nav-list"><a href="./aulao.html" class="nav-link-menu">Aulão</a></li>
+        <li class="nav-list"><a href="./materiais-de-revisao.html" class="nav-link-menu">Materiais de Revisão</a></li>
+        <li class="nav-list"><a href="./provas.html" class="nav-link-menu">Provas</a></li>
         <li class="nav-list"><a href="./notas-de-corte.html" class="nav-link-menu">Notas de Corte</a></li>
-            
-            <img style="margin-top: 20px;" src="https://cutekawaiiresources.files.wordpress.com/2015/10/1082506597_l.gif?w=1200&h=" alt="">
-            
-        </nav>
-        </nav>
+        
+       <img style="margin-top: 20px;" src="./Imagens/Gifs Bob Esponja/bob-esponja-menu.webp" alt="">
+        
+    </nav>
+    </nav>
     </header>
 
       <main>
@@ -94,7 +99,7 @@
         
             <div class="swiper-slide" id="swiper-slide-apostila">
               <div class="container-slide-apostila">
-                <img class="img-slide-apostila" src="https://artpoin.com/wp-content/uploads/2023/08/artpoin-bob-esponja18.png" alt="">
+                <img class="img-slide-apostila" src="./Imagens/Slides/bob-esponja-slide-1.png" alt="">
                 
                 <div class="content-slide-apostila">
                   <div class="title-apostila">
@@ -103,13 +108,13 @@
 
                   <div class="subtitle-apostila">O material mais top pra você se dar bem no ENEM! Tudo organizadinho em apostilas em PDF pra você ler e dar aquela conferida quando quiser!</div>
     
-                  <a class="link-apostila" href="#">BAIXAR AGORA</a>
+                  <a class="link-apostila" href="./materiais-de-revisao.html">BAIXAR AGORA</a>
                 </div>
             </div>
            </div>
             <div class="swiper-slide" id="swiper-slide-apostila">
               <div class="container-slide-apostila">
-                <img class="img-slide-apostila" src="https://pngimg.com/uploads/spongebob/spongebob_PNG38.png" alt="">
+                <img class="img-slide-apostila" src="./Imagens/Slides/bob-esponja-slide-2.png" alt="">
                 
                 <div class="content-slide-apostila">
                   <div class="title-apostila">
@@ -132,25 +137,16 @@
     
         </div>
 
-    <section class="section-pesquisa">
-          <div class="div-nav-pesquisa">
-            <a href="./index.html"><img src="./logo.png" alt=""></a>
-            <input id="inputBusca" onkeyup="filtrarPc()" type="text" placeholder="pesquise aqui...">
-      
-              <svg class="svg-div" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><style>.svg-div{fill:#003366}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-              <!-- <a href="#"><img src="https://th.bing.com/th/id/R.d2e2beeae6433d170dc022df12b93fdc?rik=GLAGC22r%2bOnyFw&riu=http%3a%2f%2f4.bp.blogspot.com%2f-2VLannZ9rFs%2fT0P9WweKevI%2fAAAAAAAAAQU%2fjLYY3Io5g3c%2fs1600%2fbob-esponja2.gif&ehk=GobocRVQ%2bP29nGKxbVvqqW8Z5D1teGvhKUpgD85ju54%3d&risl=&pid=ImgRaw&r=0" alt=""></a> -->
-            <ul id="lista-titulos-pc"></ul>
-          </div>
-          
-    </section>
+    <section class="section-pesquisa"></section>
+    
    <section class="section-home" id="section-padding">
         <h1 class="h1-home" style="text-align: center;">Cronograma de Estudos</h1>
         <!-- <h2>Sua Jornada Rumo ao Sucesso Acadêmico Começa Aqui</h2> -->
 
         <div class="container3">
-          <div class="content5">
-              <img src="https://c1.staticflickr.com/3/2372/2380183266_bd37c42cdb.jpg" alt="">
-            </div> 
+          <!-- <div class="content5">
+              <img src="./Imagens/bob-esponja-formatura.png" alt="">
+            </div>  -->
             <div class="content7">
               <h3>O que é um Cronograma de Estudos?</h3>
               <p>
@@ -240,20 +236,17 @@
                 A chave para o sucesso na preparação para o Encceja é a persistência e a disciplina. Seu cronograma de estudos é uma ferramenta valiosa, mas o compromisso em segui-lo e fazer os ajustes necessários ao longo do caminho é o que fará a diferença. Lembre-se de que o Encceja é uma oportunidade de conquistar sua certificação de ensino fundamental ou médio, e um cronograma bem planejado pode ser o seu guia para alcançar esse objetivo.
             </p> -->
 
-            <h3>Separamos 3 cronogramas para vocês, confira:</h3>
+            <h3>Separamos 2 cronogramas para vocês, confira:</h3>
             
             <div style="text-align: center;">
               <h2>Cronograma 1: Ênfase em Matérias Difíceis</h2>
-              <img src="./Encceja 1.jpg" alt="">
+              <img src="./Imagens/Imagens Cronograma/Encceja 1.png" alt="">
 
               <h2>Cronograma 2: Ênfase em Matérias com Maior Aparição </h2>
-              <img src="./Encceja 2.jpg" alt="">
+              <img src="./Imagens/Imagens Cronograma/Encceja 2.png" alt="">
 
-              <h2>Cronograma 3: Equilíbrio de Matérias</h2>
-              <img src="./Encceja 3.jpg" alt="">
+          
             </div>
-              
-            
 
               <p>
                 A chave para o sucesso na preparação para o Encceja é a persistência e a disciplina. Seu cronograma de estudos é uma ferramenta valiosa, mas o compromisso em segui-lo e fazer os ajustes necessários ao longo do caminho é o que fará a diferença. Lembre-se de que o Encceja é uma oportunidade de conquistar sua certificação de ensino fundamental ou médio, e um cronograma bem planejado pode ser o seu guia para alcançar esse objetivo.
@@ -325,30 +318,47 @@
                 <p>
                   Este modelo é ideal para quem busca uma distribuição equilibrada de estudos ao longo da semana, abordando todas as áreas de conhecimento regularmente.
                 </p>
-                <img src="./Enem 1.jpg" alt="">
+                <img src="./Imagens/Imagens Cronograma/Enem 1.png" alt="">
 
                 <h3>Modelo 2: Foco na Redação</h3>
                 <p>
                   Este modelo destaca a importância da prática da redação e distribui as outras áreas ao longo da semana.
                 </p>
-                <img src="./Enem 1.jpg" alt="">
+                <img src="./Imagens/Imagens Cronograma/Enem 1.png" alt="">
   
                 <h3>Modelo 3: Intensivo nos Fins de Semana</h3>
                 <p>
                   Este modelo é projetado para estudantes que têm mais tempo durante os fins de semana.
                 </p>
-                <img src="./Enem 1.jpg" alt="">
+                <img src="./Imagens/Imagens Cronograma/Enem 1.png" alt="">
 
                 <h3>Modelo 4: Distribuição Flexisível</h3>
                 <p>
                   Este modelo permite uma distribuição mais flexível dos estudos ao longo da semana, adaptando-se à sua disponibilidade.
                 </p>
-                <img src="./Enem 1.jpg" alt="">
+                <img src="./Imagens/Imagens Cronograma/Enem 1.png" alt="">
 
 
               </div>
             </div>
          </div>
+
+         <h1 class="h1-home">Cronograma Enem</h1>
+
+<div class="container7">
+    <div class="content7" style="text-align: center;">
+
+              <h3>Faça Você Mesmo</h3>
+              <p style="text-align: left; margin-bottom: 20px;">
+                Clique em baixar para fazer o donwload do modelo e criar seu próprio cronograma de estudos!
+              </p>
+
+            <div class="div-enem" style="text-align: center;"> 
+              <img src="./Imagens/Imagens Cronograma/Cronograma em Branco.png" alt="">
+            </div>
+                  <a id="link-cronograma" href="./Imagens/Imagens Cronograma/Cronograma em Branco.png" download="Modelo Cronograma em Branco">BAIXAR!</a>
+         </div>
+  </div>
   </section>
 
     
@@ -378,12 +388,12 @@
         <p>Email: guia360@gmail.com</p>
         <p>Telefone: (123) 456-7890</p>
 
-        <img style="margin-top: 20px;" src="https://cutekawaiiresources.files.wordpress.com/2015/10/452627.gif?w=1200&h=" alt="">
+        <img style="margin-top: 20px;" src="./Imagens/Gifs Bob Esponja/bob-esponja-cronograma.webp" alt="">
     </div>
 </footer>
       </main> 
     
-    <script src="./script.js"></script>
+    <script src="./Js/script.js"></script>
     <script type="module">
       import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.js'
 
